@@ -63,7 +63,22 @@ async def generate(
         
         result = banana_service.generate_image(final_prompt, ratio, image_bytes, mask_bytes, model, api_key)
         
-        # If result is base64, ensure it has prefix
+        # If result is a URL, download it and convert to base64 (Proxy for China access)
+        if result and result.startswith("http"):
+            try:
+                import requests
+                import base64
+                print(f"Proxying image from URL: {result}")
+                img_response = requests.get(result)
+                img_response.raise_for_status()
+                b64_data = base64.b64encode(img_response.content).decode('utf-8')
+                result = f"data:image/png;base64,{b64_data}"
+            except Exception as proxy_error:
+                print(f"Failed to proxy image: {proxy_error}")
+                # Fallback to original URL if proxy fails
+                pass
+
+        # If result is raw base64 (no prefix), ensure it has prefix
         if result and not result.startswith("http") and not result.startswith("data:"):
             result = f"data:image/png;base64,{result}"
             
