@@ -21,13 +21,27 @@ app.add_middleware(
 )
 
 # Serve static files
-# Ensure we mount the frontend directory correctly
+# In production, we serve the 'dist' folder built by Vite
+# We check if 'dist' exists, otherwise fallback to 'frontend' (for local dev)
+dist_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "dist")
 frontend_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), "frontend")
-app.mount("/frontend", StaticFiles(directory=frontend_path), name="frontend")
 
-@app.get("/")
-async def read_root():
-    return FileResponse(os.path.join(frontend_path, "index.html"))
+if os.path.exists(dist_path):
+    app.mount("/assets", StaticFiles(directory=os.path.join(dist_path, "assets")), name="assets")
+    # Mount other static assets if needed, or just root for index.html
+    
+    @app.get("/")
+    async def read_root():
+        return FileResponse(os.path.join(dist_path, "index.html"))
+    
+    # Catch-all for SPA routing if needed, or just serve index.html
+else:
+    # Fallback for local development (serving raw source)
+    app.mount("/frontend", StaticFiles(directory=frontend_path), name="frontend")
+    
+    @app.get("/")
+    async def read_root():
+        return FileResponse(os.path.join(frontend_path, "index.html"))
 
 @app.post("/api/generate")
 async def generate(
