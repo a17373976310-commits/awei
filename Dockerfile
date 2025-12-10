@@ -38,7 +38,7 @@ COPY backend ./backend
 COPY --from=builder /app/dist ./dist
 
 # Expose port
-EXPOSE 8000
+EXPOSE 8080
 
 # Start Command
 CMD ["python", "-m", "backend.main"]
