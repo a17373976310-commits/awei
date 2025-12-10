@@ -326,3 +326,55 @@ Sending request to LLM (gemini-3-pro-preview)...
 Optimization SUCCESS. Content: [Visual Description]
 "现代中国电商[厨具/炒锅]场景，[高端轻奢]商业摄影风格。一只质感厚重、涂层细腻的黑色不粘炒锅（带透明玻璃盖）位于[画面正中央，微微倾斜展示锅深]。
 [Pr...
+
+--- New Request ---
+Scenario: taobao_main
+Prompt: 给这个黑色炒锅做一张淘宝主图
+Has API Key: True
+Sending request to LLM (gemini-3-pro-preview)...
+Optimization SUCCESS. Content: Here is the prompt designed for a high-converting Tmall/Taobao main image, following the **"Commerci...
+
+--- New Request ---
+Scenario: free_mode
+Prompt: 一个女孩
+Has API Key: True
+Skipping optimization. Reason: Scenario 'free_mode' is free/general or not in templates.
+
+--- New Request ---
+Scenario: free_mode
+Prompt: 一个女孩
+Has API Key: True
+Skipping optimization. Reason: Scenario 'free_mode' is free/general or not in templates.
+
+--- New Request ---
+Scenario: img_modify_v1
+Prompt: 给这张图片的尺寸换成3:4的
+Has API Key: True
+Sending request to LLM (gemini-3-pro-preview)...
+Optimization SUCCESS. Content: ```json
+{
+  "task_type": "RESIZE",
+  "recommended_model": "gemini-3-pro-image-preview",
+  "final_asp...
+
+--- New Request ---
+Scenario: img_modify_v1
+Prompt: 给这张图片的尺寸换成3:4的
+Has API Key: True
+Sending request to LLM (gemini-3-pro-preview)...
+Optimization SUCCESS. Content: ```json
+{
+  "task_type": "RESIZE",
+  "recommended_model": "gemini-3-pro-image-preview",
+  "final_asp...
+
+--- New Request ---
+Scenario: img_modify_v1
+Prompt: 给这张图片的尺寸换成3:4的
+Has API Key: True
+Sending request to LLM (gemini-3-pro-preview)...
+Optimization SUCCESS. Content: ```json
+{
+  "task_type": "RESIZE",
+  "recommended_model": "gemini-3-pro-image-preview",
+  "final_asp...

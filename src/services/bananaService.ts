@@ -20,7 +20,7 @@ export class BananaService {
     }
 
     async generateImage(options: GenerationOptions): Promise<string> {
-        console.log('Generating image with options:', options);
+        console.log('Generating image with options:', options, this.apiKey, this.modelId);
 
         // TODO: Implement actual API call
         // For now, return a placeholder or mock response
