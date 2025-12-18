@@ -121,6 +121,45 @@ async def generate(
             b64 = base64.b64encode(img_bytes).decode('utf-8')
             original_images_b64.append(f"data:image/jpeg;base64,{b64}")
 
+        # --- Server-side History Saving ---
+        try:
+            import time
+            timestamp = int(time.time() * 1000)
+            history_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static", "history")
+            os.makedirs(history_dir, exist_ok=True)
+
+            # Save generated image
+            if result and result.startswith("data:image"):
+                header, encoded = result.split(",", 1)
+                img_data = base64.b64decode(encoded)
+                with open(os.path.join(history_dir, f"{timestamp}.png"), "wb") as f:
+                    f.write(img_data)
+                print(f"DEBUG_LOG: Saved generated image to {history_dir}/{timestamp}.png")
+
+            # Save original images
+            for idx, img_bytes in enumerate(image_bytes_list):
+                with open(os.path.join(history_dir, f"{timestamp}_orig_{idx}.jpg"), "wb") as f:
+                    f.write(img_bytes)
+                print(f"DEBUG_LOG: Saved original image {idx} to {history_dir}/{timestamp}_orig_{idx}.jpg")
+
+            # Save metadata
+            metadata = {
+                "timestamp": timestamp,
+                "original_prompt": prompt,
+                "optimized_prompt": final_prompt,
+                "scenario": scenario,
+                "model": model,
+                "ratio": ratio,
+                "layout_logic": layout_logic,
+                "original_images_count": len(image_bytes_list)
+            }
+            with open(os.path.join(history_dir, f"{timestamp}.json"), "w", encoding="utf-8") as f:
+                json.dump(metadata, f, ensure_ascii=False, indent=2)
+            print(f"DEBUG_LOG: Saved metadata to {history_dir}/{timestamp}.json")
+        except Exception as save_error:
+            print(f"WARNING: Failed to save history to disk: {save_error}")
+        # ----------------------------------
+
         print(f"<<< [SUCCESS] Image generated and processed.")
         return JSONResponse({
             "url": result,
