@@ -16,7 +16,7 @@
     <div id="app">
         <header class="app-header">
             <h1
-                style="font-size: 1.25rem; font-weight: 600; background: linear-gradient(to right, #fff, #a5b4fc); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                style="font-size: 1.25rem; font-weight: 600; background: linear-gradient(to right, #fff, #a5b4fc); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;">
                 AI 创意工坊</h1>
             <nav class="mode-switch">
                 <button id="btn-img-modify" class="nav-btn">图片修改</button>
@@ -52,6 +52,8 @@
                             <select id="model-select" class="model-select">
                                 <option value="comfly_nano_banana">Comfly Nano Banana 2 (官方源)</option>
                                 <option value="nano_banana_official">Nano Banana (Google)</option>
+                                <option value="doubao_seedream_4_0">Doubao Seedream 4.0 (即梦4)</option>
+                                <option value="doubao_seedream_4_5">Doubao Seedream 4.5 (即梦4.5)</option>
                             </select>
                         </div>
 
@@ -71,13 +73,30 @@
                             </div>
 
                             <!-- Sub-Scenario (Hidden by default) -->
-                            <div id="sub-scenario-container" class="scenario-selector hidden"
-                                style="margin-top: 0.5rem; flex-wrap: wrap;">
-                                <button class="scenario-btn sub-btn active" data-value="taobao_main">淘宝主图</button>
-                                <button class="scenario-btn sub-btn" data-value="creative_poster">创意海报</button>
-                                <button class="scenario-btn sub-btn" data-value="amazon_white">亚马逊白底</button>
-                                <button class="scenario-btn sub-btn" data-value="amazon_detail">亚马逊A+</button>
-                                <button class="scenario-btn sub-btn" data-value="taobao_detail">淘宝详情</button>
+                            <div id="sub-scenario-container" class="sub-scenario-wrapper hidden">
+                                <div class="scenario-group">
+                                    <div class="group-label">电商平台 (Platforms)</div>
+                                    <div class="group-btns">
+                                        <button class="scenario-btn sub-btn active"
+                                            data-value="taobao_main">淘宝主图</button>
+                                        <button class="scenario-btn sub-btn" data-value="taobao_detail">详情场景</button>
+                                        <button class="scenario-btn sub-btn" data-value="amazon_white">亚马逊白底</button>
+                                        <button class="scenario-btn sub-btn" data-value="amazon_detail">亚马逊A+</button>
+                                    </div>
+                                </div>
+                                <div class="scenario-group">
+                                    <div class="group-label">创意设计 (Creative)</div>
+                                    <div class="group-btns">
+                                        <button class="scenario-btn sub-btn" data-value="brand_story">品牌故事</button>
+                                        <button class="scenario-btn sub-btn" data-value="creative_poster">创意海报</button>
+                                    </div>
+                                </div>
+                                <div class="scenario-group">
+                                    <div class="group-label">辅助工具 (Tools)</div>
+                                    <div class="group-btns">
+                                        <button class="scenario-btn sub-btn" data-value="image_modify">图像修改</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 

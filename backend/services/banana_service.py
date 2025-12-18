@@ -12,6 +12,15 @@ SIZE_MAP = {
     "9:16": {"width": 720,  "height": 1280}
 }
 
+# Doubao 4.5 High-Res Size Map (Min 3.7MP)
+DOUBAO_SIZE_MAP = {
+    "1:1":  {"width": 2048, "height": 2048}, # 4.19MP
+    "4:3":  {"width": 2304, "height": 1728}, # 3.98MP
+    "3:4":  {"width": 1728, "height": 2304}, # 3.98MP
+    "16:9": {"width": 2688, "height": 1512}, # 4.06MP
+    "9:16": {"width": 1512, "height": 2688}  # 4.06MP
+}
+
 OPENAI_SIZE_MAP = {
     "1:1": "1024x1024",
     "4:3": "1024x768",
@@ -25,18 +34,24 @@ class BananaService:
         # Get model config
         model_config = MODEL_REGISTRY.get(model_id)
         if not model_config:
-            # Fallback to default
+            print(f"DEBUG_LOG: Model {model_id} not found, falling back to nano_banana_2")
             model_config = MODEL_REGISTRY["nano_banana_2"]
+        
+        print(f"DEBUG_LOG: Using Model: {model_config['name']} ({model_id})")
             
-        # 2. 【重写参数处理逻辑】
         # 获取尺寸
-        size_config = SIZE_MAP.get(ratio, SIZE_MAP["1:1"]) # Default to 1:1 if not found
+        if model_id == "doubao_seedream_4_5":
+            size_config = DOUBAO_SIZE_MAP.get(ratio, DOUBAO_SIZE_MAP["1:1"])
+        else:
+            size_config = SIZE_MAP.get(ratio, SIZE_MAP["1:1"])
+            
         width = size_config["width"]
         height = size_config["height"]
         
-        # 3. 【修复 Doubao 模型调用】
-        # 确保使用配置中的真实 model_key
+        # 使用局部变量，避免污染全局 MODEL_REGISTRY
+        base_url = model_config["url"].rstrip('/')
         real_model_id = model_config["model_key"]
+        provider = model_config.get("provider", "default")
 
         payload = {
             "prompt": prompt,
@@ -46,28 +61,26 @@ class BananaService:
             "guidance_scale": 7.5,
             "num_inference_steps": 30,
             "model": real_model_id,
-            "aspect_ratio": ratio
+            "aspect_ratio": ratio,
+            "size": f"{width}x{height}"
         }
 
         if image:
-            payload["image"] = base64.b64encode(image).decode('utf-8')
+            base64_data = base64.b64encode(image).decode('utf-8')
+            # For comfly_json, we use Data URL prefix. For others, just base64.
+            if provider == "comfly_json":
+                payload["image"] = f"data:image/png;base64,{base64_data}"
+            else:
+                payload["image"] = base64_data
             payload["strength"] = 0.7 
         
         if mask:
-            payload["mask"] = base64.b64encode(mask).decode('utf-8')
-
-        # Determine URL based on provider
-        url = model_config["url"]
-        if model_config.get("provider") == "comfly":
-            if image:
-                url = f"{url.rstrip('/')}/images/edits"
+            base64_mask = base64.b64encode(mask).decode('utf-8')
+            if provider == "comfly_json":
+                payload["mask"] = f"data:image/png;base64,{base64_mask}"
             else:
-                url = f"{url.rstrip('/')}/images/generations"
-            
-        # Unified Parameter Logic:
-        # Comfly/OpenAI/Banana usually expect 'size' string.
-        payload["size"] = f"{width}x{height}"
-            
+                payload["mask"] = base64_mask
+
         # Determine API Key
         final_api_key = api_key if api_key else config.BANANA_API_KEY
         if final_api_key:
@@ -80,11 +93,10 @@ class BananaService:
 
         # 4. 【添加调试日志】
         print(f"DEBUG_LOG: 用户选择={ratio}, 正在发送尺寸: {width} x {height}, 模型ID: {real_model_id}")
-        print(f"DEBUG_PAYLOAD: {payload}")
 
-        if image:
+        if image and provider == "comfly":
             # --- Image-to-Image (Multipart) ---
-            url = f"{model_config['url'].rstrip('/')}/images/edits"
+            url = f"{base_url}/images/edits"
             
             # 1. Prepare Files
             files = {
@@ -94,13 +106,13 @@ class BananaService:
                 files['mask'] = ('mask.png', mask, 'image/png')
             
             # 2. Prepare Data (Parameters)
-            # size_str = OPENAI_SIZE_MAP.get(ratio, "1024x1024") 
-            # Google model requires aspect_ratio, not size string for edits apparently
             data = {
                 "prompt": prompt,
                 "model": real_model_id,
                 "n": 1,
                 "aspect_ratio": ratio,
+                "size": f"{width}x{height}",
+                "strength": 0.7,
                 "response_format": "url"
             }
             
@@ -110,51 +122,128 @@ class BananaService:
                 
             print(f"DEBUG_LOG: Sending Multipart Request (Img2Img). URL={url}")
             print(f"DEBUG_DATA: {data}")
-            response = requests.post(url, headers=headers, files=files, data=data)
+            response = requests.post(url, headers=headers, files=files, data=data, timeout=120)
             
         else:
-            # --- Text-to-Image (JSON) ---
-            # Clean parameters: Remove width/height/size, keep aspect_ratio
-            if "width" in payload: del payload["width"]
-            if "height" in payload: del payload["height"]
-            if "size" in payload: del payload["size"]
+            # --- Text-to-Image or Image-to-Image (JSON) ---
+            url = f"{base_url}/images/generations"
+            print(f"DEBUG_LOG: Sending JSON Request. URL={url}")
+            print(f"DEBUG_PAYLOAD: { {k: v for k, v in payload.items() if k not in ['image', 'mask']} }") # Don't log base64
             
-            # Ensure aspect_ratio is present (it should be, but just in case)
-            payload["aspect_ratio"] = ratio
-            
-            print(f"DEBUG_LOG: Sending JSON Request (Txt2Img). URL={url}")
-            print(f"DEBUG_PAYLOAD_CLEANED: {payload}")
-            response = requests.post(url, json=payload, headers=headers)
+            import time
+            max_retries = 2
+            retry_count = 0
+            while retry_count <= max_retries:
+                try:
+                    # For comfly_json, we use a cleaner payload
+                    if provider == "comfly_json":
+                        current_payload = {
+                            "model": real_model_id,
+                            "prompt": prompt,
+                            "size": f"{width}x{height}",
+                            "n": 1,
+                            "response_format": "url"
+                        }
+                        if image:
+                            base64_data = base64.b64encode(image).decode('utf-8')
+                            current_payload["image"] = f"data:image/png;base64,{base64_data}"
+                            current_payload["strength"] = 0.7
+                    else:
+                        current_payload = payload
+                        # For non-Doubao models, we clean width/height/size
+                        is_doubao = "doubao" in real_model_id.lower()
+                        if not is_doubao:
+                            if "width" in current_payload: del current_payload["width"]
+                            if "height" in current_payload: del current_payload["height"]
+                            if "size" in current_payload: del current_payload["size"]
+
+                    print(f"DEBUG_LOG: Sending JSON Request (Attempt {retry_count + 1}). URL={url}")
+                    response = requests.post(url, json=current_payload, headers=headers, timeout=120)
+                    
+                    print(f"DEBUG_LOG: API Response Status: {response.status_code}")
+                    if response.status_code != 200:
+                        print(f"DEBUG_LOG: API Error Response Body: {response.text}")
+                    
+                    response.raise_for_status()
+                    break
+                except (requests.exceptions.ProxyError, requests.exceptions.ConnectionError) as e:
+                    retry_count += 1
+                    if retry_count <= max_retries:
+                        print(f"DEBUG_LOG: Connection error: {e}. Retrying in 2s...")
+                        time.sleep(2)
+                    else:
+                        raise e
+                except Exception as e:
+                    if hasattr(e, 'response') and e.response is not None:
+                        if e.response.status_code in [502, 503, 504]:
+                            retry_count += 1
+                            if retry_count <= max_retries:
+                                print(f"DEBUG_LOG: Server error {e.response.status_code}. Retrying...")
+                                time.sleep(2)
+                                continue
+                    raise e
 
         try:
             response.raise_for_status()
             result = response.json()
+            print(f"DEBUG_LOG: API Response Type: {type(result)}")
             
-            if "output" in result and len(result["output"]) > 0:
-                 return result["output"][0] 
-            
-            if "data" in result and len(result["data"]) > 0:
-                item = result["data"][0]
-                if "url" in item:
-                    return item["url"]
-                if "b64_json" in item:
-                    return item["b64_json"]
+            if not isinstance(result, dict):
+                print(f"DEBUG_LOG: API Response Content: {result}")
+                if isinstance(result, list) and len(result) > 0:
+                    # If it's a list, maybe the first item is what we want
+                    item = result[0]
+                    if isinstance(item, str): return item
+                    if isinstance(item, dict): result = item
+                else:
+                    return str(result)
 
-            return result.get("url", "")
+            print(f"DEBUG_LOG: API Response Keys: {list(result.keys())}")
+            
+            # Try to find image in various common locations
+            if "output" in result and result["output"]:
+                 if isinstance(result["output"], list) and len(result["output"]) > 0:
+                     return result["output"][0]
+                 return result["output"]
+            
+            if "data" in result and isinstance(result["data"], list) and len(result["data"]) > 0:
+                item = result["data"][0]
+                if isinstance(item, dict):
+                    if "url" in item:
+                        return item["url"]
+                    if "b64_json" in item:
+                        return item["b64_json"]
+                elif isinstance(item, str):
+                    return item
+            
+            # Doubao 4.5 specific response handling if needed
+            if "image_url" in result:
+                return result["image_url"]
+
+            # Fallback to root url or other common fields
+            for key in ["url", "image", "img_url"]:
+                if key in result and result[key]:
+                    return result[key]
+
+            print(f"DEBUG_LOG: Could not find image in response: {result}")
+            return ""
         except Exception as e:
             error_msg = str(e)
             if hasattr(e, 'response') and e.response is not None:
                 try:
-                    error_detail = e.response.json()
-                    print(f"API Error JSON: {error_detail}")
+                    error_detail = e.response.text # Use text to be safe
+                    print(f"API Error Detail: {error_detail}")
                     error_msg = f"{str(e)} - Detail: {error_detail}"
                 except:
-                    print(f"API Error Text: {e.response.text}")
-                    error_msg = f"{str(e)} - Detail: {e.response.text}"
+                    error_msg = f"{str(e)} - Detail: (could not read response text)"
+            else:
+                print(f"Local Error: {str(e)}")
             
             # Log to file
             with open("backend_error.log", "a", encoding="utf-8") as f:
-                f.write(f"Error: {error_msg}\n")
+                import datetime
+                now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                f.write(f"[{now}] Error: {error_msg}\n")
             
             print(f"Error generating image: {error_msg}")
             raise Exception(error_msg)

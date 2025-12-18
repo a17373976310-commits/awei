@@ -47,7 +47,7 @@ class App {
             url: data.url,
             prompt: data.prompt,
             optimizedPrompt: data.optimizedPrompt,
-            originalImage: data.originalImage,
+            originalImages: data.originalImages || [],
             timestamp: Date.now()
         };
         this.history.unshift(item);
@@ -124,9 +124,21 @@ class App {
         modalPrompt.textContent = item.prompt || '无';
         modalOptimized.textContent = item.optimizedPrompt || '无';
 
-        if (item.originalImage) {
+        if (item.originalImages && item.originalImages.length > 0) {
             modalOriginalGroup.classList.remove('hidden');
-            modalOriginalImg.src = item.originalImage;
+            modalOriginalImg.classList.add('hidden'); // Hide single img if exists
+
+            // Create or update gallery in modal
+            let gallery = modalOriginalGroup.querySelector('.modal-original-gallery');
+            if (!gallery) {
+                gallery = document.createElement('div');
+                gallery.className = 'modal-original-gallery';
+                modalOriginalGroup.appendChild(gallery);
+            }
+
+            gallery.innerHTML = item.originalImages.map(src => `
+                <img src="${src}" class="modal-gallery-thumb" onclick="window.open('${src}', '_blank')">
+            `).join('');
         } else {
             modalOriginalGroup.classList.add('hidden');
         }
@@ -234,6 +246,14 @@ class App {
         btnTxt?.addEventListener('click', () => setMode('txt2img'));
         btnImg?.addEventListener('click', () => setMode('img2img'));
         btnModify?.addEventListener('click', () => setMode('img_modify'));
+
+        // Auto-switch mode based on model selection
+        const modelSelect = document.getElementById('model-select');
+        modelSelect?.addEventListener('change', () => {
+            if (modelSelect.value === 'doubao_seededit') {
+                setMode('img_modify');
+            }
+        });
     }
 
     initRatios() {
@@ -401,6 +421,11 @@ class App {
         }
     }
 
+    async base64ToBlob(base64, type = 'image/png') {
+        const response = await fetch(base64);
+        return await response.blob();
+    }
+
     initGeneration() {
         const btn = document.getElementById('generate-btn');
         const promptInput = document.getElementById('prompt-input');
@@ -421,13 +446,7 @@ class App {
                 const formData = new FormData();
                 formData.append('prompt', prompt);
                 formData.append('ratio', this.selectedRatio.value);
-
-                // Force scenario for img_modify mode
-                if (this.currentMode === 'img_modify') {
-                    formData.append('scenario', 'img_modify_v1');
-                } else {
-                    formData.append('scenario', this.selectedScenario);
-                }
+                formData.append('scenario', this.selectedScenario);
 
                 const modelSelect = document.getElementById('model-select');
                 if (modelSelect) {
@@ -439,11 +458,12 @@ class App {
                     formData.append('api_key', apiKeyInput.value);
                 }
 
-                if ((this.currentMode === 'img2img' || this.currentMode === 'img_modify') && this.uploadedImage) {
-                    // Convert base64 to blob
-                    const fetchRes = await fetch(this.uploadedImage);
-                    const blob = await fetchRes.blob();
-                    formData.append('image', blob, 'image.png');
+                // Send all uploaded images for multi-view analysis
+                if (this.uploadedImages.length > 0) {
+                    for (let i = 0; i < this.uploadedImages.length; i++) {
+                        const blob = await this.base64ToBlob(this.uploadedImages[i]);
+                        formData.append('image', blob, `image_${i}.png`);
+                    }
                 }
 
                 // Call Backend API
@@ -463,7 +483,7 @@ class App {
                     url: data.url,
                     prompt: data.original_prompt || prompt,
                     optimizedPrompt: data.optimized_prompt,
-                    originalImage: (this.currentMode === 'img2img' || this.currentMode === 'img_modify') ? this.uploadedImage : null
+                    originalImages: data.original_images || []
                 });
 
             } catch (error) {

@@ -8,6 +8,7 @@ from .services.prompt_service import prompt_service
 from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 import os
+import json
 
 app = FastAPI()
 
@@ -50,26 +51,58 @@ async def generate(
     scenario: str = Form("general"),
     model: str = Form("nano_banana_2"),
     api_key: Optional[str] = Form(None),
-    image: Optional[UploadFile] = File(None),
+    image: Optional[list[UploadFile]] = File(None),
     mask: Optional[UploadFile] = File(None)
 ):
     try:
-        image_bytes = await image.read() if image else None
+        print(f"\n>>> [NEW REQUEST] Prompt: {prompt[:50]}... | Model: {model} | Ratio: {ratio}")
+        
+        image_bytes_list = []
+        if image:
+            for img in image:
+                content = await img.read()
+                if content:
+                    image_bytes_list.append(content)
+        
         mask_bytes = await mask.read() if mask else None
         
         # Optimize prompt based on scenario
-        # Pass image_bytes for multimodal understanding (LLM)
-        final_prompt = prompt_service.optimize_prompt(prompt, scenario, image_bytes, api_key)
+        # Returns a JSON string with dual-core prompts
+        optimized_result = prompt_service.optimize_prompt(prompt, scenario, image_bytes_list, api_key)
         
-        result = banana_service.generate_image(final_prompt, ratio, image_bytes, mask_bytes, model, api_key)
+        final_prompt = optimized_result
+        layout_logic = ""
+        
+        try:
+            # Try to parse as JSON (Dual-Core Engine output)
+            prompt_data = json.loads(optimized_result)
+            
+            # Select prompt based on model
+            is_seadream = "doubao" in model.lower() or "seadream" in model.lower()
+            
+            if is_seadream:
+                final_prompt = prompt_data.get("seadream_cn", optimized_result)
+                print(f"DEBUG_LOG: Selected Chinese prompt for SeaDream/Doubao model.")
+            else:
+                final_prompt = prompt_data.get("nano_banana_en", optimized_result)
+                print(f"DEBUG_LOG: Selected English prompt for Nano-Banana model.")
+            
+            layout_logic = prompt_data.get("layout_logic", "")
+        except Exception as e:
+            # Fallback if not JSON
+            print(f"DEBUG_LOG: Optimized result is not JSON or parsing failed: {e}")
+            final_prompt = optimized_result
+
+        primary_image = image_bytes_list[0] if image_bytes_list else None
+        result = banana_service.generate_image(final_prompt, ratio, primary_image, mask_bytes, model, api_key)
         
         # If result is a URL, download it and convert to base64 (Proxy for China access)
-        if result and result.startswith("http"):
+        if result and isinstance(result, str) and result.startswith("http"):
             try:
                 import requests
                 import base64
                 print(f"Proxying image from URL: {result}")
-                img_response = requests.get(result)
+                img_response = requests.get(result, timeout=20)
                 img_response.raise_for_status()
                 b64_data = base64.b64encode(img_response.content).decode('utf-8')
                 result = f"data:image/png;base64,{b64_data}"
@@ -82,12 +115,29 @@ async def generate(
         if result and not result.startswith("http") and not result.startswith("data:"):
             result = f"data:image/png;base64,{result}"
             
+        # Convert all original images to base64 for history
+        original_images_b64 = []
+        for img_bytes in image_bytes_list:
+            b64 = base64.b64encode(img_bytes).decode('utf-8')
+            original_images_b64.append(f"data:image/jpeg;base64,{b64}")
+
+        print(f"<<< [SUCCESS] Image generated and processed.")
         return JSONResponse({
             "url": result,
             "optimized_prompt": final_prompt,
-            "original_prompt": prompt
+            "original_prompt": prompt,
+            "original_images": original_images_b64
         })
     except Exception as e:
+        import traceback
+        error_trace = traceback.format_exc()
+        print(f"CRITICAL_ERROR in /api/generate: {str(e)}\n{error_trace}")
+        
+        with open("backend_error.log", "a", encoding="utf-8") as f:
+            import datetime
+            now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            f.write(f"[{now}] CRITICAL_ERROR: {str(e)}\n{error_trace}\n")
+            
         raise HTTPException(status_code=500, detail=str(e))
 
 if __name__ == "__main__":
