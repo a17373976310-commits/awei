@@ -467,7 +467,8 @@ class App {
                 }
 
                 // Call Backend API
-                const response = await fetch('/api/generate', {
+                const apiBase = window.CONFIG?.API_BASE_URL || '';
+                const response = await fetch(`${apiBase}/api/generate`, {
                     method: 'POST',
                     body: formData
                 });
