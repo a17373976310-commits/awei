@@ -116,6 +116,10 @@ class BananaService:
                 "response_format": "url"
             }
             
+            # Add image_size for nano-banana-2-2k
+            if real_model_id == "nano-banana-2-2k":
+                data["image_size"] = "1K" # Default to 1K as per user screenshot
+            
             # Remove Content-Type: application/json for multipart
             if "Content-Type" in headers:
                 del headers["Content-Type"]
@@ -144,6 +148,8 @@ class BananaService:
                             "n": 1,
                             "response_format": "url"
                         }
+                        if real_model_id == "nano-banana-2-2k":
+                            current_payload["image_size"] = "1K"
                         if image:
                             base64_data = base64.b64encode(image).decode('utf-8')
                             current_payload["image"] = f"data:image/png;base64,{base64_data}"

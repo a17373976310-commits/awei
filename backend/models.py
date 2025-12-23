@@ -33,6 +33,13 @@ MODEL_REGISTRY = {
         "description": "Google 最先进的图像生成和编辑模型，支持文生图、图生图、多图生图",
         "provider": "comfly"
     },
+    "nano_banana_2_2k": {
+        "name": "Nano Banana 2-2k (高清版)",
+        "url": "https://ai.comfly.chat/v1",
+        "model_key": "nano-banana-2-2k",
+        "description": "Nano-banana 2 高清版，支持 1K/2K/4K 分辨率控制",
+        "provider": "comfly"
+    },
 
     "doubao_seedream_4_0": {
         "name": "Doubao Seedream 4.0 (即梦4)",
