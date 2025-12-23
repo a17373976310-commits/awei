@@ -122,7 +122,7 @@ class BananaService:
                 
             print(f"DEBUG_LOG: Sending Multipart Request (Img2Img). URL={url}")
             print(f"DEBUG_DATA: {data}")
-            response = requests.post(url, headers=headers, files=files, data=data, timeout=120)
+            response = requests.post(url, headers=headers, files=files, data=data, timeout=120, proxies={"http": None, "https": None})
             
         else:
             # --- Text-to-Image or Image-to-Image (JSON) ---
@@ -158,7 +158,7 @@ class BananaService:
                             if "size" in current_payload: del current_payload["size"]
 
                     print(f"DEBUG_LOG: Sending JSON Request (Attempt {retry_count + 1}). URL={url}")
-                    response = requests.post(url, json=current_payload, headers=headers, timeout=120)
+                    response = requests.post(url, json=current_payload, headers=headers, timeout=120, proxies={"http": None, "https": None})
                     
                     print(f"DEBUG_LOG: API Response Status: {response.status_code}")
                     if response.status_code != 200:
@@ -168,10 +168,13 @@ class BananaService:
                     break
                 except (requests.exceptions.ProxyError, requests.exceptions.ConnectionError) as e:
                     retry_count += 1
+                    print(f"CRITICAL_CONNECTION_ERROR: {type(e).__name__}: {e}")
                     if retry_count <= max_retries:
-                        print(f"DEBUG_LOG: Connection error: {e}. Retrying in 2s...")
+                        print(f"DEBUG_LOG: Retrying in 2s... ({retry_count}/{max_retries})")
                         time.sleep(2)
                     else:
+                        import traceback
+                        traceback.print_exc()
                         raise e
                 except Exception as e:
                     if hasattr(e, 'response') and e.response is not None:
@@ -246,6 +249,8 @@ class BananaService:
                 f.write(f"[{now}] Error: {error_msg}\n")
             
             print(f"Error generating image: {error_msg}")
+            import traceback
+            traceback.print_exc()
             raise Exception(error_msg)
 
 banana_service = BananaService()

@@ -62,7 +62,7 @@ class PromptService:
         }
 
         try:
-            response = requests.post(url, headers=headers, json=payload, timeout=45)
+            response = requests.post(url, headers=headers, json=payload, timeout=45, proxies={"http": None, "https": None})
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
             return json.loads(content)
@@ -107,7 +107,7 @@ class PromptService:
         }
 
         try:
-            response = requests.post(url, headers=headers, json=payload, timeout=45)
+            response = requests.post(url, headers=headers, json=payload, timeout=45, proxies={"http": None, "https": None})
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
             # Validate it's proper JSON
@@ -115,6 +115,8 @@ class PromptService:
             return content
         except Exception as e:
             print(f"ERROR: Dual-core prompt generation failed: {e}")
+            import traceback
+            traceback.print_exc()
             # Fallback
             fallback = {
                 "nano_banana_en": f"{user_prompt}, high quality, 4k",
