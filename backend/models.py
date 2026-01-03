@@ -40,6 +40,13 @@ MODEL_REGISTRY = {
         "description": "Nano-banana 2 高清版，支持 1K/2K/4K 分辨率控制",
         "provider": "comfly"
     },
+    "nano_banana_2_4k": {
+        "name": "Nano Banana 2-4k (超高清版)",
+        "url": "https://ai.comfly.chat/v1",
+        "model_key": "nano-banana-2-4k",
+        "description": "Nano-banana 2 超高清版，默认支持 4K 分辨率输出",
+        "provider": "comfly"
+    },
 
     "doubao_seedream_4_0": {
         "name": "Doubao Seedream 4.0 (即梦4)",
