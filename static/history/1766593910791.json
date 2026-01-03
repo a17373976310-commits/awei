@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766593910791,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese e-commerce jewelry scene, Zen minimalist commercial photography style. [Subject Lock]: A circular wrist bracelet composed of approximately 18-20 uniformly sized, perfectly spherical beads. The beads exhibit a pale, milky celadon to creamy off-white hue, resembling polished white jade, moonstone, or agate. The surface finish is vitreous and highly glossy, capturing sharp, distinct white specular highlights on the curve of each sphere. The material is semi-translucent/semi-opaque, demonstrating subsurface scattering properties that give the beads a soft, internal wax-like glow. The bracelet is placed centrally on a textured natural surface.\n[Props]: Surrounded by a few dried lotus pods, a small ceramic tea cup, and delicate bamboo leaves (enhancing Zen aesthetics).\n[Background]: Soft beige linen fabric texture with dappled sunlight shadows.\nLighting is bright natural daylight simulation, ensuring the jade texture looks moist and translucent.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉·温润如脂”. Position: [Top Left Negative Space]. Style: [Elegant Serif 3D Text, dark green color].\n2. **Sub Title**: Content: “羊脂白玉 细腻油润”. Style: [Small clean sans-serif, dark grey].\n3. **Marketing Banner**: Content: “源头直供 | 假一赔十”. Style: [Minimalist Gold Line Border].\n4. **Trust Badge**: Content: “国检证书”. Style: [Gold Seal Icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用新中式风格布局。由于和田玉主打'温润'和'文化感'，背景不宜过于杂乱，通过'枯木'、'茶具'、'银杏'等少量道具点缀即可丰富画面，避免喧宾夺主。文字部分推荐使用深绿色或深灰色，配合宋体或楷体变体，传达高级感。",
+  "original_images_count": 2
+}

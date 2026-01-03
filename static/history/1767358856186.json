@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767358856186,
+  "original_prompt": "给这个锅做一张淘宝主图",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Kitchenware scenario, High-End Commercial Photography style. A sleek, matte black non-stick wok is the hero subject, positioned centrally on a polished marble countertop. The wok features a distinctive **faceted exterior with subtle vertical fluting** on the lower half and a **speckled stone-texture interior**. The clear tempered glass lid is topped with a unique, **ergonomic T-shaped handle curving like a wave or whale tail**. The long handle has a metallic connector and a polished silver cap.\n[Props]: Fresh vibrant vegetables (red bell peppers, green bok choy) are artfully placed inside the pan to suggest cooking, with a wooden spatula resting nearby.\n[Background]: A bright, out-of-focus modern kitchen interior with warm ambient light.\nLighting is Studio Softbox, emphasizing the glossy glass lid and the matte texture of the faceted body.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Upper text, lower product).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “钻石切面不粘锅”. Position: Top Left Negative Space. Style: 3D Bold Sans-serif, Silver or Gold gradient, soft drop shadow.\n2. **Sub Title**: Content: “聚能锁鲜 轻烟少油”. Style: Clean white sans-serif, smaller size.\n3. **Marketing Banner**: Content: “居家美学精选”. Style: Floating red capsule button style.\n4. **Trust Badge**: Content: “德国LFGB认证”. Style: Translucent glass shield icon.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the wok has a long handle extending to the right, the product naturally creates a strong horizontal line. Place the wok in the lower 60% of the frame. Use the 'Top Left' empty space (above the wok body and left of the lid handle) for the Main Title and Subtitle stack to balance the visual weight of the pan handle on the right. Ensure the 'Diamond Facet' texture on the side of the pot is facing the key light to create contrast and show off the form.",
+  "original_images_count": 3
+}

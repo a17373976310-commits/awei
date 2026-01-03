@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766644805890,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：红珠昭吉，鸿运常驻  天然南红玛瑙手串",
+  "optimized_prompt": "[Visual Description]\n新中式国潮电商海报风格。画面核心是[Subject Lock: 通透红润的南红玛瑙手串，带有一颗精致的珐琅银莲花配珠]。为了充实画面，手串置于一块深色带有纹理的天然砚石或老木板上。前景与背景运用了丰富的道具：几片散落的金色银杏叶增添秋意与贵气，远景虚化处摆放着一个古朴的香炉飘着淡淡轻烟，以及一角若隐若现的红色宫墙或窗棂剪影。光影效果为“侧逆暖光”，强调玛瑙的胶质感和银饰的精致细节，整体色调为高级的“朱砂红”与“沉稳褐”的搭配。\n\n[Text & UI Layout]\n***Layout Style**: 竖排文字布局（右侧留白处）。\nText Rendering Instructions:\n1. **Main Title**: 内容: “红珠昭吉”. 样式: [立体浮雕质感的金色毛笔字，带有微微的投影，极具力量感].\n2. **Sub Title**: 内容: “鸿运常驻”. 样式: [纤细的宋体字，字间距较宽，显雅致].\n3. **Marketing Banner**: 内容: “天然南红玛瑙手串”. 样式: [仿古印章形式的标签，或半透明磨砂玻璃条底衬].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user wants a 'richer' scene, the product should be grounded on a textured surface rather than floating. I suggest placing the bracelet slightly off-center (left or bottom-center) to allow the props (tea, fans, leaves) to frame it without blocking it. The text works best in a vertical orientation (traditional Chinese style) on the right side, utilizing the negative space created by the background props.",
+  "original_images_count": 1
+}

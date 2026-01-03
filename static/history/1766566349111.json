@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766566349111,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的白色哑光厨房背景，然后锅斜放。",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese e-commerce Kitchenware scene, Clean Minimalist Commercial Photography style. [Subject Lock: A round culinary frying pan featuring a matte sage green exterior finish and a glossy cream-colored ceramic non-stick interior. The handle is polished stainless steel with a Y-shaped bracket] is positioned diagonally (slanted) in the center, floating slightly or resting dynamically to show both the depth of the pot and the coating.\n[Props]: Styled with fresh green herbs (like basil or mint) and a light-colored wooden spatula nearby to enhance the organic vibe.\n[Background]: Bright, high-quality white matte kitchen environment, featuring textured white plaster or white matte brick walls, creating a pure and clean atmosphere.\nLighting is High-Key Studio Softbox, ensuring the cream ceramic interior looks glossy and the green exterior looks smooth and matte.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: 内容: “清新陶瓷 物理不粘”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif in Sage Green or Dark Grey].\n2. **Sub Title**: 内容: “少油轻烟 健康首选”. Style: [Clean modern font, thinner weight].\n3. **Marketing Banner**: 内容: “一抹治愈绿”. Style: [Translucent Frosted Glass Pill Shape].\n4. **Trust Badge**: 内容: “欧盟标准材质”. Style: [3D Silver Shield Icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Considering the 'white matte background' and 'diagonal pan position', the layout should utilize the empty space created by the slant (usually the top-left or top-right corner) for the main text block. This creates a balanced visual weight. Use a dark grey or deep sage green font color to ensure readability against the bright white background.",
+  "original_images_count": 2
+}

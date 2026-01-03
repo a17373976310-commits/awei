@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767007174508,
+  "original_prompt": "将这个图片尺寸改为1.1，并且将右下角水印去掉",
+  "optimized_prompt": "[\n  {\n    \"task_type\": \"Image Modification - Outpainting & Inpainting\",\n    \"instructions\": \"1. [Outpainting]: Expand the canvas vertically to achieve a 1:1 square aspect ratio. Extend the background environment (modern office interior, glass windows, blurred greenery outside) naturally upwards and downwards. Ensure the courier's torso and the recipient's back are extended logically without distortion. 2. [Inpainting/Cleanup]: Locate the bottom right corner containing the watermark text '小红书号: 4283518927' and the logo. Remove this text completely using context-aware fill, replacing it with the recipient's black shirt texture or the blurred background as appropriate to match the surrounding pixels seamlessly.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

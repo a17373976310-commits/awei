@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766364069245,
+  "original_prompt": "给这个手串做一张详情页，要求有一个模特戴着手串，暗色背景",
+  "optimized_prompt": "[Visual Description]\n\"A moody, low-key lifestyle photography shot. A close-up of a model's wrist wearing the [Subject Lock: beaded bracelet with dark iridescent rainbow obsidian beads, a central golden Tiger's Eye, and twin matte black sculpted Pixiu guardian beasts]. The background is a deep, textured charcoal or midnight blue, creating a mysterious and premium atmosphere. Dramatic rim lighting (chiaroscuro) hits the bracelet, catching the subtle green and purple sheen of the obsidian and the golden flash of the Tiger's eye. The model's hand is relaxed, perhaps resting on a dark stone surface or dark silk.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Immersive Cinematic (沉浸式影调排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “守护之力” (Power of Guardianship). Style: [Bold, calligraphy-inspired Chinese font, Metallic Gold color]. Position: [Top left or center aligned in negative space].\n2. **Description**: Content: “彩虹眼黑曜石 · 招财貔貅” (Rainbow Eye Obsidian · Wealth-attracting Pixiu). Style: [Minimalist Sans-serif, White, smaller size].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "由于背景是暗色（Dark Mode），文字颜色建议使用白色、浅灰或烫金色（Gold Foil）以确保可读性和高级感。标题应放置在画面中光线较暗的负空间（Negative Space），避免遮挡手串的高光细节。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766645029511,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：红珠昭吉，鸿运常驻  天然南红玛瑙手串",
+  "optimized_prompt": "[Visual Description]\n新中式国潮电商静物摄影，高转化率淘宝主图风格。画面核心主体为【南红玛瑙手串】，强调其油润饱满的柿子红光泽。必须清晰展现【景泰蓝莲花珠】的蓝紫渐变珐琅细节以及旁边那颗【金草莓晶/日光石】的细闪质感。\n[场景充实元素]: 为了丰富画面层次，背景放置在一个深色实木茶案上。画面中点缀精致的国风道具：左侧放置一个古朴的汝窑茶盏，右后方有一卷半开的古籍书卷作为虚化背景，前景散落几颗红豆或干花瓣，寓意吉祥。利用光影斑驳的效果（丁达尔光）穿过画面，营造“岁月静好、鸿运当头”的高级意境。\n\n[Text & UI Layout]\n***Layout Style**: 经典电商海报布局，图文结合紧密。\n1. **Main Title (主标题)**: 内容: “红珠昭吉”. 位置: [画面左上角或右上角留白处]. 风格: [流金质感毛笔书法字，带有轻微投影，极具视觉冲击力].\n2. **Sub Title (副标题)**: 内容: “鸿运常驻”. 风格: [竖排清秀宋体，字号较小，与主标题形成错落感].\n3. **Product Label (产品名)**: 内容: “天然南红玛瑙手串”. 风格: [底部或侧边使用红色丝带底纹或仿古印章样式承载文字].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Given the warm orange-red tone of the agate, use a darker background (dark wood or stone gray) to make the product pop. Place the text '红珠昭吉' in a large, vertical calligraphy font to emphasize the 'New Chinese' (新中式) style. Ensure the text color uses Gold (#FFD700) or White to contrast against the background.",
+  "original_images_count": 1
+}

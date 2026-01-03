@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766632352312,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄眸缀曜，能量绕腕 银曜猫眼聚气场 顺遂满程耀华年",
+  "optimized_prompt": "[Visual Description]\n现代中国电商珠宝首饰场景，高端玄学与奢华感兼具的商业摄影风格。一串由圆形银曜石宝石组成的优质手串位于画面视觉中心。珠子在深黑色光泽基底上呈现出独特的“猫眼”效应，闪烁着银灰色的光芒。\n[Props]: 画面元素丰富充实，旨在强调能量感：周围散落着几块未经打磨的黑曜石原石作为点缀，流动的银色丝绸面料环绕在底部以呼应珠子的银色光泽，也许还有一丝淡淡的禅意烟雾增加神秘氛围。一个精致的深色古董木托盘或石质底座将手串托起。\n[Background]: 深炭色过渡到柔和银灰色的渐变背景，营造出一种高级且神秘的氛围，突出“聚气”的概念。\n光影采用聚焦的影棚聚光灯，配合冷色调的轮廓光，完美勾勒出珠子表面的金属银色猫眼光泽。\n\n[Text & UI Layout]\n***Layout Style**: 上文下图经典布局。\n文字渲染指南 (必须高对比度且清晰):\n1. **Main Title**: 内容: “玄眸缀曜，能量绕腕”. 位置: 顶部居中或左上角留白处. 风格: 3D金属质感（金或银色）衬线体，锐利且庄重.\n2. **Sub Title**: 内容: “银曜猫眼聚气场”. 风格: 干净的白色无衬线体，略小于主标题，位于其下方.\n3. **Marketing Banner**: 内容: “顺遂满程耀华年”. 风格: 高级金边胶囊样式或漂浮丝带UI.\n4. **Trust Badge**: 内容: “天然甄选”. 风格: 金色印章图形.",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested a 'richer scene', the layout should ensure the text remains legible against the busier background. Using a top-heavy text composition allows the bottom 2/3rds of the image to showcase the bracelet and the added props (silk, stones, smoke) without interference. The text should use metallic textures (Gold/Silver) to match the premium 'Silver Sheen' aesthetic of the product.",
+  "original_images_count": 1
+}

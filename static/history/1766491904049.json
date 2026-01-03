@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766491904049,
+  "original_prompt": "给这套产品做一张a+，要求图中有模特，然后有三个矩形或者其他形状分别展示，皇冠，耳环，项链",
+  "optimized_prompt": "[Visual Description]\nAn Amazon A+ content \"Lookbook Breakdown\" image. The main visual is a high-resolution lifestyle shot of a beautiful bride model wearing a luxury bridal jewelry set. She has an elegant updo hairstyle to reveal the jewelry clearly. She is wearing the specific [Subject Lock] set: a silver-toned tiara with floral-lattice geometry, a V-shaped drop necklace with a pear-shaped pendant, and matching teardrop earrings. \n\nSuperimposed or arranged alongside the model are three distinct rectangular or circular inset frames (detail windows). \n- Frame 1: A macro zoom on the Tiara's graduated peaks and crystal encrusting.\n- Frame 2: A macro zoom on the Necklace's ornate centerpiece.\n- Frame 3: A macro zoom on the Teardrop Earrings.\n\nThe background is a soft-focus wedding setting, bright and airy white tones.\n\n[Text & UI Layout]\n***Layout Style**: Component Breakdown (Product Set Display).\nText Rendering Instructions (Use English for Text):\n1. **Main Headline**: Content: \"Complete Bridal Elegance\". Style: [Elegant Serif, Silver or Dark Grey].\n2. **Detail Label 1** (Near Tiara box): Content: \"Royal Tiara\".\n3. **Detail Label 2** (Near Necklace box): Content: \"Statement Necklace\".\n4. **Detail Label 3** (Near Earrings box): Content: \"Dazzling Earrings\".",
+  "scenario": "amazon_detail",
+  "model": "nano_banana_2_2k",
+  "ratio": "16:9",
+  "layout_logic": "Since the user requested a model + 3 specific shapes for the items, the 'Component Breakdown' layout is best. It uses the model for emotional appeal (showing the full look) while the three geometric insets fulfill the requirement to isolate and highlight the Tiara, Necklace, and Earrings separately, allowing customers to inspect the details described in the visual fingerprint.",
+  "original_images_count": 1
+}

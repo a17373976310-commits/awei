@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767317780859,
+  "original_prompt": "给这个手串做一张淘宝主图",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nProduct Photography, Taobao Main Image style. [Subject Lock] A beaded bracelet composed of uniformly sized, perfectly spherical beads made of high-clarity clear quartz. The beads are arranged in a circular loop, floating slightly or resting elegantly on a textured surface. The lighting is soft and high-key, emphasizing the crystal-clear transparency, sharp specular highlights, and internal refraction of the beads. The background is a clean, zen-like setting, perhaps featuring a subtle ripple of water or a smooth white stone surface to convey purity and energy. \\n\\n[Text & UI Layout]\\nVertical composition (3:4 or 1:1). \\nMain Title: \\\"天然白水晶\\\" (Natural White Quartz) placed boldly in the top center or upper left quarter, using a sleek, serif font in dark charcoal or metallic silver.\\nSub Title: \\\"通透纯净 能量守护\\\" (Transparent & Pure, Energy Guardian) located just below the main title in a smaller, lighter sans-serif font.\\nTagline: \\\"AAA级珍藏\\\" (AAA Grade Collection) in a small badge or tag style near the bottom right.\",\n    \"seadream_cn\": \"【视觉描述】\\n电商产品摄影，淘宝主图风格。[Subject Lock] 一串由均匀大小、完美球形珠子组成的白水晶手串。珠子晶莹剔透，展现出极高的光学清晰度，强烈的内部折射和锐利的高光。画面构图以圆环状的手串为核心，背景采用极简的新中式禅意风格，可以是淡雅的微波水面或是一块素净的汉白玉石台，光线通透柔和，强调水晶的“水头”和纯净感，营造出一种清凉、静谧的高级感。\\n\\n【文字与UI布局】\\n构图比例为竖版或正方形。\\n主标题：“天然白水晶”位于画面中上部，采用优雅的宋体或黑体，颜色为深灰或银色烫金质感。\\n副标题：“通透纯净 能量守护”在主标题下方，字号较小，字体纤细。\\n角标文案：“AAA级珍藏”以精致的小标签形式置于画面右下角或左下角，增加品质背书。\",\n    \"layout_logic\": \"Since the product is transparent and colorless, the background should not be too cluttered. A clean, light-colored background (white, light grey, or very pale blue water ripples) works best to highlight the refraction and edges of the beads. Text should be placed in the negative space above the bracelet to balance the composition. Use dark fonts for contrast against a light background.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767323634077,
+  "original_prompt": "给这个手串做一张淘宝主图，要求背景暗色调（可以不是黑色）的女性高级礼盒面板或者放点黑白的玫瑰，文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Dark Luxury Commercial Photography style. A single-strand beaded bracelet composed of uniformly sized, perfectly spherical clear quartz beads (10-12mm) is positioned in the Center Foreground. The beads feature high optical clarity with subtle internal refractions and surface reflections, creating distinct specular highlights. \n[Props]: The bracelet rests on a textured, dark charcoal or deep midnight blue velvet gift box panel. In the background, elegant Black and White Roses (monochromatic, artistic soft focus) add a layer of romantic sophistication.\n[Background]: A dark, moody studio setting with a shallow depth of field to blur the roses slightly, keeping the focus on the crystal's clarity.\nLighting is High-Contrast Studio Lighting with rim lights to accentuate the transparency and glass-like gloss of the beads against the dark backdrop.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “平安顺遂”. Position: Top Center or Top Left Negative Space. Style: 3D Elegant Serif Font with a Metallic Gold or Silver finish, glowing slightly against the dark background.\n2. **Sub Title**: Content: “白水晶”. Style: Clean, minimalist Sans-serif, white color, smaller than the main title.\n3. **Marketing Banner**: Content: “天然甄选”. Style: A thin, vertical elegant line or small translucent tag.\n4. **Trust Badge**: Content: “礼赠首选”. Style: Minimalist gold outline circle icon.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用'暗调底色+金属色文字'的经典奢华搭配。背景压暗（深灰、深蓝或黑色）能最大程度衬托白水晶的通透感（像是在发光）。文字排版建议放在上方留白处，使用带有衬线的字体（如宋体）来呼应'平安顺遂'的传统祈福寓意，同时配合'黑白玫瑰'的元素，营造出一种'静谧、守护'的高级礼品感。",
+  "original_images_count": 1
+}

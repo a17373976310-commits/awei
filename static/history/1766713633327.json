@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766713633327,
+  "original_prompt": "提取图片中的logo，给logo做一个激光雕刻效果，纯白背景",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nA clean, minimalist graphic design featuring the isolated 'JP' monogram logo extracted from the original dark background. The logo is rendered with a realistic laser engraving effect, appearing as if etched or burned into the surface with precision. The texture inside the letters shows subtle depth, slight inner shadows, and a scorched or debossed edge typical of laser marking. The color of the engraving is a dark charcoal grey or burnt black to contrast sharply against the background.\\n\\n[Text & UI Layout]\\nBackground: Pure white (#FFFFFF), absolutely clean with no gradients or shadows.\\nComposition: The 'JP' monogram is perfectly centered, large, and isolated. No other text or elements.\",\n    \"seadream_cn\": \"[Visual Description]\\n极简主义平面设计，从原有的深色背景中提取出的“JP”字母组合Logo。Logo呈现出逼真的激光雕刻效果（Laser Engraving），仿佛是精密蚀刻在表面上。字体内呈现出微妙的下凹深度、边缘带有轻微的烧焦感或内阴影，模拟真实的物理雕刻质感。雕刻部分的颜色为深炭灰色或烧焦黑，形成高对比度。\\n\\n[Text & UI Layout]\\n背景：纯白色（#FFFFFF），干净无杂质，无渐变。\\n构图：“JP”字母Logo完美居中，尺寸适中，作为画面的唯一视觉焦点。\",\n    \"layout_logic\": \"Since this is a logo extraction and effect application task, the layout should be strictly centered. The 'engraving' effect needs to simulate depth (inner shadow) and texture (slight roughness) to differentiate it from a flat print.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

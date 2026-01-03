@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766594412692,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese Zen E-commerce scene, High-end Commercial Photography. [Subject: A toroidal wrist ornament composed of a continuous loop of ~18-20 milky, pale-green spherical beads with high-gloss vitreous luster] resting elegantly on a textured grey raw stone slab. \n[Props]: Enriched with elements like a delicate dried plum blossom branch stretching from the corner, a small handmade ceramic tea cup nearby, and subtle ripple effects suggesting a Zen garden vibe. \n[Background]: Soft beige linen fabric backdrop with dappled sunlight shadows (gobo effect). \nLighting is soft natural window light mixed with studio fill, emphasizing the subsurface light scattering and oily texture of the jade beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Left-Text Right-Product Balanced Layout (左文右图平衡布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “温润和田玉”. Position: [Top Left Negative Space]. Style: [3D Elegant Serif with gold texture edge]. Color: [Dark Emerald Green or Charcoal].\n2. **Sub Title**: Content: “细腻油润 颗颗甄选”. Style: [Clean Sans-serif, dark grey, widely spaced].\n3. **Marketing Banner**: Content: “国潮甄选”. Style: [Vertical red seal stamp style or minimalist gold line box].\n4. **Trust Badge**: Content: “正品保证”. Style: [Small circular gold icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested 'enriched elements', the product should not be floating in void. Place the bracelet slightly off-center (bottom-right or center-low) on a prop (stone/wood). Use the props (branches/tea) to frame the product, leading the eye to the jade. Reserve the Top-Left corner specifically for the text to ensure the 'F-pattern' reading flow.",
+  "original_images_count": 2
+}

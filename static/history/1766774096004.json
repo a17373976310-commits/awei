@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766774096004,
+  "original_prompt": "给这套产品穿戴在一个欧洲模特身上，客厅场景，有一个欧洲男性双手做出正在给女性（看向男性微笑）带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\nAn immersive lifestyle photography shot set in an upscale, sun-drenched European living room. The scene captures a romantic, intimate moment between a European couple. The female model, elegant and radiant, is wearing the [Subject Lock: V-shaped silver necklace with a central pear-shaped pendant and matching chandelier earrings]. She looks up with a warm, loving smile at the European male model standing beside her. The male is gently holding the [Subject Lock: high-arched silver tiara with intricate filigree and a dominant central peak], in the active pose of placing it upon her head like a playful coronation. The lighting is soft and warm, highlighting the sparkle of the clear crystals and the polished silver finish against the cozy home background.\n\n[Text & UI Layout]\n***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: \"爱的加冕时刻\". Style: Elegant Serif, sophisticated and romantic. Position: Floating in the soft focus background area.\n2. **Description**: Content: \"璀璨银饰，见证你们的专属浪漫\". Style: Clean Sans-serif, smaller, legible.",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Since the male's arms will likely be raised to place the tiara, forming a frame around the female's head, the best location for text is usually in the upper corners or to the side of the male, utilizing the blurred living room background (negative space) to ensure legibility without obscuring the jewelry or the couple's facial expressions.",
+  "original_images_count": 1
+}

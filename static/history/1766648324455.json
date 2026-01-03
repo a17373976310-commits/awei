@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766648324455,
+  "original_prompt": "给这个手串做一张淘宝详情页，要求一个模特戴着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"一张极具生活气息的场景摄影，特写展示一位女性模特的纤细手腕，佩戴着主体[Subject Lock: 南红玛瑙手串，包含红润通透的圆珠、一颗精致的掐丝珐琅莲花珠和一颗金沙石隔珠]。光线是午后透过窗纱的暖阳，侧逆光照射，完美呈现出玛瑙珠子的胶质感和透光性。模特的动作自然轻柔，背景中隐约可见[一本泛黄的书页或一套素雅的白瓷茶具]，营造出岁月静好、温婉恬淡的东方禅意氛围。\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (场景融合排版).\nText Rendering Instructions:\n1. **Mood Title**: 内容: “腕间风雅”. Style: [精细宋体或手写行楷, 典雅大气]. Position: [画面留白处，例如左上角].\n2. **Description**: 内容: “温润南红 · 步步生莲”. Style: [纤细衬线体, 字号较小].\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the focus is on the bracelet worn on the wrist, the hand should be positioned to create a natural diagonal line or a gentle curve across the frame. Keep the background blurry (low depth of field) to ensure the product stands out. The text should be placed in the 'negative space' (empty area) usually found in the upper left or right corner, avoiding overlap with the model's hand.",
+  "original_images_count": 1
+}

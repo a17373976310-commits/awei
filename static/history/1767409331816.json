@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767409331816,
+  "original_prompt": "给这四个包装，首饰盒——包装盒——首饰盒包装——包装袋，做一张淘宝详情页。",
+  "optimized_prompt": "[Visual Description]\n\"A high-end commercial lifestyle photography shot for a luxury jewelry brand. The subject is a coordinated set of four packaging items [Subject Lock: vibrant warm orange shopping bag with 'Vaubel' logo, rigid setup box, open display box with gold rim, and a glossy hinged jewelry box]. The items are artfully arranged on a textured creamy-beige travertine stone surface. Soft, warm 'Golden Hour' sunlight streams from the side, creating elegant shadows and highlighting the contrast between the matte paper texture and the glossy lacquer of the jewelry box. A delicate white silk ribbon is loosely draped in the background to enhance the sense of gift-giving ceremony.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Luxury Editorial (杂志级留白排版).\nText Rendering Instructions:\n1. **Mood Title**: Text: “开启璀璨时刻” (Open the Bright Moment). Style: [Elegant Serif / Songti, Deep Brown or Gold Foil effect]. Position: [Upper center or Top Left negative space].\n2. **Description**: Text: “奢华触感，珍藏心意” (Luxury Touch, Cherished Heart). Style: [Minimalist Sans-serif, small, letter-spaced].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Suggest placing the tallest item (the Shopping Bag) in the back-left or back-right to anchor the composition. Layer the Rigid Box and Display Box in the mid-ground, and place the smallest Glossy Jewelry Box in the foreground, slightly open to invite the viewer. The text should be placed in the negative space opposite the Shopping Bag to balance the visual weight.",
+  "original_images_count": 1
+}

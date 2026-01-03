@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766564543181,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的厨房背景。",
+  "optimized_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的厨房背景。, high quality, 4k",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Default layout.",
+  "original_images_count": 2
+}

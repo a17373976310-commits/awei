@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766593174501,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, 'New Chinese Zen' commercial photography style. The [circular beaded bracelet composed of approximately 21-23 uniformly spherical beads with a milky greenish-white hue and high-gloss surface] is the absolute hero, resting centrally on a textured dark slate or aged wooden tray to create contrast against the pale jade.\n[Props]: The scene is enriched with cultural elements: a delicate white porcelain tea cup in the mid-ground, a few fresh green bamboo leaves scattered naturally near the bracelet, and a vintage calligraphy brush resting on the side. \n[Background]: A softly blurred backdrop featuring abstract ink wash painting textures or a wooden lattice screen.\nLighting is [Soft Macro Studio Lighting], emphasizing the translucency, depth, and oily gloss (greasy luster) of the jade beads.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Classic E-commerce Layout). Keep text areas clean despite the props.\nText Rendering Instructions:\n1. **Main Title**: Content: \"温润和田\". Position: [Top Left Negative Space]. Style: [Elegant Serif 3D Gold or Dark Green font].\n2. **Sub Title**: Content: \"细腻油润 · 手工打磨\". Style: [Clean Sans-serif, dark grey].\n3. **Marketing Banner**: Content: \"甄选好料\". Style: [Minimalist capsule with gold border].\n4. **Trust Badge**: Content: \"国检证书\". Style: [Translucent shield icon].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "用户要求'充实画面'，因此我们引入了茶具、竹叶、文房四宝等'新中式'道具。建议采用'中心构图'放置手串，道具在四周形成环绕或对角线构图，避免遮挡产品本身。文案应放置在背景较干净的区域（如左上角），使用深色或烫金字体以确保在浅色背景下的识别度。",
+  "original_images_count": 1
+}

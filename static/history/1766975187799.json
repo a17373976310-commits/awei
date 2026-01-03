@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766975187799,
+  "original_prompt": "帮我把手臂和手串完美的融入背景，并且添加阴影",
+  "optimized_prompt": "{\n  \"task_type\": \"Image Harmonization & Shadow Generation\",\n  \"instructions\": \"Keep the arm and the transparent spherical bead bracelet unchanged in terms of shape and texture. Focus on generating realistic contact shadows and soft ambient shadows cast by the arm and bracelet onto the orange textured background. The shadows should follow a natural light source direction (top-left or top-right) to ground the subject. Adjust the lighting on the arm slightly if necessary to match the background's warm tone, ensuring a seamless composite.\"\n}",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

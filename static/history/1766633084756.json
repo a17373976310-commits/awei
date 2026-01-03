@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766633084756,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄墨凝瑞，静心绕腕 黑曜澄明养心性 莲花绽芳享宁年",
+  "optimized_prompt": "[Visual Description]\n新中式禅意电商静物摄影，高级商业布光。主体为一串高光泽的黑色黑曜石圆珠手串，画面中心聚焦于那一颗温润的橙色太阳石和一颗精致的掐丝珐琅莲花珠。手串静置于浅色原木纹理台面上。\n[道具充实]: 为了丰富画面层次，周围精心摆放了具有禅意的道具：后方是一个做工精致的黄铜法铃（或小铜钟），旁边散落着几片干燥的植物叶片（如尤加利叶）增添自然气息，背景隐约可见线装古籍的一角，并伴有淡淡的檀香烟雾缭绕，营造“静心”的氛围。\n[光影]: 柔和的暖调影棚光，高光清晰展现黑曜石的质感和珐琅的工艺细节。\n\n[Text & UI Layout]\n***排版风格**: 新中式雅致布局 (Text-heavy Top, Product Bottom).\n文字渲染说明:\n1. **主标题**: 内容: “玄墨凝瑞，静心绕腕”. 位置: [上方居中或右上角留白处]. 风格: [流金毛笔书法字体 或 典雅宋体], 带有微弱的立体浮雕感.\n2. **副标题**: 内容: “黑曜澄明养心性”. 风格: [竖排或小字横排], 纤细精致.\n3. **卖点文案**: 内容: “莲花绽芳享宁年”. 风格: [与副标题呼应].\n4. **信任背书**: 内容: “天然严选”. 风格: [仿古印章或金边圆形徽章].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested 'more elements', the visual composition should use a 'Framing' technique. Place the bracelet in the center foreground. Arrange the brass bell and dried leaves in the mid-ground and background to create depth without blocking the product. The text should be placed in the negative space (likely top or top-right) using a gold or dark brown color palette to harmonize with the wood and black beads, ensuring the 'Zen' message is legible but artistic.",
+  "original_images_count": 1
+}

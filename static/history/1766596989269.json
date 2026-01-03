@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766596989269,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面，文案：灵玉护身  岁岁安康 天然和田玉手串",
+  "optimized_prompt": "[Visual Description]\n现代中国电商[珠宝首饰]场景，[新中式禅意]商业摄影风格。一串由乳白色和田玉圆珠组成的精致手串平铺展示在粗糙质感的浅灰色岩石展台上，珠体呈现油脂光泽和细腻的羊脂白质感。\n[Props]: 画面中点缀几片嫩绿的茶叶或竹叶，以及流动的淡金色水纹光影，一缕轻烟袅袅升起，增添画面的灵动与充实感，营造“人养玉，玉养人”的意境。\n[Background]: 柔和的米色调背景，带有隐约的山水水墨纹理，突出东方美学。\nLighting is [Studio Softbox]，柔光箱打光，强化玉石的油润感和高光反射，确保细节清晰。\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: 内容: “灵玉护身”. Position: [Top Left Negative Space]. Style: [3D浮雕质感毛笔字体，深墨绿色]. Color: [Dark Green/Gold].\n2. **Sub Title**: 内容: “岁岁安康”. Style: [精致宋体，竖排或横排于主标题旁].\n3. **Marketing Banner**: 内容: “天然和田玉手串”. Style: [极简磨砂玻璃标签].\n4. **Trust Badge**: 内容: “国检证书”. Style: [半透明金边盾牌].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a circular loop, centering it slightly lower than the geometrical center allows ample breathing room at the top for the poetic copy. Using 'Zen' elements like bamboo, stone, or smoke fills the negative space elegantly without competing with the product's simple geometry. The text should use a serif or calligraphy font to match the 'Traditional Chinese' vibe.",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766594511305,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, High-end Zen commercial photography style. The [White Jade Bracelet] is the hero, resting elegantly on a textured dark sandalwood tray or slate stone in the center.\n[Props]: To enrich the composition, surround the subject with scattered dried tea leaves, a small vintage white porcelain cup in the mid-ground, and a blurred silhouette of a traditional folding fan or bamboo leaves in the background.\n[Background]: A warm, softly lit tea table setting with depth of field.\nLighting is [Soft Diffused Studio Lighting], specifically highlighting the 'greasy' subsurface scattering and vitreous luster of the jade beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “甄选和田玉”. Position: [Top Center]. Style: [3D Glossy Serif font (Songti) in Dark Gold].\n2. **Sub Title**: Content: “温润细腻 油性十足”. Style: [Elegant Calligraphy style, smaller, beneath title].\n3. **Marketing Banner**: Content: “源头直供 · 一物一证”. Style: [Minimalist Gold-Bordered Tag].\n4. **Trust Badge**: Content: “国检证书”. Style: [Translucent Shield Icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "考虑到手串是圆形的中心构图，建议使用‘中心对称’或‘上轻下重’的排版。将产品放置在画面下部或正中，利用道具（茶具、书籍、植物）在四周形成不规则的环绕，打破圆形的单调感。文字信息集中在顶部空白区域，主标题使用衬线体（宋体/明体）以呼应和田玉的文化属性。确保背景道具虽多但经过虚化处理，不抢占玉石的高光焦点。",
+  "original_images_count": 2
+}

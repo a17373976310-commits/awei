@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766771978562,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景是明亮的成人礼现场，有蛋糕，旁边有家人和朋友为她庆生。",
+  "optimized_prompt": "[Visual Description]\n\"A high-key, celebratory lifestyle photography shot capturing a 'Coming of Age' moment. The central subject is a beautiful young European woman (approx. 18 years old), radiant with joy. She is adorned in the [Subject Lock]: wearing the regal silver-tone tiara with pear-cut crystals, the matching V-drop necklace with a large teardrop pendant, and the chandelier-style earrings. She stands before a lavish birthday cake with lit candles. Softly blurred in the background, family and friends are clapping and smiling. The setting is an elegant, bright banquet hall filled with natural light and pastel floral arrangements. The lighting emphasizes the high-gloss silver and the sparkle of the faceted cubic zirconia.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: '璀璨加冕 · 成人礼' (Sparkling Coronation · Coming of Age). Style: Elegant Serif, metallic texture. Position: Floating in the upper negative space.\n2. **Description**: Content: '这一刻，做最闪耀的主角' (At this moment, be the most shining protagonist). Style: Clean Sans-serif, smaller size.\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议将文字置于画面上方或左上方的留白区域（Negative Space），避开人物面部和精细的皇冠细节。标题应使用具有仪式感的字体，副标题则保持简洁。光线应确保珠宝的高光点（Specular Highlights）清晰可见，以增强产品的价值感。",
+  "original_images_count": 1
+}

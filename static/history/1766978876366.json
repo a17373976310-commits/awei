@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766978876366,
+  "original_prompt": "帮我给这个产品和手臂添加一个场景，无文案",
+  "optimized_prompt": "[Visual Description]\nSubject: Close-up shot of a delicate female wrist wearing a multi-strand beaded bracelet. The bracelet consists of 7-8 rows of translucent amber-peach spherical beads, tightly stacked. The skin tone is warm and natural. \nEnvironment: A serene, high-end lifestyle setting. The hand rests gently near a textured linen fabric or a soft, warm-toned silk surface. Sunlight filters through dappled leaves, casting soft, organic shadows on the wrist and the beads, creating sparkling refractions inside the amber glass.\nAtmosphere: Warm, elegant, ethereal, and sophisticated. Soft focus background (bokeh) with hints of dried flowers or a ceramic tea cup.\n\n[Text & UI Layout]\nNote: Since no specific text was provided, placeholder commercial copy is suggested.\nMain Title: \"Amber Glow\" (Located in the upper left or right negative space, elegant serif font)\nSub Title: \"Capture the warmth of light\" (Small sans-serif below title)\nLayout: The arm enters diagonally from the bottom left or right, leaving ample clean space at the top for typography.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Suggest using a diagonal composition where the arm leads the eye from the bottom corner towards the center. The background should be kept relatively clean (soft focus) in the upper quadrant to accommodate the suggested Main Title ('流光琥珀' / 'Amber Glow'). The lighting needs to be backlit or side-lit to emphasize the translucency of the beads.",
+  "original_images_count": 1
+}

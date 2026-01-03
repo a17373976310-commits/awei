@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766590272358,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求躺在红色背景里并且添加一下元素充实画面",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Premium Festival Commercial Photography style. A high-gloss Cinnabar Bracelet (18 deep red glittering beads, 1 peach agate bead, 1 blue cloisonné charm) lying flat in the center. \n[Props]: Surrounded by scattered gold flakes, subtle traditional Chinese paper-cut patterns (faintly visible), and a few soft dried red plum blossoms to enrich the composition.\n[Background]: A rich, textured deep red gradient background (Monochromatic Red Theme), creating a festive and auspicious atmosphere.\nLighting is focused Studio Softbox lighting, highlighting the gold dust sparkles inside the red beads and the glossy texture of the enamel charm.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: \"本命年红朱砂\". Position: Top Left Negative Space. Style: 3D Bold Serif Gold Texture with soft shadow. Color: Metallic Gold.\n2. **Sub Title**: Content: \"金砂饱满 · 纳福转运\". Style: Clean white sans-serif, sharp and elegant.\n3. **Marketing Banner**: Content: \"官方正品\". Style: Red 3D Capsule with gold border.\n4. **Trust Badge**: Content: \"高含量紫金砂\". Style: Circular Gold Seal stamp effect.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is red and the background is requested to be red, lighting is critical to separate the subject from the background. Use rim lighting (backlight) to create a glowing edge around the beads. The text should be in Gold or White to contrast strongly against the red background. Place the bracelet in the center or slightly lower center to leave ample room at the top for the main selling points.",
+  "original_images_count": 2
+}

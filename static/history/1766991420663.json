@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766991420663,
+  "original_prompt": "帮我给这个些透明的白色手串添加一个合适的背景，无文案",
+  "optimized_prompt": "[Subject Lock]: A wide, multi-strand cuff of translucent, amber-tinted spherical beads with high gloss on a wrist. \n\n[Visual Description]: High-end commercial jewelry photography. The bracelet is presented against a soft, textured background of cream-colored raw silk or matte beige stone. A gentle beam of warm sunlight strikes the beads from the side, creating caustic light refractions and highlighting the internal transparency of the amber spheres. Dappled shadows of foliage (gobo effect) fall softly across the background to add depth and an organic touch. The composition is clean, airy, and serene, focusing on the purity of the material. \n\n[Text & UI Layout]: Minimalist magazine style. Main Title \"Pure Amber\" (using a refined Serif font) placed in the upper right negative space. Subtitle \"Translucent elegance on your wrist\" in a small, clean Sans-serif font below the title. No text overlapping the product.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用对角线构图或三分法构图。将佩戴手串的手臂安排在画面左下至右上的对角线上，或者占据右侧三分之二的位置。光源应从左上方或正上方打入，确保高光点落在珠子的曲面上以体现光泽。文字应放置在与光源方向相对的留白处（如左上角），以平衡画面的视觉重心。",
+  "original_images_count": 1
+}

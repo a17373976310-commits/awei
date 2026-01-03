@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766629815220,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，",
+  "optimized_prompt": "[Visual Description]\n\"新中式电商珠宝首饰场景，高级禅意商业摄影风格。[Subject Lock]: 银曜石圆形珠串，由约14-16颗高光泽圆珠组成，每颗珠子都呈现出深邃的黑色底色，并带有明显的银色金属光泽或'猫眼'闪光。手串放置在一个有着岁月质感的深色胡桃木托盘上。\n[Props]: 为了充实画面，托盘周围点缀几颗未打磨的天然黑曜石原石，一枝鲜活的绿竹叶伸入画面增加生机，以及一缕缭绕的檀香烟雾，营造神秘与尊贵的氛围。\n[Background]: 深灰色的新中式纹理背景，隐约可见的中式窗棂光影，增加空间的层次感。\n光影采用商业影棚布光，侧逆光重点强调每一颗珠子表面的银色光晕，体现'极品银光'的质感。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 经典电商竖版构图，上文下图。\n文字渲染指南 (必须清晰醒目):\n1. **Main Title**: 内容: “天然银曜 强效招财”. 位置: [画面上方正中]. 风格: [立体烫金书法体或黑体，带有辉光效果，极具视觉冲击力].\n2. **Sub Title**: 内容: “猫眼效应 颗颗精选”. 风格: [精致宋体，银白色，位于主标题下方].\n3. **Marketing Banner**: 内容: “开光加持 | 顺丰包邮”. 风格: [红色渐变胶囊条，微立体质感].\n4. **Trust Badge**: 内容: “国检证书”. 风格: [金色质感徽章，位于右下角].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the user requested a richer scene, the layout strategy is to use the props (stones, bamboo, smoke) to frame the product in the bottom 2/3rds of the image, creating a natural 'stage'. The top 1/3rd should be kept relatively clean (using the dark background or smoke negative space) to ensure the heavy-hitting commercial copy (Main Title) remains instantly readable. The contrast between the gold text and the dark/black product creates a classic 'Black Gold' luxury aesthetic.",
+  "original_images_count": 1
+}

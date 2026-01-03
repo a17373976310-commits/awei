@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766566007886,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的白色哑光厨房背景，然后锅斜放。",
+  "optimized_prompt": "[Visual Description]\n\"现代极简厨房电商主图，高调明亮的商业摄影风格。画面中心是一口斜放的鼠尾草绿煎锅，展示其柔和的哑光绿色外壁和奶油色陶瓷内壁，不锈钢手柄向右上方延伸，质感细腻。\n[Props]: 搭配极简的白色哑光厨具背景，周围可能有若隐若现的白色亚麻布纹理或白色陶瓷器皿，增加画面的层次感但不抢镜。\n[Background]: 纯净的白色哑光厨房环境，光线通透，营造出清新、健康、无油烟的烹饪氛围。\n布光采用专业影棚柔光，强调锅具内壁的温润光泽和手柄的金属质感，阴影柔和自然。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 经典的上下结构 (上方留白用于文案，下方展示斜放的产品主体)。\nText Rendering Instructions (清晰易读的高级感排版):\n1. **Main Title**: 内容: “轻享·不粘新煮义”. 位置: [左上方留白处]. 风格: [立体无衬线字体，配色呼应锅身的鼠尾草绿，带轻微投影].\n2. **Sub Title**: 内容: “奶油白陶瓷内胆 / 一抹即净”. 风格: [深灰色细黑体，精致利落].\n3. **Marketing Banner**: 内容: “健康少油烟”. 风格: [磨砂玻璃质感胶囊条，点缀细金属边框].\n4. **Trust Badge**: 内容: “食品级材质”. 风格: [银色极简圆形徽章，增加信任感].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested the pan to be placed 'diagonally' (slanted), the handle will likely extend towards the upper right or right side. This naturally creates a perfect negative space in the **Top Left** corner. Place the Main Title and Subtitle there to balance the visual weight of the handle. Use a high-key (bright white) background to make the 'Sage Green' pop, ensuring the text color is dark enough (e.g., Dark Green or Charcoal Grey) to be readable against the white background.",
+  "original_images_count": 2
+}

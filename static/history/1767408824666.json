@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408824666,
+  "original_prompt": "给这四个包装做一张淘宝详情页",
+  "optimized_prompt": "[Visual Description]\n\"A high-end commercial lifestyle photograph for a Taobao product detail page. The subject is [a cohesive luxury packaging set dominated by a vivid pumpkin orange color scheme, featuring a large rigid presentation box with a brown base and gold trim, a smaller hinged jewelry box with white satin interior, and a vertical shopping bag with the 'Vaubel' logo]. The items are arranged elegantly on a textured light beige travertine stone surface to emphasize the premium material quality. The lighting is [soft, warm afternoon sunlight], casting gentle diagonal shadows to create depth and a 'Quiet Luxury' atmosphere. The background is clean and neutral, allowing the vivid orange color to be the visual focus.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Scene-blended typography).\nText Rendering Instructions:\n1. **Mood Title**: Content: “奢华礼赠”. Style: [Elegant Serif, Gold or Dark Brown font color]. Position: [Floating in the upper negative space].\n2. **Description**: Content: “专属定制包装 · 传递心动时刻”. Style: [Clean Sans-serif, smaller, minimalist]. Position: [Aligned below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用三角形构图：将较高的手提袋放置在后方（左侧或右侧），大方盒放置在中间层，最小的首饰盒打开展示内衬放置在最前方。这种层次感能引导视线。文字放置在手提袋旁边的留白区域，避免遮挡任何包装的Logo细节。背景保持浅色调（米色、浅灰），以确保橙色主体在手机屏幕上足够吸睛。",
+  "original_images_count": 1
+}

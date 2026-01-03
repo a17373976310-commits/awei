@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767363457656,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如木桌，桌子或者其他）比例合适，有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "[Visual Description] High-end Amazon lifestyle product photography. In the sharp foreground, the [Subject Lock] luxury three-piece bridal jewelry set (tiara, V-drop necklace, chandelier earrings) is elegantly arranged on a polished, dark walnut wooden table, showcasing the silver Baroque scrollwork and pear-cut crystal details. The lighting highlights the brilliance of the stones. In the softly blurred background (bokeh), a romantic scene unfolds: a handsome European male is looking affectionately at a European female who has a genuinely surprised and delighted expression (hands covering mouth in joy). Warm, cozy ambient lighting.\n\n[Text & UI Layout] Minimalist and premium design. Main copy \"The Perfect Surprise\" in an elegant, thin serif font (white or metallic gold) positioned in the upper negative space. Sub-copy \"Timeless Elegance\" in a smaller sans-serif font below the title.",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Composition should use a shallow depth of field. Place the jewelry set in the bottom 40% of the frame (sharp focus) to anchor the product. Place the couple in the top 60% (soft focus) to provide emotional context without competing for visual attention. Text should be placed in the 'air' around the couple's heads.",
+  "original_images_count": 2
+}

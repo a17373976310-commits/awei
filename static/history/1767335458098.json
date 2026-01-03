@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767335458098,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的高级礼盒面板，主文案：透光如星 驱散浊气  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\n\"现代中国电商珠宝首饰场景，轻奢静谧商业摄影风格。[一串由完美球形、高净度透明白水晶珠组成的手串，可见内部穿绳，晶体折射出强烈的环境光泽，表面无瑕光滑] 位于画面中央的[深色高级绒面礼盒面板]之上。\n[Props]: 背景为深邃的黑色或午夜蓝天鹅绒质感，衬托出水晶的冰透感。光线透过珠体仿佛星光闪烁，呼应'透光如星'的主题。\n[Background]: 虚化的深色礼盒内部，营造高端礼品氛围。\nLighting is [专业珠宝布光]，使用侧逆光和聚光灯，强调水晶珠体的通透感和边缘的高光，确保没有杂乱的阴影。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 上文下图经典布局。\n文字渲染说明 (必须高对比度且清晰):\n1. **Main Title**: 内容: “透光如星 驱散浊气”. 位置: [左上角留白处]. 风格: [3D 优雅宋体，带微弱外发光]. 颜色: [纯白或亮银色].\n2. **Sub Title**: 内容: “平安顺遂 白水晶”. 风格: [清晰纤细黑体，略小于主标题]. 颜色: [淡金色].\n3. **Marketing Banner**: 内容: “5A级珍品”. 风格: [极简金线边框].\n4. **Trust Badge**: 内容: “天然甄选”. 风格: [半透明磨砂玻璃角标].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the background is 'Deep/Dark' (Dark Velvet), use White or Light Gold text for maximum contrast. Place the text in the Top-Left corner to follow natural reading order. The product should sit centrally on the 'Gift Box Panel' in the lower 2/3rds of the frame to anchor the composition.",
+  "original_images_count": 2
+}

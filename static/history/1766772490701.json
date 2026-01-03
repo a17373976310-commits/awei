@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766772490701,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景圣诞节，要求场景明亮。",
+  "optimized_prompt": "[Visual Description]\n\"A high-key, immersive lifestyle photograph featuring a beautiful European teenage girl as the model. She is wearing the luxurious jewelry set: the intricate silver-tone tiara with a symmetrical arched design and central peak sits elegantly on her styled hair, the V-shaped crystal necklace adorns her neck, and the chandelier drop earrings sparkle by her jawline. She wears a festive, elegant white or silver party dress. The background is a bright, dreamy Christmas setting with a blurred white Christmas tree, silver ornaments, and twinkling fairy lights. Natural daylight floods the scene, creating a soft, glowing, and high-energy atmosphere. The focus is sharp on the high-density crystal pave settings and teardrop gems of the jewelry, capturing their brilliance.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Floating in bright negative space).\nText Rendering Instructions:\n1. **Mood Title**: Text: “闪耀圣诞夜” (Sparkling Christmas Eve). Style: [Elegant Serif, Silver or Gold foil texture]. Position: [Upper right or left negative space].\n2. **Description**: Text: “做自己的公主，点亮冬日童话” (Be your own princess, light up the winter fairytale). Style: [Minimalist Sans-serif, smaller size].\"\n",
+  "scenario": "taobao_detail",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "建议采用中近景构图（Medium Closeup），确保珠宝细节清晰可见。由于场景要求‘明亮’，背景可能会有较多高光，文案建议使用深灰色或带有投影的金色/银色，以保证在明亮背景下的可读性。文案位置应避开模特的头部和首饰主体，置于背景虚化处。",
+  "original_images_count": 1
+}

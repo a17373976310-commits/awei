@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767003667127,
+  "original_prompt": "帮我做一张淘宝详情页背景是一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。底部有一个框框，框框上面是一架顺丰标志logo的飞机，框框里面有内容文案是：一物一证   高档礼盒    精美礼品",
+  "optimized_prompt": "帮我做一张淘宝详情页背景是一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。底部有一个框框，框框上面是一架顺丰标志logo的飞机，框框里面有内容文案是：一物一证   高档礼盒    精美礼品, 高质量, 4k",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Default layout.",
+  "original_images_count": 1
+}

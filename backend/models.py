@@ -54,5 +54,12 @@ MODEL_REGISTRY = {
         "model_key": "doubao-seedream-4-5-251128",
         "description": "字节跳动最新即梦4.5模型，支持多模态生成",
         "provider": "comfly_json"
+    },
+    "gpt_image_1_5": {
+        "name": "GPT-Image-1.5 (OpenAI)",
+        "url": "https://ai.comfly.chat/v1",
+        "model_key": "gpt-image-1.5",
+        "description": "OpenAI 图像生成模型，支持文生图与图生图",
+        "provider": "openai"
     }
 }

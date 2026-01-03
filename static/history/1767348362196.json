@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767348362196,
+  "original_prompt": "给这个手串做一张淘宝主图，要求换一个深色背景，手串透明干净，主文案：透光如星 驱散浊气  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description] A high-end Taobao main product image featuring a [Subject Lock: clear quartz bead bracelet] composed of uniformly sized, perfectly spherical beads resting on a dark surface. The beads must appear ultra-transparent, clean, and glossy, with visible internal drilling channels and high light refraction properties. The background is a deep, dark obsidian or velvet texture to maximize the contrast with the crystal-clear beads, making them glow like stars in the night sky. Lighting is soft yet focused, creating sharp specular highlights on the spherical surfaces to emphasize their purity and clarity. \n\n[Text & UI Layout] Minimalist and elegant layout. The main headline \"透光如星 驱散浊气\" is placed in the upper center or upper left area, using a sophisticated, glowing serif font (like Songti). The subtitle \"平安顺遂 白水晶\" is placed directly below in a smaller, sans-serif font. The text color is white or light silver to stand out against the deep background.",
+  "scenario": "image_modify",
+  "model": "gpt_image_1_5",
+  "ratio": "3:4",
+  "layout_logic": "采用经典的‘中心聚焦’或‘黄金分割’构图。产品位于画面中心或略偏下方，占据视觉重心。深色背景（纯黑、深蓝或深灰）能最大程度衬托白水晶的通透感。文字应置于上方留白处，使用白色系字体以确保在深色底上的可读性，字体加一点外发光效果可以呼应‘透光如星’的概念。",
+  "original_images_count": 1
+}

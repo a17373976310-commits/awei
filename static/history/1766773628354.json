@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766773628354,
+  "original_prompt": "给这套产品穿戴在一个欧洲模特身上，客厅场景，有一个欧洲男性双手做出正在给女性带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\n\"Cinematic lifestyle photography set in a luxurious European living room with soft, warm ambient lighting. The focal point is a beautiful European female model wearing an elegant evening gown, adorned with the [Subject Lock: V-shaped crystal necklace and chandelier earrings]. A handsome European male model stands slightly behind her, hands raised in a gentle, romantic gesture, placing the [Subject Lock: ornate silver filigree tiara with pear-shaped gems] onto her head. The jewelry sparkles intensely against the soft background. The atmosphere is intimate, regal, and full of love, capturing a 'princess moment'.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Romantic Scene Composition).\nText Rendering Instructions:\n1. **Mood Title**: Content: “为爱加冕” (Crowning for Love). Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Floating in the upper negative space or beside the couple].\n2. **Description**: Content: “专属你的璀璨时刻” (Your exclusive sparkling moment). Style: [Minimalist Sans-serif, small, clean].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the visual involves a vertical interaction (hands above head), the composition will likely be central or slightly off-center. The text should be placed in the negative space on the side (left or right) to balance the visual weight of the couple, or floated elegantly at the top if there is enough headroom above the male model's hands.",
+  "original_images_count": 1
+}

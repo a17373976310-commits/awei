@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767321555098,
+  "original_prompt": "给这个手串做一张淘宝主图，要求背景暗色调的女性高级礼盒面板或者放点黑白的玫瑰，",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry Scene, Dark Luxury Gift aesthetic. A bracelet composed of approximately 18-20 uniform, perfectly spherical clear quartz beads is the hero subject, resting on a dark, plush velvet surface inside a premium gift box. The beads exhibit high optical clarity and transparency with visible internal elastic threading. Surrounding the bracelet are elegant black and white roses (monochromatic floral art), adding a romantic yet high-end atmosphere. The background is a deep, moody charcoal or black, emphasizing the brilliance of the crystal. Lighting is dramatic studio lighting with rim lights to create sparkling specular highlights and refraction on the bead surfaces, ensuring the product looks expensive and sharp.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “至臻纯净” (Ultimate Purity). Position: Top Center. Style: Luxury Serif font in Metallic Silver or Champagne Gold, glowing against the dark background.\n2. **Sub Title**: Content: “天然白水晶 · 奢华礼赠” (Natural White Crystal · Luxury Gift). Style: Elegant, thin sans-serif, white color.\n3. **Marketing Banner**: Content: “送礼首选” (Top Choice for Gifting). Style: A minimalist white-bordered transparent glass capsule button.\n4. **Trust Badge**: Content: “甄选美货” (Selected Beauty). Style: Small gold foil stamp effect.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "由于背景设定为暗色调（Dark Mode），文字颜色必须采用亮色系（如白色、银色、浅金色）以确保可读性。建议主标题使用有衬线的字体（Serif）来呼应'高级礼盒'的优雅感。水晶手串本身是透明的，因此光影对比度要拉高，让珠子的边缘光（Rim Light）和高光点（Highlights）非常清晰，避免产品隐没在黑色背景中。",
+  "original_images_count": 1
+}

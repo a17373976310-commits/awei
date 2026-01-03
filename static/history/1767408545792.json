@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408545792,
+  "original_prompt": "给这四个包装做一张淘宝详情页",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle photography shot for an e-commerce detail page. The subject [Luxury orange packaging suite with gold accents and distinct branding] is arranged artistically on a textured beige travertine stone surface or soft cream silk. The tall shopping bag stands in the background, the large square box lies flat revealing its white interior, and the small jewelry box is open in the foreground to create depth. Lighting is soft, warm morning sunlight casting delicate organic shadows (gobo effect) of leaves, highlighting the metallic gold trim and the vibrant matte orange texture. The atmosphere is sophisticated, expensive, and inviting.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Minimalist Luxury (极简奢华排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “挚爱甄选”. Style: [Elegant Serif, Gold foil texture effect]. Position: [Top left or center, floating in negative space].\n2. **Description**: Content: “诠释礼赠的高级美学”. Style: [Thin Sans-serif, dark grey, smaller]. Position: [Below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since this is for a detail page (likely vertical scrolling), place the products in the lower 2/3rds of the frame to anchor the visual weight. Use the upper 1/3rd (the 'negative space' of the wall or background) for the text overlay. The lighting should guide the eye from the text down to the open jewelry box.",
+  "original_images_count": 1
+}

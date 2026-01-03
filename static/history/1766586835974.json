@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766586835974,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求红色背景",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry Photography. A close-up, high-angle shot of [Subject Lock: A beaded bracelet featuring a primary sequence of deep red, spherical beads with a distinct 'goldstone' glitter effect. The beads exhibit a high-gloss finish... paired with a singular peach accent stone and a blue cloisonné-style floral metal charm]. The product is displayed on a textured, deep crimson velvet surface or a smooth red matte pedestal, creating a sophisticated 'Red on Red' aesthetic. \n[Props]: Minimalist geometric red blocks or a subtle traditional Chinese knot in the blurred background.\n[Background]: Rich, monochromatic red studio background with a slight radial gradient to add depth.\nLighting is High-Key Commercial Studio Lighting with strong rim lights (backlighting) to separate the red beads from the red background. Sharp specular highlights on the beads emphasize the glossy texture.\n\n[Text & UI Layout]\n***Layout Style**: Center-Focused or Right-Aligned Negative Space.\nText Rendering Instructions (White and Gold scheme for maximum contrast against red):\n1. **Main Title**: Content: “帝王紫金砂”. Position: [Top Right or Top Center]. Style: [3D Bold Serif in Brushed Gold texture].\n2. **Sub Title**: Content: “本命年招财纳福”. Style: [Clean White Sans-serif, smaller size].\n3. **Marketing Banner**: Content: “开光祈福”. Style: [Vertical tag on the left, Translucent White Glass effect].\n4. **Trust Badge**: Content: “假一赔三”. Style: [Small Gold Seal icon].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Due to the Red-on-Red requirement, lighting separation is critical. The text must use White (#FFFFFF) or Luxury Gold (#D4AF37) to ensure readability. Avoid red text. Place the product centrally with strong rim lighting to create a 'halo' effect, separating it from the background.",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766348053167,
+  "original_prompt": "给这个手串做一张详情页",
+  "optimized_prompt": "[Visual Description]\n\"A serene, contemplative lifestyle photography scene. The main subject is a beaded bracelet (dark iridescent rainbow obsidian beads, one golden tiger's eye center bead, two matte carved Pixiu beads) resting naturally on a weathered dark wood tea table or a rough slate stone surface. The lighting is soft and moody, resembling late afternoon golden hour, casting long, gentle shadows that highlight the chatoyancy of the tiger's eye and the subtle sheen of the black beads. Background elements include a wisp of incense smoke rising from a traditional burner and a ceramic tea cup, creating a Zen-like, spiritual atmosphere.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Zen Aesthetic).\nText Rendering Instructions:\n1. **Mood Title**: Content: '静心守神'. Style: [Traditional Calligraphy or Elegant Serif, Vertical or Horizontal layout]. Position: [Upper right or Top center in negative space].\n2. **Description**: Content: '彩虹眼黑曜石 · 招财貔貅'. Style: [Clean Sans-serif, smaller font, Gold or White color]. Position: [Below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "9:16",
+  "layout_logic": "Since this is a bracelet with cultural/spiritual significance (Pixiu, Obsidian), the layout should evoke 'Zen' and 'Premium Quality'. Use a dark environment with focused warm lighting to make the golden tiger's eye bead pop. The text should be placed in the negative space (likely upper right or left) to balance the composition, using traditional calligraphy fonts to match the product's DNA.",
+  "original_images_count": 1
+}

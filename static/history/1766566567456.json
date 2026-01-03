@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766566567456,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的白色哑光厨房背景（厨房细节多一点），然后锅斜放。",
+  "optimized_prompt": "[Visual Description]\nModern bright Chinese e-commerce kitchen scene, high-key commercial photography style. The [Sage green ceramic skillet featuring a matte exterior, cream interior, and a distinctive polished stainless steel handle with a forked Y-bracket attachment] is placed at a dynamic diagonal angle on a matte white textured countertop.\n[Props]: Background features soft-focus kitchen details like a wooden spatula, fresh herbs (basil or mint) in a white ceramic vase, and a clean white tile backsplash to create a homely yet premium atmosphere.\n[Background]: Bright white matte kitchen interior with rich textures (marble, matte tile), ensuring a clean and airy vibe.\nLighting is [Studio Softbox], bright and even, highlighting the glossy cream ceramic interior and the matte green exterior.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Upper Text, Lower Product).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “清新·陶瓷不粘”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with soft shadow, Sage Green color].\n2. **Sub Title**: Content: “轻油少烟 顺滑易洁”. Style: [Clean and sharp, dark grey, smaller than main title].\n3. **Marketing Banner**: Content: “健康首选”. Style: [Premium UI, 'Frosted Glass Pill' shape].\n4. **Trust Badge**: Content: “不含PFOA”. Style: [Translucent Glass Badge with Silver Rim].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用对角线构图。将煎锅主体放置在画面中下部，锅柄指向右上方，形成动态视觉引导。主标题和副标题文案安排在左上角的白色背景留白区域，利用背景的高明度衬托深色文字，确保手机端第一眼可读。光线应重点打在奶油色内壁上，展示其‘不粘’的光滑质感。",
+  "original_images_count": 2
+}

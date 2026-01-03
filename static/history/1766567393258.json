@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766567393258,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，细节多一点，背景是白色的几何块，里面有证书，奖杯，奖牌。",
+  "optimized_prompt": "[Visual Description]\n\"Modern E-commerce [Cookware] scene, [Award-Winning & Trustworthy] commercial photography style. [A circular frying pan characterized by a distinct two-tone colorway: matte sage green exterior, glossy cream ceramic interior, and a polished stainless steel Y-yoke handle with visible rivets] is located at [Center Stage, slightly angled to show depth].\n[Props]: Surrounded by [Gold Trophies], [Silver Medals], and [Framed Quality Certificates] arranged elegantly on geometric platforms to signify authority and quality.\n[Background]: [Clean White Geometric Blocks / Abstract Minimalist Pedestals].\nLighting is [Studio Softbox with High Key setup], creating bright reflections on the stainless steel rim and handle, ensuring product details are sharp.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “荣获国际大奖”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with soft shadow]. Color: [Gold/Deep Green].\n2. **Sub Title**: Content: “权威认证 · 陶瓷不粘”. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: “销量TOP1”. Style: [Premium UI, e.g. '3D Red Gradient Capsule'].\n4. **Trust Badge**: Content: “质保十年”. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "9:16",
+  "layout_logic": "产品主体放置在画面中下部的白色几何台面上，占据视觉重心。奖杯和证书作为背景衬托放置在后方两侧，不要遮挡产品主体。文字信息集中在上方留白区域，主标题使用金色或深绿色以呼应'奖项'和'产品色'，增强信任感。",
+  "original_images_count": 2
+}

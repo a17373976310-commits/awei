@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766988771182,
+  "original_prompt": "帮我给这个些透明手串添加一个红色场景，无文案",
+  "optimized_prompt": "[Visual Description]\nSubject: A wide, multi-strand cuff bracelet made of translucent amber spherical beads worn on a wrist, showcasing high refraction and a bubbly texture. The beads are warm and copper-toned.\nEnvironment: A monochromatic rich red scene, possibly red silk or velvet drapes creating soft folds, deep crimson shadows, warm ambient lighting emphasizing the amber translucency of the beads against the red backdrop, festive and luxurious atmosphere.\nLighting: Soft studio lighting, rim light highlighting the spherical curves, creating a warm glow inside the beads.\n[Text & UI Layout]\nMain Title: \"Amber Glow\"\nSub Title: \"Festive Elegance Collection\"\nCall to Action: \"Limited Edition\"",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the user requested 'no copy' provided but the system logic requires generating one, create a minimalistic layout. Place the main title '琥珀流光' (Amber Glow) in a refined serif font at the top right or bottom right, balancing the diagonal composition of the arm. Keep the red background clean around the text area to ensure readability.",
+  "original_images_count": 1
+}

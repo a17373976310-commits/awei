@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766633313954,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄墨凝瑞，静心绕腕 黑曜澄明养心性 莲花绽芳享宁年",
+  "optimized_prompt": "[Visual Description]\n现代中国风珠宝电商场景，禅意轻奢商业摄影风格。一串晶莹剔透的黑曜石手串[Subject Lock]位于画面中央的纹理石台上。\n[Props]: 画面中充实着飘浮的金箔莲花瓣、袅袅升起的白色禅意香烟、温润的鹅卵石，以及远处虚化的古风木质屏风（丰富画面层次感）。\n[Background]: 深炭灰色渐变背景，带有柔和的金色轮廓光点缀。\n光影采用影棚柔光箱，配合暖色聚光灯照射珠体，展现黑曜石的玻璃光泽，确保产品细节清晰锐利。\n\n[Text & UI Layout]\n***Layout Style**: 右文左图平衡布局。\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: 内容: “玄墨凝瑞，静心绕腕”. 位置: [右上方留白处]. 风格: [3D流金书法字体，带柔和阴影]. 颜色: [奢华金].\n2. **Sub Title**: 内容: “黑曜澄明养心性”. 风格: [干净衬线体，白色，略小于主标题].\n3. **Marketing Banner**: 内容: “莲花绽芳享宁年”. 风格: [磨砂玻璃条，带细金边].\n4. **Trust Badge**: 内容: “大师开光”. 风格: [半透明玻璃徽章，带金边].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Considering the user asked to 'fill the picture with elements,' a standard center composition might look too crowded if text overlays the product. I recommend a **Left-Product / Right-Text** (or vice versa) layout. Place the bracelet on a prop (stone/wood) on one side, and use the 'empty' space on the other side for the vertical text stack. The floating elements (petals, smoke) should frame the product without obscuring the text area. The gold text color will contrast beautifully against the dark obsidian and charcoal background.",
+  "original_images_count": 0
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767362082552,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求一个欧洲男士捧着这套首饰给一个女生惊喜。",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nSubject Lock: The silver crystal jewelry set (tiara, necklace, and earrings) prominently displayed in a luxurious gift box being held open.\\nScene: A romantic indoor evening setting, soft warm lighting. A handsome European man in a semi-formal shirt is holding the open jewelry box towards the camera/viewer, slightly out of focus in the background is a surprised and happy European woman covering her mouth with joy. The focus is sharp on the jewelry set in the foreground.\\nAtmosphere: Romantic, high-end, emotional, surprise moment, cinematic lighting, bokeh background.\\n\\n[Text & UI Layout]\\nPlatform: Amazon\\nMain Title: \\\"The Perfect Surprise\\\"\\nSub Title: \\\"Complete Bridal Set\\\"\\nBadge/Tag: \\\"Premium Quality\\\"\\nFont Style: Elegant Serif font for the title, minimalist Sans-Serif for subtitles, white or gold text overlay.\",\n    \"seadream_cn\": \"[视觉描述]\\n主体锁定：银色水晶首饰套装（皇冠、项链和耳环）作为绝对视觉焦点，陈列在一个打开的高级丝绒礼盒中。\\n场景：浪漫的求婚或周年纪念氛围。一位英俊的欧洲男士穿着半正式衬衫，双手捧着打开的首饰盒递向前方。背景中有一位欧洲女性，面带惊讶和幸福的表情，双手捂嘴，眼神充满感动。利用浅景深效果，主体首饰清晰锐利，人物背景虚化。\\n光影与色调：温暖的烛光色调，梦幻的光斑（Bokeh），强调珠宝的璀璨光泽。\\n\\n[文字与UI布局]\\n平台：亚马逊 (Amazon)\\n主标题：\\\"The Perfect Surprise\\\" (完美惊喜)\\n副标题：\\\"Complete Bridal Set\\\" (全套新娘首饰)\\n标签：\\\"Premium Quality\\\"\\n字体风格：高雅的衬线体主标题，搭配简洁的无衬线副标题，文字应避开珠宝主体，置于画面上方或下方留白处。\",\n    \"layout_logic\": \"Since this is for Amazon, the product must be the hero. The layout should place the jewelry box in the lower-center or center foreground to maximize visibility and detail. The human models should serve as emotional context in the background/mid-ground without obscuring the product. Text should be minimal, English only (per Amazon rules), and placed in 'safe zones' (usually corners or top) to not cover the jewelry.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

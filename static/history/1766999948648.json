@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766999948648,
+  "original_prompt": "给我生成一个顺丰小哥在红色背景里箱子箱子一个，拿着上面有顺丰的logo",
+  "optimized_prompt": "给我生成一个顺丰小哥在红色背景里箱子箱子一个，拿着上面有顺丰的logo, 高质量, 4k",
+  "scenario": "free_mode",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Default layout.",
+  "original_images_count": 1
+}

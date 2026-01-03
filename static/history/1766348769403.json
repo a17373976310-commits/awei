@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766348769403,
+  "original_prompt": "给这个手串做一张详情页，要求黑色有质感背景，带排版（排版内容一堆玄学的话语），文案：黑曜石貔貅 镇宅纳福随身守护 辟邪之石 深邃墨玉黑天然黑曜石貔貅手串",
+  "optimized_prompt": "[Visual Description]\n\"A high-end, mysterious product photography shot featuring a [beaded bracelet with black obsidian and golden tiger's eye]. The bracelet rests on a textured [rough black volcanic slate or dark ebony wood surface]. The lighting is dramatic and moody, utilizing 'Chiaroscuro' techniques to highlight the glossy sheen of the black beads and the chatoyant band of the central tiger's eye bead. Faint, wispy [incense smoke] curls around the product, creating a spiritual and metaphysical atmosphere (Xuanxue vibe). The overall color palette is deep black and dark grey with striking golden highlights.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Oriental Zen Vertical Layout (竖排新中式玄学风).\nText Rendering Instructions:\n1. **Main Title (Vertical Calligraphy)**: Content: “黑曜石貔貅”. Style: [Bold Chinese Brush Calligraphy, Gold Foil Texture]. Position: [Right side, vertical alignment].\n2. **Metaphysical Slogan**: Content: “镇宅纳福随身守护”. Style: [Traditional Serif, thin, smaller size]. Position: [Top left or beside title].\n3. **Feature Keywords**: Content: “辟邪之石 | 深邃墨玉黑 | 天然黑曜石貔貅手串”. Style: [Small minimal sans-serif, widely spaced]. Position: [Bottom center, understated elegance].\"\n",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "9:16",
+  "layout_logic": "Considering the 'Xuanxue' (metaphysical) theme, a vertical text layout (traditional Chinese book style) on the right side is recommended to enhance the cultural depth. Use a Gold (#D4AF37) font color against the deep black background to signify wealth and premium quality.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766348907728,
+  "original_prompt": "给这个手串做一张详情页，要求有质感背景，带图标排版（排版内容一堆玄学的话语），文案：黑曜石貔貅 镇宅纳福随身守护 辟邪之石 深邃墨玉黑天然黑曜石貔貅手串",
+  "optimized_prompt": "[Visual Description]\n\"A high-end product detail shot featuring a [beaded bracelet with rainbow obsidian and a central golden tiger's eye bead]. The bracelet rests on a textured, dark slate or weathered ebony wood surface, emphasizing a Zen and mystical atmosphere. The lighting is dramatic and focused (rim lighting), specifically catching the subtle iridescent rainbow sheen on the black beads and the chatoyant glow of the central golden bead. The two matte carved Pixiu beads flank the center, showing intricate details. Background creates a sense of depth and tranquility.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Feature List with Icons (玄学卖点排版).\nText Rendering Instructions:\n1. **Main Title**: Content: “黑曜石貔貅”. Style: [Bold, Traditional Calligraphy or Serif, Gold or Silver foil texture]. Position: [Top Center or Top Left].\n2. **Slogan**: Content: “镇宅纳福随身守护”. Style: [Elegant Serif, smaller].\n3. **Feature List**: Vertical layout with small minimal icons (like shields, lotus, sun) next to text lines: “辟邪之石”, “深邃墨玉黑”, “天然黑曜石”.\n4. **Product Name**: Content: “天然黑曜石貔貅手串”. Style: [Small sans-serif at bottom].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "9:16",
+  "layout_logic": "Since the user requested 'metaphysical words' (玄学话语) and icons, the layout should adopt a 'Feature List' structure common in talisman or crystal jewelry marketing. Place the product in the center or slightly lower third to ground it. Use the upper space or the side negative space for the text. The 'Main Title' should be imposing (Calligraphy style works best for this vibe). The 'Feature List' should look like a spec sheet but stylized with Zen elements (vertical lines, small seal marks, or lotus icons) to convey the 'metaphysical' benefits.",
+  "original_images_count": 1
+}

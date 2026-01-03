@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767409555643,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），首饰盒——包装盒——首饰盒包装——包装袋，做一张淘宝详情页。",
+  "optimized_prompt": "[Visual Description]\n\"A sophisticated lifestyle product photography shot for a Taobao detail page. The subject is a luxury jewelry packaging set [Subject Lock: vibrant orange palette, shopping bag with 'Vaubel' logo, rigid box with brown band, square presentation box with gold rim, small glossy hinged box]. The items are arranged artistically on a textured creamy beige travertine stone surface or a soft white silk cloth. The shopping bag stands tall in the back left, while the boxes are layered in the foreground to show depth and variety. Soft, warm morning sunlight casts gentle shadows (possibly distinctive leaf shadows) across the scene, highlighting the matte texture of the paper and the metallic gold accents. The atmosphere is elegant, premium, and inviting, suggesting a high-end gifting ritual.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Elegant Commercial Composition (Left or Top Negative Space).\nText Rendering Instructions (Use Simplified Chinese):\n1. **Mood Title**: Content: '奢感礼遇 · 橙意呈现'. Style: [Elegant Serif, Gold or Dark Brown color, Large]. Position: [Top Right or Top Center floating in negative space].\n2. **Description**: Content: '每一个高光时刻，都值得被珍藏'. Style: [Minimalist Sans-serif, small, clean]. Position: [Below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用'金字塔式'或'景深式'构图。将最高的【手提袋】置于后景（左侧或右侧三分线），中景放置【方形展示盒】和【长方硬盒】，前景放置最小的【小首饰盒】（打开状态），形成视觉引导线。文字信息放置在画面另一侧的留白处（如大理石台面或纯净背景上），保持画面平衡，避免遮挡产品细节。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767346950340,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的高级礼盒面板，主文案：透光如星 驱散浊气  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry Photography, High-End Luxury Gift Box theme. A minimalist spherical beaded bracelet comprised of approximately 16-18 highly polished, round gemstone beads threaded on an elastic cord, positioned centrally on a premium dark black or deep navy velvet jewelry cushion inside a gift box. The beads exhibit high optical clarity and transparency, characteristic of rock crystal, allowing for sharp internal refraction. In the high-contrast lighting, the beads display strong specular highlights on their upper curves, resembling 'star-like' sparkles. The visible internal thread creates a continuous horizontal line. Background is a blurred dark studio setting with subtle ambient light reflections.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Text in upper negative space, Product centered below).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “透光如星 驱散浊气”. Position: Top Center or Top Left. Style: 3D Metallic Silver or White Serif font, glowing slightly to match the 'star' theme.\n2. **Sub Title**: Content: “平安顺遂 白水晶”. Style: Clean Sans-serif, white, smaller than main title.\n3. **Marketing Banner**: Content: “天然臻选”. Style: Minimalist frosted glass capsule.\n4. **Trust Badge**: Content: “5A级净体”. Style: Thin Gold rim circular badge.\"",
+  "scenario": "taobao_main",
+  "model": "nano_banana_official",
+  "ratio": "3:4",
+  "layout_logic": "建议采用【暗调背景+亮色文字】的高对比策略。背景使用深黑或深蓝的丝绒质感，最大程度衬托白水晶的‘透’与‘亮’。主标题‘透光如星’可以使用发光特效字体，呼应水晶的高光点。产品置于画面下半部分的礼盒软垫上，占据核心视觉区域，确保晶体内部的通透感和穿绳细节清晰可见。",
+  "original_images_count": 2
+}

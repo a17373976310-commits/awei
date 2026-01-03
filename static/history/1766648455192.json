@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766648455192,
+  "original_prompt": "给这个手串做一张淘宝详情页，要求一个模特戴着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"一张极具东方韵味的生活场景摄影。特写镜头展示一位女性模特的白皙手腕，佩戴着[由半透明暖红橙色玛瑙圆珠组成的手串，核心是一颗带有蓝紫色珐琅细节的银色莲花花苞珠子，以及一颗米褐色磨砂质感的隔珠]。模特身穿淡雅的新中式丝绸上衣，姿态优雅地正在整理袖口或轻抚书页。光线是清晨的柔和暖阳，侧逆光打在手串上，让红玛瑙呈现出温润的胶质感，银色莲花泛着微光，营造出温婉、岁月静好的氛围。背景是虚化的中式书房或茶室一角。\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (场景融合排版 - 新中式风格).\nText Rendering Instructions:\n1. **Mood Title**: 内容: “腕间朱砂 莲生欢喜”. Style: [行书或宋体, 具有文化感]. Position: [悬浮在背景留白处].\n2. **Description**: 内容: “温润南红 · 匠心银饰”. Style: [纤细的衬线体, 字间距较宽].\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since a model's hand is involved, the composition should guide the eye from the wrist/bracelet towards the text area. The wrist should likely enter from the bottom corner (left or right). The text should be placed in the opposing 'negative space' (blurred background area) to create visual balance. Use a vertical layout for the Chinese title to enhance the traditional aesthetic.",
+  "original_images_count": 1
+}

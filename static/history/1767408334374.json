@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408334374,
+  "original_prompt": "给这四个包装做一张详情页",
+  "optimized_prompt": "[Visual Description]\nA high-end commercial product photography setup featuring the Vaubel luxury packaging set. The composition showcases the four items: the tall orange shopping bag with black rope handles in the back, the large square rigid box with gold rim in the middle ground, and the open jewelry clam-shell case in the foreground. The dominant Hermès-style orange (Pantone 165C) pops against a minimalist, high-key background—soft warm beige or creamy white geometric pedestals. Soft, diffused studio lighting creates elegant shadows and highlights the matte paper texture and gold foil accents. 8k resolution, ultra-realistic, C4D render style quality.\n\n[Text & UI Layout]\nA clean, vertical e-commerce detail page layout. Significant negative space is reserved at the top third of the image for typography. The text should be elegant and minimalist. Main Title in bold Serif font: '橙意 · 奢华礼赠'. Subtitle in smaller Sans-serif: '高端珠宝包装定制方案'. Floating text elements near the jewelry box describing '精细做工' (Fine Craftsmanship).",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘Z’字形视线引导：从左上角的文案标题开始，视线自然滑向中间的方形礼盒，最后落在右下角或前方打开的首饰盒细节上。手提袋作为最高的物体应置于后方（通常是右后方）以平衡画面重心。背景色建议使用低饱和度的米色（Beige）或暖灰色（Warm Grey），以避免抢夺‘爱马仕橙’主体的视觉焦点。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766587854016,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求躺在渐变红色背景里，旁边有一段米色丝带",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce [Jewelry/Bracelet] scene, [Premium & Auspicious] commercial photography style. [A single-strand beaded bracelet composed primarily of uniform, spherical red cinnabar-style beads with a deep crimson red hue and subtle grainy surface texture. It features a specific focal point: a translucent peach-pink agate bead adjacent to a metallic filigree charm with vibrant blue enamel inlays] lying flat in the [Center].\n[Props]: Surrounded by [An elegant, flowing beige silk ribbon adding softness and contrast], [Subtle light caustics] (enhancing value).\n[Background]: [Smooth Gradient Red Background, transitioning from deep maroon to bright scarlet, creating a festive atmosphere].\nLighting is [Studio Softbox with Rim Light], ensuring the glossy texture of the cinnabar and the blue enamel details are sharp and defined.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: '本命年·朱砂'. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with gold gradient and soft shadow]. Color: [Luxury Gold].\n2. **Sub Title**: Content: '原矿打磨 招财纳福'. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: '礼盒包装'. Style: [Premium UI, e.g. '3D Red Gradient Capsule'].\n4. **Trust Badge**: Content: '真品保证'. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is small and round, place it centrally but slightly lower to leave ample 'Negative Space' in the upper half for the main headline. The beige ribbon should act as a 'Visual Guide', leading the eye from the text down to the bracelet. Use gold text to contrast against the red gradient background for a classic 'Red & Gold' festive aesthetic.",
+  "original_images_count": 2
+}

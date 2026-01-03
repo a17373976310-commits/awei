@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766587631146,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求躺在红色背景里，旁边有一段米色丝带",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry Photography. A close-up, high-angle shot of [Subject Lock: A glossy deep red cinnabar bracelet with round, speckled beads, featuring a single translucent peach bead and a vibrant blue cloisonné enamel floral charm]. The bracelet is lying flat on a textured Deep Red Background (matte paper or velvet texture to contrast with the glossy beads). \n[Props]: An elegant, flowing Beige Silk Ribbon winds gently around the bracelet, adding a soft color contrast and leading the eye.\n[Lighting]: Professional Commercial Studio Lighting. Softbox lighting creates distinct specular highlights on the spherical beads, emphasizing the 'granular surface texture' and the glossy finish. Shadows are soft and natural.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Classic E-commerce Layout).\nText Rendering Instructions (Must be High Contrast against Red background):\n1. **Main Title**: Content: “原矿朱砂”. Position: [Top Left Negative Space]. Style: [Bold 3D Serif font in Brushed Gold texture, suggesting premium quality].\n2. **Sub Title**: Content: “招财纳福 · 护身辟邪”. Style: [Clean White Sans-serif, small and sharp below main title].\n3. **Marketing Banner**: Content: “本命年必备”. Style: [Vertical tag on the right side, Frosted Glass effect with white text].\n4. **Trust Badge**: Content: “国检证书”. Style: [Small Gold Shield icon near the bottom].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Due to the 'Red Product on Red Background' request, lighting contrast is critical. The text must be White or Gold to ensure legibility. The beige ribbon is a crucial compositional element to separate the red beads from the red floor.",
+  "original_images_count": 2
+}

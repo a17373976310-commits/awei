@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766592082891,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求绸缎面的白色布为主色并且添加一下元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry photography, High-End Studio Vibe. The main subject is [A bracelet composed of uniform spherical beads arranged in a continuous circular loop, featuring pale green translucent spheres with distinct specular reflections]. The bracelet is placed centrally on luxurious white satin fabric with soft, elegant flowing folds. \n[Props]: A delicate sprig of white magnolia or plum blossom lies softly in the background to add a Zen aesthetic. A blurred outline of a white porcelain tea cup adds cultural context.\n[Background]: The white satin cloth fills the frame, acting as a clean, textured backdrop.\nLighting is Soft Commercial Studio Lighting, emphasizing the 'oily' gloss (greasy luster) of the jade and the silky texture of the cloth. High definition, sharp focus on the beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Upper Text, Lower Product).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉手串”. Position: [Top Center]. Style: [3D Elegant Serif, Dark Green or Gold texture].\n2. **Sub Title**: Content: “温润如脂 · 颗颗精选”. Style: [Clean and sharp, minimal font].\n3. **Marketing Banner**: Content: “源头直供 | 假一赔三”. Style: [Minimalist Gold Line Border or Frosted Glass Pill].\n4. **Trust Badge**: Content: “附国检证书”. Style: [Gold Seal Badge].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a circular loop and the background is white satin, ensure the bracelet casts a soft, natural drop shadow to ground it on the cloth. Place the text in the 'negative space' of the satin folds at the top, avoiding overlap with the jade beads to maintain a clean, premium look.",
+  "original_images_count": 2
+}

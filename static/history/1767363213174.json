@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767363213174,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如木桌，桌子或者其他），有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "[Visual Description]\n**Subject Lock**: The specific silver crystal jewelry set (elaborate tiara, V-shape necklace, and drop earrings) is placed in the immediate foreground on a polished, rich dark walnut wooden table. The metal texture is silver, and the crystals are highly reflective.\n**Environment**: A high-end, softly lit romantic interior setting. \n**Characters**: Behind the table in the mid-ground, a handsome European male is smiling warmly, looking at a European female. The female has a facial expression of pure surprise and delight (eyes wide, perhaps hands near cheeks), looking down at the jewelry set on the table. \n**Lighting & Tone**: Warm ambient lighting, creating a sparkling bokeh effect on the jewelry. The depth of field is shallow, keeping the jewelry in razor-sharp focus while the couple is slightly softer but clearly visible.\n\n[Text & UI Layout]\n**Main Title**: \"Shine Like a Queen\" (Modern Serif font, elegant, white or silver)\n**Sub Title**: \"Exquisite Bridal Crystal Set\" (Smaller Sans-serif, minimalist)\n**Placement**: Text aligned to the top left or bottom right, ensuring it does not overlap with the jewelry or the faces.",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "1. **Focal Point**: The jewelry must remain the sharpest element in the foreground (bottom 1/3 of the frame). The wooden table acts as a stage.\n2. **Interaction**: The characters' gaze should direct the viewer's eye back to the jewelry.\n3. **Text Safety**: Since this is for Amazon, keep text minimal and legible. Place text in areas of high contrast (e.g., darker background areas) or add a subtle shadow to the text for readability.",
+  "original_images_count": 2
+}

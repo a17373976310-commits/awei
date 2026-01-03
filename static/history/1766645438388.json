@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766645438388,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，顶视，文案：红珠昭吉，鸿运常驻  天然南红玛瑙手串",
+  "optimized_prompt": "[Visual Description]\n\"现代中国电商珠宝场景，新中式国潮吉祥氛围。主体为[Subject Lock: 天然南红玛瑙手串，珠体圆润呈橘红色，带有一颗景泰蓝莲花配珠和一颗金沙日长石]，位于画面正中央（90度垂直顶视）。\n[Props]: 画面构图充实饱满，周围精心摆放着寓意吉祥的精致道具：如意纹饰、几颗红彤彤的柿子（寓意事事如意）、几枚古铜钱，以及散落的桂花或梅花花瓣，营造出琳琅满目的富贵感。\n[Background]: 浅色宣纸肌理背景或淡雅的原木桌面，突显红玛瑙的色泽。\n光影为专业珠宝摄影布光，柔和明亮，展现珠子的胶质感和光泽。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 经典电商顶视布局，文字位于留白处。\nText Rendering Instructions (清晰高对比度):\n1. **Main Title**: 内容: “红珠昭吉”。位置: [画面上方或左侧]. 风格: [鎏金毛笔书法字体，带有淡淡的投影，突显高级感].\n2. **Sub Title**: 内容: “鸿运常驻”。风格: [精致宋体，比主标题略小，排版工整].\n3. **Marketing Banner**: 内容: “天然南红玛瑙手串”。风格: [新中式红色印章风格或极简线条框].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the request is for a 'Top View' with 'More Elements', the product should be centered. The props (persimmons, coins, flowers) should form a circular or framing pattern around the bracelet to draw the eye inward. The text should be placed in the corners or the top 1/3rd of the image where the background texture is cleaner, avoiding overlap with the busy props to ensure readability.",
+  "original_images_count": 1
+}

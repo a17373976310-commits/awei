@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766644457356,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：红珠昭吉，鸿运常驻  天然南红玛瑙手串",
+  "optimized_prompt": "[Visual Description]\n\"新中式高定珠宝电商摄影，画面丰富且具有禅意。核心主体是一串[天然南红玛瑙手串]，珠体呈现饱满的柿子红/锦红，胶质感强，光泽油润。画面重点展示那颗[景泰蓝工艺的银质莲花珠]和旁边的[金草莓晶/日光石珠]细节。\n[场景丰富元素]: 放置在深色胡桃木托盘或有肌理感的宣纸背景上。周围点缀着几颗玛瑙原石、一枝斜出的腊梅或南天竹（增加画面层次感），以及一缕缥缈的檀香烟雾（增加灵动感）。背景可透出中式窗棂的模糊光影。\n[光影]: 侧逆光打亮珠体边缘，展现玛瑙的通透红润，景泰蓝的珐琅色彩清晰可见。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 竖向排版或经典的上下结构。\n文字渲染说明 (确保在丰富背景上依然清晰):\n1. **Main Title**: 内容: “红珠昭吉”. 位置: [画面右上方或左上方留白处]. 风格: [大气毛笔书法字体 或 烫金宋体].\n2. **Sub Title**: 内容: “鸿运常驻”. 风格: [竖排小字，紧跟主标题，字间距略宽，体现雅致].\n3. **Product Name**: 内容: “天然南红玛瑙手串”. 风格: [位于底部或中部，采用磨砂玻璃质感底条衬托].\n4. **Trust Badge**: 内容: “匠心手作”. 风格: [红色印章风格图标].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested to 'enrich the scene', do not place the bracelet on a plain white background. Use a textured surface (wood or stone) and use 'framing props' (flowers, smoke, shadows) around the edges of the image. Keep the center clear for the bracelet to ensure it remains the visual anchor. Place the text '红珠昭吉' vertically on the right side to mimic a traditional scroll or poetry layout, which suits the 'Agate' product vibe perfectly.",
+  "original_images_count": 1
+}

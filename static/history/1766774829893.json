@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766774829893,
+  "original_prompt": "给这套产品做一张亚马逊主图，调整产品位置精修产品两边黑色位置，并且添加合适阴影",
+  "optimized_prompt": "[Visual Description]\n\"A professional Amazon main image product shot. The [Bridal Jewelry Set] (tiara, necklace, and earrings) is arranged in a perfectly symmetrical, balanced composition on a pure white background (RGB 255, 255, 255). The tiara is placed at the top, with the necklace curved elegantly below it, and the earrings centered in the negative space. Lighting is high-key studio softbox illumination, specifically tuned to maximize the brilliance of the clear crystals and ensure the silver-plated metal looks bright and polished, eliminating any harsh black reflections or dark edges on the sides. Subtle, realistic contact shadows are added beneath each item to ground them.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Amazon Compliant (Clean & Centered).\nText Rendering Instructions:\n1. **Main Title**: Content: 'Bridal Radiance'. Style: [Minimalist Sans-serif, Dark Grey]. Position: [Bottom Center, optional for A+ content, remove for Main Image].\n2. **Feature**: Content: 'Complete 3-Piece Set'. Style: [Small, Clean].\"\n",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "For an Amazon Main Image (亚马逊主图), the priority is a pure white background and the removal of all text overlays on the final image. The prompt emphasizes 'eliminating black reflections' (refining the black positions) by requesting high-key softbox lighting. The layout arranges the items symmetrically to fill the square frame efficiently while maintaining clear separation between the tiara, necklace, and earrings.",
+  "original_images_count": 1
+}

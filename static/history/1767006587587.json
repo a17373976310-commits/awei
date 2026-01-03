@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767006587587,
+  "original_prompt": "帮我做一张淘宝详情页背景是一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。底部有一个框框，框框上面是一架顺丰标志logo的飞机，框框里面有内容文案是：一物一证   高档礼盒    精美礼品",
+  "optimized_prompt": "[Visual Description]\n\"一张极具商业质感的淘宝详情页海报。画面主体是一位全身照的顺丰快递小哥，身着标准制服，面带职业微笑，双手稳稳托着一个印有顺丰Logo的纸箱。背景设定为【红色现实场景】（如带有节日氛围的红墙或高档社区入口），光线明亮自然，背景虚化以突出人物。画面下方设计有一个UI信息框，框体上方悬浮着一架[Subject Lock: 顺丰航空波音757货机，白色机身黑色流线涂装，SF AIRLINES字样]，飞机呈现起飞姿态，仿佛正在冲出画面，寓意极速直达。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 场景融合+底部卡片式排版 (Scene Integration + Bottom Card UI).\nText Rendering Instructions:\n1. **Core Selling Points**: 内容: “一物一证   高档礼盒    精美礼品”. Style: [现代无衬线黑体，简洁有力，深色字体]. Position: [位于底部的白色/半透明圆角矩形框内，居中排列].\n2. **Composition Note**: 飞机位于文字框顶端边缘，形成破格的视觉冲击力。\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "建议采用‘破格’构图法：将底部白色文字框作为前景层，顺丰飞机的起落架或机腹稍微遮挡文字框的上边缘，制造出飞机正在从框中飞出的3D立体感。顺丰小哥位于中景层，红色背景作为远景，形成清晰的前中后景深关系，增强画面的空间感和高级感。",
+  "original_images_count": 1
+}

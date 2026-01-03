@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767409899652,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），首饰盒——包装盒——首饰盒包装——包装袋，做一张淘宝详情页。要求几何背景。",
+  "optimized_prompt": "[Visual Description]\n\"A high-end commercial product photography setup for a Taobao detail page. The subject is a [Subject Lock: luxury jewelry packaging suite in vibrant orange]. The composition features: 1) The tall rectangular paper shopping bag with black rope handles and 'Vaubel' logo standing in the back. 2) The large square rigid presentation box with the two-tone orange and dark brown design placed at an angle in the mid-ground. 3) The small glossy clam-shell jewelry box is open in the foreground, displaying its plush white interior. The products are arranged on a set of abstract, matte-finished geometric podiums (cubes, cylinders, and ramps) in soft neutral tones (cream or light grey) to create a modern architectural look. Lighting is soft and directional, highlighting the contrast between the matte cardstock of the bag and the high-gloss lacquer of the small box.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Modern Geometric Balance (几何平衡排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “甄选橙意 奢华礼赠”. Style: [Elegant Serif, Dark Grey or Gold Foil texture]. Position: [Floating in the upper left negative space].\n2. **Description**: Content: “高端珠宝包装系列 / 赋予礼物非凡仪式感”. Style: [Minimalist Sans-serif, smaller size].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用三角形构图：最高的购物袋作为构图顶点放在后方略偏一侧，大的方形礼盒作为基础重心，小的首饰盒放在最前方作为视觉焦点。几何背景的线条应引导视线聚焦在产品Logo和材质细节上。文字区域应利用几何体留出的纯色空间，避免遮挡产品本身。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766777000384,
+  "original_prompt": "这套产品穿戴在一个欧洲模特身上，客厅场景，有一个欧洲男性双手做出正在给女性（看向男性微笑）带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\nA cinematic, high-end lifestyle photograph set in an elegant European living room. The focus is on a romantic moment between a European couple. The female model, seated, is wearing the [Subject Lock: ornate silver necklace with pear-cut pendant and matching chandelier earrings]. A European male stands gently beside her, holding the [Subject Lock: matching crystal tiara with scrolling leaf motifs] with both hands, in the act of placing it on her head like a coronation. The female model looks up at the male with a warm, loving smile. The lighting is soft and golden, streaming through a window, highlighting the sparkle of the crystals and the emotional connection. The background features blurred velvet sofas and classic decor.\n\n[Text & UI Layout]\n***Layout Style**: Emotional Storytelling (情感叙事排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: \"为爱加冕\". Style: [Romantic Serif, Elegant, Gold or White]. Position: [Upper Left or Right negative space].\n2. **Description**: Content: \"璀璨时刻，你是唯一\". Style: [Minimalist Sans-serif, smaller opacity].",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Since the visual focus is the interaction between the couple (eyes meeting) and the 'crowning' action, the text should be placed in the negative space (likely the upper corners or to the side of the male figure) to avoid breaking the emotional connection. The font should be elegant and romantic (Serif) to match the bridal/luxury mood.",
+  "original_images_count": 1
+}

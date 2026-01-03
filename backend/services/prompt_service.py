@@ -110,9 +110,28 @@ class PromptService:
             response = requests.post(url, headers=headers, json=payload, timeout=45, proxies={"http": None, "https": None})
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
+            
+            # Log the raw content for debugging
+            with open("prompt_debug.log", "a", encoding="utf-8") as f:
+                f.write(f"\n--- LLM Response ---\n{content}\n")
+            
             # Validate it's proper JSON
-            json.loads(content) 
-            return content
+            try:
+                json_data = json.loads(content)
+                print(f"DEBUG_LOG: Successfully parsed LLM JSON response.")
+                return content
+            except json.JSONDecodeError as je:
+                print(f"ERROR: LLM output is not valid JSON: {je}")
+                # Try to extract JSON if it's wrapped in markdown
+                if "```json" in content:
+                    try:
+                        extracted = content.split("```json")[1].split("```")[0].strip()
+                        json.loads(extracted)
+                        print(f"DEBUG_LOG: Successfully extracted JSON from markdown block.")
+                        return extracted
+                    except:
+                        pass
+                raise je
         except Exception as e:
             print(f"ERROR: Dual-core prompt generation failed: {e}")
             import traceback
@@ -121,8 +140,13 @@ class PromptService:
             fallback = {
                 "nano_banana_en": f"{user_prompt}, high quality, 4k",
                 "seadream_cn": f"{user_prompt}, 高质量, 4k",
-                "layout_logic": "Default layout."
+                "layout_logic": "Default layout (Fallback due to error)."
             }
-            return json.dumps(fallback, ensure_ascii=False)
+            fallback_json = json.dumps(fallback, ensure_ascii=False)
+            
+            with open("prompt_debug.log", "a", encoding="utf-8") as f:
+                f.write(f"Optimization ERROR: {str(e)}. Using fallback.\n")
+            
+            return fallback_json
 
 prompt_service = PromptService()

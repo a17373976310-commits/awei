@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767362456881,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求一个欧洲男士捧着这套首饰给一个女生惊喜。",
+  "optimized_prompt": "[Visual Description]\nA high-conversion Amazon lifestyle image featuring a romantic gifting scenario. A handsome European man in a sharp navy suit is holding a large, open black velvet jewelry box towards the viewer (and towards the female subject). Inside the box, clearly visible and sharp, is the [Subject Lock: luxury bridal jewelry set comprising a tiara with high-arched baroque filigree and marquise crystals, a matching V-shape necklace with a pear-shaped pendant, and teardrop chandelier earrings]. In the slightly soft-focus background, a beautiful woman is covering her mouth with her hands in a gesture of pure joy and surprise. The lighting is warm and cinematic, highlighting the sparkle of the rhinestones and cubic zirconia. 8k resolution, commercial photography.\n\n[Text & UI Layout]\nOverlay text positioned in a clean, non-obstructive area (e.g., bottom center or top left). \nMain Title: \"The Perfect Surprise\"\nSub Title: \"Complete Bridal Crystal Set\"\nFont style: Modern Sans-Serif, white with a subtle drop shadow for readability.",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since this is a scenario-based image, the focus (Depth of Field) must be on the jewelry box in the man's hands to ensure the product details are sharp. The 'surprise' emotion is conveyed through the background atmosphere. The text should be minimal and in English (Amazon standard), placed typically at the bottom to avoid covering the product.",
+  "original_images_count": 1
+}

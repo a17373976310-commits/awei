@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766766201738,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景是成人礼，旁边有家人和朋友为她庆生。",
+  "optimized_prompt": "[Visual Description]\n\"A cinematic lifestyle photograph capturing a heartwarming coming-of-age celebration. The central subject is a beautiful European teenage girl (approx. 18 years old) wearing a **luxurious silver-tone crystal jewelry set**. She wears the **peaked arch tiara with a central teardrop crystal**, the **V-shaped necklace**, and the **dangling diamond-shaped earrings**. She is in the middle of blowing out candles on a birthday cake, her face illuminated by the warm glow. Surrounding her in the soft-focus background are happy family members and friends clapping and cheering. The atmosphere is festive and emotional, with warm bokeh from fairy lights in the background emphasizing the sparkle of the jewelry.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Emotional Storytelling (情感叙事排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “成长的加冕”. Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Top center or upper right negative space].\n2. **Description**: Content: “这一刻，做自己的公主”. Style: [Soft Script, smaller, creates a dreamy feel].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Suggestions: Place the girl slightly off-center to allow space for the text overlay on the blurred background side. Ensure the candlelight or ambient light catches the facets of the tiara and necklace to make them the visual anchor points.",
+  "original_images_count": 1
+}

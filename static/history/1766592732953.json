@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766592732953,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求绸缎面为主色并且添加一下元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, High-end Commercial Photography style. The [Subject Lock: minimalist beaded bracelet with perfectly spherical, pale milky-green celadon beads and vitreous luster] is gently resting on a luxurious, rippling champagne-colored silk satin fabric. The silk texture creates soft folds and waves.\n[Props]: To enrich the scene, a vintage sandalwood jewelry tray is placed partially underneath the bracelet, and a delicate dried magnolia branch extends from the corner, adding a Zen aesthetic. \n[Background]: Soft, flowing silk satin in warm beige/cream tones.\nLighting is Soft Studio Diffused Light, creating gentle highlights on the silk and emphasizing the glossy 'oiliness' of the jade beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田青白玉” (Hetian Celadon-White Jade). Position: [Top Center Negative Space]. Style: [Elegant Serif Font with Gold texture].\n2. **Sub Title**: Content: “温润如脂 天然原矿” (Warm as grease, Natural Ore). Style: [Clean and sharp, dark grey].\n3. **Marketing Banner**: Content: “国检证书 / 假一赔三” (National Cert / Fake 1 Compensate 3). Style: [Minimalist Gold Border Pill Shape].\n4. **Trust Badge**: Content: “甄选好物” (Selected Goodies). Style: [Translucent Glass Seal].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the background is silk (绸缎), it will have natural folds and waves. Use the smoother, flatter areas of the silk (negative space) usually at the top or top-left for the main copy to ensure readability. The product should be centered or slightly lower-center, with the props (flowers/wood) framing it but not obscuring the beads.",
+  "original_images_count": 2
+}

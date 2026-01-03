@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766773964293,
+  "original_prompt": "给这套产品穿戴在一个欧洲模特身上，客厅场景，有一个欧洲男性双手做出正在给女性带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\n\"A cinematic, high-end lifestyle photograph set in a lavish European living room with classic moldings and velvet furniture. A handsome European male model in a formal suit stands slightly behind a beautiful European female model, gently placing the [Subject Lock: Baroque-inspired Tiara with pear-cut crystals] onto her head in a 'crowning' gesture. The female model, wearing an elegant evening gown, is already adorned with the [Subject Lock: V-shape drop necklace] and [Subject Lock: chandelier earrings]. The lighting is warm and romantic, highlighting the intricate silver filigree and the sparkle of the clear crystals against the soft background.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Romantic Scene Composition).\nText Rendering Instructions:\n1. **Mood Title**: Content: “为爱加冕”. Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Floating in the upper negative space, slightly off-center].\n2. **Description**: Content: “闪耀女王时刻，定格浪漫瞬间”. Style: [Minimalist Sans-serif, small, white or light grey].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Since the visual focus is vertical (the interaction between the male standing and female sitting/standing), place the text in the upper left or upper right quadrant where the background (living room wall/curtains) is out of focus. Ensure the text color contrasts well with the background (likely light text on a darker ambient background).",
+  "original_images_count": 1
+}

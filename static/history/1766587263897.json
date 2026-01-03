@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766587263897,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求一个穿着红色衣服的人手托着这个手串",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Festive and Premium Commercial Photography style. A beaded bracelet featuring approximately 18 deep crimson red spherical beads with sparkling granular texture (cinnabar), one peachy-pink agate bead, and a blue-red cloisonné lotus charm is being gently held in the open palm of a model's hand. The model is wearing a premium red silk traditional outfit (New Chinese Style), with the red sleeve elegantly visible. The composition is tone-on-tone red, symbolizing luck and prosperity.\n[Props]: Soft red silk fabric folds in the background, creating a luxurious atmosphere.\n[Background]: Clean, soft-focus warm red gradient to match the clothing, emphasizing the 'Zodiac Red' vibe.\nLighting is [Commercial Macro Lighting], focusing on the glitter flecks inside the cinnabar beads and the gloss of the cloisonné charm, ensuring the product pops against the red hand and clothes.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Text floats in negative space above the hand).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: 内容: “原矿朱砂”. Position: [Top Left Negative Space]. Style: [3D Gold Serif font, creating a premium contrast against red]. Color: [Luxury Gold].\n2. **Sub Title**: 内容: “含量保真 招财纳福”. Style: [Clean White Sans-serif, smaller].\n3. **Marketing Banner**: 内容: “本命年红绳系列”. Style: [Vertical tag on the right side].\n4. **Trust Badge**: 内容: “国检证书”. Style: [Small Gold Shield icon].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Due to the 'Red on Red' theme (Red Beads + Red Clothes), the product might blend in if not lit correctly. The generated image should focus on lighting the beads to make them look glossy and distinct from the matte red fabric of the clothes. Text color is best in Gold or White to provide maximum contrast against the red background. Place the hand in the lower center to leave the top 40% empty for the Main Title.",
+  "original_images_count": 2
+}

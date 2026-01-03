@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766362763137,
+  "original_prompt": "给这个手串做一张主图",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Premium Zen Luxury Vibe. [Subject Lock]: A circular beaded bracelet featuring a single focal golden-brown tiger's eye bead flanked by two textured, matte black sculpted Pixiu beads and polished black obsidian beads. The bracelet forms a symmetrical loop centered on a textured dark slate or polished ebony wood surface. [Props]: Subtle golden light streaks or faint zen smoke trails in the background to enhance the spiritual atmosphere. [Background]: Dark, high-contrast atmospheric depth, keeping the focus entirely on the jewelry. Lighting is specialized jewelry studio lighting (Macrophotography), strictly highlighting the golden chatoyancy of the center bead and the rainbow sheen of the obsidian beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Text above, Product below). Text Rendering Instructions (Must be High Contrast & Legible in Simplified Chinese): 1. **Main Title**: Content: '招财金貔貅'. Position: [Top Center]. Style: [3D Gold Metallic Bold Sans-serif with soft shadow to match the Tiger's Eye]. 2. **Sub Title**: Content: '天然彩虹眼黑曜石'. Style: [Clean White, sharp and elegant, smaller than main title]. 3. **Marketing Banner**: Content: '镇店之宝'. Style: [Traditional Red Seal/Stamp aesthetic or Red Gradient Capsule].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "The bracelet is circular, so a centered composition works best. Place the 'Golden Tiger's Eye' bead facing directly forward as the 'Hero' element. The lighting must create a high contrast between the dark obsidian and the glowing gold bead. The text '招财金貔貅' (Wealth Attracting Golden Pixiu) should be in gold color to visually link with the center bead, creating a color harmony.",
+  "original_images_count": 1
+}

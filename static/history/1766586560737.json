@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766586560737,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, High-End Commercial Photography style. [Subject Lock: A beaded bracelet composed primarily of deep crimson spherical beads with glittering particulate texture, interspersed with a singular translucent peach-pink bead and a unique cloisonné metal charm with blue enamel] is placed on a pristine white ceramic podium or textured stone surface. \n[Props]: Minimalist Zen stone props or a subtle silk cloth in the background.\n[Background]: Clean soft-gradient studio background (light grey to white) to make the red pop.\nLighting is [Studio Softbox], ensuring the 'high-contrast specular highlights' and 'glittering inclusions' of the beads are sharp and visible.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “原矿高含朱砂”. Position: [Top Center/Left Negative Space]. Style: [3D Bold Sans-serif, Deep Red or Gold texture with soft shadow].\n2. **Sub Title**: Content: “细腻油润 护身纳福”. Style: [Clean black serif font, smaller and elegant].\n3. **Marketing Banner**: Content: “国潮臻品”. Style: [Vertical tag on the right, Red background with White text].\n4. **Trust Badge**: Content: “真品保障”. Style: [Gold circular stamp effect].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a circular bracelet, the best composition is to center the product in the lower 2/3 of the frame to maximize its size and detail visibility. The top 1/3 should be left as clean negative space (light grey or white) specifically for the Main Title and Subtitle. Use a high-contrast color for the text (Gold or Deep Red) against the light background to ensure the 'Pop-out' effect.",
+  "original_images_count": 2
+}

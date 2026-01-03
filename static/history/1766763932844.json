@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766763932844,
+  "original_prompt": "给这套产品穿戴在一个欧洲新娘身上，场景是婚礼现场",
+  "optimized_prompt": "[Visual Description]\nA stunning cinematic close-up portrait of a young European bride with porcelain skin and gentle blonde waves, wearing the specific luxurious three-piece bridal jewelry set. The bride is adorned with the [Subject Lock: high-arched tiara with pear-cut central crystal and filigree patterns] resting elegantly on her head. Around her neck is the [Subject Lock: V-shaped necklace with heavy pave stones and a pear-shaped droplet], perfectly framing her collarbone. Her ears feature the [Subject Lock: dangling chandelier-style drop earrings]. The setting is a sunlit, romantic wedding venue with blurred white florals and soft architectural arches in the background. The lighting is ethereal and soft, highlighting the sparkle of the clear cubic zirconia against the silver metal.\n\n[Text & UI Layout]\n- Headline: \"Eternal Elegance\" (Elegant Serif font, centered at the bottom third or floating in negative space near the shoulder)\n- Sub-headline: \"Royal Bridal Collection\" (Smaller, minimalist Sans-Serif, below the headline)\n- Call to Action: \"Shop The Look\" (Small button style, bottom center)\n- The text should be white with a subtle drop shadow for readability against the bridal gown or soft background.",
+  "scenario": "free_mode",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since this is a portrait shot focusing on the jewelry, the text should be placed carefully to avoid obscuring the necklace or earrings. The best placement is usually in the lower third of the image (over the bride's dress or chest area if it's a solid color) or in the negative space to the left or right of the bride's head if the framing is off-center. Use elegant, high-contrast typography (white or silver) to match the wedding theme.",
+  "original_images_count": 1
+}

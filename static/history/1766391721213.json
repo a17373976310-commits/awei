@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766391721213,
+  "original_prompt": "给这个珠宝手串做一张主图",
+  "optimized_prompt": "[Visual Description]\n新中式珠宝电商主图，静物摄影风格。画面核心是一串黑曜石/黑虎眼手串，共19颗珠子，通体乌黑油润，高光强劲。视觉焦点在于正中央的一颗“红虎眼石”，呈现出明显的猫眼光带效应，其两侧各有一颗带有浮雕回纹的黑色雕刻珠。手串自然摆放在深色紫檀木纹理或黑石板上，展现温润质感。\n[Props]: 背景中可隐约出现虚化的紫砂壶或一抹绿植，营造东方禅意美学。\n[Background]: 深邃、干净的暗调背景，带有微暖的氛围光。\n光影采用专业的珠宝布光，强调珠体圆润的轮廓光和表面细腻的反射光泽。\n\n[Text & UI Layout]\n***Layout Style**: 经典左文右图布局。\nText Rendering Instructions (文字内容必须清晰可见):\n1. **Main Title**: 内容: “甄选红虎眼”. 位置: [左上角留白处]. 风格: [烫金宋体/楷体3D字效，透出贵气].\n2. **Sub Title**: 内容: “强光猫眼 · 细腻油润”. 风格: [纤细的白色无衬线体].\n3. **Marketing Banner**: 内容: “匠心手作”. 风格: [新中式红色印章风格UI].\n4. **Trust Badge**: 内容: “正品保证”. 风格: [磨砂玻璃质感金边徽章].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Considering the circular nature of the bracelet, center the product slightly to the right to leave 'breathable' negative space on the left for the text hierarchy. Use a warm, dark color palette (Black/Gold/Deep Red) to match the 'Red Tiger Eye' accent and convey luxury and tradition.",
+  "original_images_count": 1
+}

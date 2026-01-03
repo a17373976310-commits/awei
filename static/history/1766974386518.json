@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766974386518,
+  "original_prompt": "帮我把图片1的黑色背景换成图片2的红色背景",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description] Product photography editing task. The primary subject is a hand wearing a wide, multi-row cuff bracelet made of clear, spherical quartz beads. Maintain the original hand and bracelet pixels completely unchanged (Subject Lock). Replace the original black background with a rich, fibrous orange-red paper texture (referenced from the second image). The new background should be a matte, high-contrast warm backdrop with visible pulp grain, providing a vibrant setting for the cool, refractive beads. Ensure the lighting on the hand and beads interacts naturally with the new warm environment, potentially adding subtle warm reflections to the clear beads while keeping shadows consistent with the original wrist volume. \\n\\n[Text & UI Layout] No text overlay required for this background replacement task.\",\n    \"seadream_cn\": \"[Visual Description] 产品精修与背景替换任务。主体是一只佩戴着宽版多排透明水晶球手排的手臂，需严格锁定手部和手排原本的像素细节（主体保护），保持原本的高光与折射质感不变。将原始黑色背景无痕替换为一种富含纤维质感的橙红色纸张纹理（参考提供的第二张图）。新背景呈现哑光效果，带有细腻的纸浆颗粒，营造出温暖且高对比度的视觉氛围，衬托出水晶珠的通透与清冷感。确保手部边缘与新背景融合自然，光影关系需匹配新的暖色调环境，避免生硬的抠图痕迹。\\n\\n[Text & UI Layout] 此任务为纯背景替换，无需添加额外文案排版。\",\n    \"layout_logic\": \"Since this is a background replacement task, the focus is on the seamless integration of the foreground subject (hand and bracelet) with the new background texture. No specific text layout is needed, but the composition should ensure the hand remains the central focal point against the new red texture.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 2
+}

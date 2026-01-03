@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766761320494,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特上（非真人），纯白背景，无文案",
+  "optimized_prompt": "Commercial product photography of a luxurious bridal jewelry set worn on a sleek, matte black mannequin bust. The set includes a crystal tiara, a V-shape drop necklace, and chandelier earrings, featuring ornate silver filigree and pear-shaped stones [Subject Lock]. The deep black mannequin provides high contrast against the sparkling silver and clear crystals. Pure white background (#FFFFFF). Bright, even studio lighting with sharp highlights on the gemstones. Soft natural contact shadow at the base of the mannequin. 8k resolution, ultra-detailed textures. [Text & UI Layout]: No text, no logos, clean composition centered for Amazon listing.",
+  "scenario": "amazon_white",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the background is pure white and the mannequin is black, the product (silver/crystal) will pop significantly. Center the mannequin bust vertically and horizontally. Ensure the tiara is placed correctly on the 'head' portion and the necklace drapes naturally on the 'neck/chest' area. Leave ample white space around the edges (padding) to meet Amazon's requirement that the product occupies at least 85% of the frame but isn't cut off.",
+  "original_images_count": 1
+}

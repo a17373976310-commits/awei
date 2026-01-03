@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766492497338,
+  "original_prompt": "将皇冠里面的白色闪光去除",
+  "optimized_prompt": "{\n  \"task_type\": \"OBJECT_EDIT\",\n  \"instructions\": \"Identify the 'starburst' or 'lens flare' effects located on the tiara (specifically the bright white cross-shaped sparkles). Select only these flare artifacts and remove them using a content-aware fill that reconstructs the underlying crystal and metal texture naturally. Maintain the natural shine of the jewelry, but eliminate the artificial 'dazzle' effects.\"\n}",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

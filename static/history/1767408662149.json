@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408662149,
+  "original_prompt": "给这四个包装做一张淘宝详情页",
+  "optimized_prompt": "[Visual Description]\nA high-end lifestyle photography shot for an e-commerce key visual. The subject is the [Subject Lock: cohesive luxury packaging suite featuring a vibrant orange color palette, including a 'Vaubel' paper bag, a rigid box, a gold-rimmed display box, and a glossy jewelry box]. The items are arranged artistically on a textured beige travertine stone console table. In the background, a blurred hint of a luxury boutique interior with warm wood tones. \n\nLighting is soft, golden-hour sunlight streaming from the side, casting gentle shadows and highlighting the gold foil stamping and the glossy finish of the small box. Props like a silk ribbon and a dried flower stem are placed nearby to enhance the gift-giving atmosphere.\n\n[Text & UI Layout]\n***Layout Style**: Natural Integration (Magazine Style).\nText Rendering Instructions:\n1. **Mood Title**: Content: \"奢华定制 · 尊贵礼遇\". Style: [Elegant Serif / Songti, Dark Brown or Gold]. Position: [Floating in the upper negative space, balanced against the products].\n2. **Description**: Content: \"赋予品牌独特的视觉语言\". Style: [Minimalist Sans-serif, smaller size].",
+  "scenario": "taobao_detail",
+  "model": "gpt_image_1_5",
+  "ratio": "3:4",
+  "layout_logic": "建议采用'对角线构图'或'三角构图'来摆放这四个大小不一的包装盒，将最高的购物袋放在后方侧面，矮的盒子放在前景，形成层次感。文字应放置在画面光线较柔和的留白区域（如左上角），避免遮挡产品上的Logo细节。",
+  "original_images_count": 1
+}

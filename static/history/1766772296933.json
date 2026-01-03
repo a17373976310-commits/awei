@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766772296933,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景圣诞节。",
+  "optimized_prompt": "[Visual Description]\n\"A magical, festive lifestyle portrait. The subject is a graceful European teenage girl with soft wavy hair, wearing the [Silver Crystal Tiara, V-shaped Necklace, and Chandelier Earrings Set]. She is dressed in an elegant deep red velvet gown suitable for a holiday party. The tiara is perched delicately on her head, and the necklace rests against her skin, catching the light. \nLighting is warm and ambient, characteristic of a cozy Christmas evening. The background features soft bokeh from Christmas tree fairy lights and festive pine decorations, creating a [Dreamy, Luxurious, Celebratory] mood.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (场景融合排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: '璀璨圣诞'. Style: [Elegant Serif, shining silver or gold texture]. Position: [Floating in the negative space, likely bottom right].\n2. **Description**: Content: '做这一刻的公主'. Style: [Minimalist Sans-serif, smaller size].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Considering the intricate detail of the jewelry set, the layout should use a shallow depth of field (bokeh background) to ensure the product remains the sharpest element. Text should be placed in the darker or blurred areas of the background (like the dark velvet of the dress or a shadowed corner of the room) to ensure readability without covering the jewelry.",
+  "original_images_count": 1
+}

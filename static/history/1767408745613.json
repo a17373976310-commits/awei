@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408745613,
+  "original_prompt": "给这四个包装做一张淘宝详情页",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle photography shot focusing on unboxing luxury. The main subject is [a coordinated luxury packaging set dominated by a vivid tangerine orange color scheme, including a tall paper bag with Vaubel logo, a large two-tone rigid box, and a small open jewelry case]. The items are arranged artfully on a polished cream marble console table. The lighting is warm and golden, resembling late afternoon sunlight filtering through sheer curtains, casting soft, elegant shadows. Background is a blurred, minimal beige interior with a hint of a decorative vase to suggest a sophisticated home environment.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: '奢华礼遇 · 匠心包装'. Style: [Elegant Serif, Gold or Dark Brown color]. Position: [Floating in upper left negative space].\n2. **Description**: Content: '为珍贵心意加冕'. Style: [Minimal Sans-serif, smaller size, Dark Grey].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘左文右图’或‘上文下图’的经典构图。由于产品是高饱和度的橙色，背景应保持低饱和度的米色、浅灰或奶油色，以突出主体。文字颜色建议吸取包装上的深褐色或金色，使视觉统一。光影应柔和，避免死黑阴影，强调材质的哑光纸感和金属光泽。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766361105353,
+  "original_prompt": "给这个手串做一张主图",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Premium 'Black & Gold' Commercial Photography style. A beaded bracelet featuring a symmetrical arrangement of spherical components lies on a textured dark slate stone surface. The primary structure consists of smooth, polished black obsidian spheres that exhibit subtle iridescent purple and green sheens under light. Centered in the composition is a single, glowing honey-gold polished tiger's eye sphere with a distinct chatoyant light reflection band. Flanking this central golden bead are two textured, carved black Pixiu beast beads with intricate relief details. \n[Props]: Subtle golden light streaks in the background, perhaps a faint hint of burning incense smoke to suggest Zen/Feng Shui.\n[Background]: Dark luxury stone texture with deep shadows to make the gold bead pop.\nLighting is focused Studio Hard Light, highlighting the 'rainbow eye' effect on the black beads and the 'cat eye' line on the gold bead.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “招财双貔貅”. Position: Top Left Negative Space. Style: 3D Gold Metallic Bold Sans-serif with drop shadow. Color: Gold gradient matching the tiger's eye.\n2. **Sub Title**: Content: “天然彩虹眼黑曜石”. Style: Clean white sans-serif, sharp and elegant.\n3. **Marketing Banner**: Content: “镇店之宝”. Style: Red and Gold Gradient Capsule UI.\n4. **Trust Badge**: Content: “真石鉴定”. Style: Translucent Glass Badge with Gold Rim.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Considering the bracelet is circular and dark, the background should be dark (Dark Mode aesthetic) to emphasize the 'sheen' of the obsidian and the 'glow' of the tiger's eye. The text needs to be in Gold or White to stand out against the dark background. Place the bracelet slightly lower-center to leave ample 'clean' space at the top for the Main Title.",
+  "original_images_count": 1
+}

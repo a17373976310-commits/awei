@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766766533690,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景是成人礼，旁边有家人和朋友为她庆生。",
+  "optimized_prompt": "[Visual Description]\nA cinematic lifestyle photograph capturing a magical coming-of-age celebration. The focal point is a beautiful young European woman (18 years old) wearing an elegant evening gown. She is adorned with the [Subject Lock: complete bridal jewelry set], featuring the high arched tiara with a pear-shaped center crystal, the V-shaped pave necklace, and matching chandelier earrings. The jewelry catches the warm ambient light, sparkling intensely. In the soft-focus background, family members and friends are seen clapping and smiling with pride, creating a warm, emotional atmosphere. The lighting is golden and festive, typical of a luxury banquet hall.\n\n[Text & UI Layout]\n***Layout Style**: Emotional Storytelling Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: \"璀璨成人礼\" (Dazzling Coming of Age). Style: [Elegant Serif, silver or metallic texture]. Position: [Floating in the upper left negative space].\n2. **Description**: Content: \"这一刻，为你加冕\" (Crowning you at this moment). Style: [Minimalist Sans-serif, clean white].",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Layout should prioritize the 'emotional connection' between the subject and the background figures. Text should be placed in the negative space (the blurred background area) to ensure the jewelry details on the model remain the absolute visual center. Use elegant, serif fonts to echo the classical baroque style of the tiara.",
+  "original_images_count": 1
+}

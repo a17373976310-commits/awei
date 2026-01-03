@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766999187509,
+  "original_prompt": "做一张1:1的淘宝主图，深色炖锅保持不变，更换背景场景，复古简约，画面清爽干净，但要有主次之分，字体要艺术字颜色与背景向适配，字内容不变，但要有主次之分，字体要艺术字颜色与背景向适配",
+  "optimized_prompt": "做一张1:1的淘宝主图，深色炖锅保持不变，更换背景场景，复古简约，画面清爽干净，但要有主次之分，字体要艺术字颜色与背景向适配，字内容不变，但要有主次之分，字体要艺术字颜色与背景向适配, 高质量, 4k",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Default layout.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766980497544,
+  "original_prompt": "帮我给这个产品和手臂添加一个场景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nSubject: A realistic human arm wearing a wide multi-strand beaded cuff bracelet (translucent warm peach/amber tint, spherical beads, high-gloss finish). The hand is relaxed, fingers slightly curled.\\nEnvironment: A soft, luxurious lifestyle setting. A sunlit beige linen tablecloth or textured silk fabric background. Soft dappled sunlight (gobos) filtering through leaves, casting gentle shadows across the wrist and fabric. Warm, golden hour lighting to enhance the amber glow of the beads.\\nAtmosphere: Elegant, serene, high-end fashion editorial style. Focus on the interplay of light and transparency.\\n\\n[Text & UI Layout]\\n(No text required on image as per user request)\\nNegative Space: Ample space around the arm for potential future logo placement.\",\n    \"seadream_cn\": \"[Visual Description]\\n主体：一只佩戴着多层宽版珠串手镯的手臂（半透明暖蜜桃色/琥珀色调，圆润珠体，高光泽感）。手部姿态自然放松，手指微曲。\\n环境：柔和的高级生活方式场景。背景铺陈着米色亚麻或质感细腻的真丝面料。斑驳的阳光透过树叶（光影遮罩）洒下，在手腕和织物上投下温柔的光影。暖调的“黄金时刻”光线，强化珠子的琥珀色剔透感。\\n氛围：优雅、宁静、高端时尚杂志风格。侧重表现光线穿透珠体时的晶莹剔透。\\n\\n[Text & UI Layout]\\n(根据用户需求不添加文案)\\n留白：在手臂周围保留充足的呼吸感空间，便于后期合成。\",\n    \"layout_logic\": \"Since no copy is requested, center the arm or place it diagonally (from bottom-left to top-right) to create dynamic flow. Use a shallow depth of field (blur background) to keep the focus strictly on the bracelet's texture and color.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

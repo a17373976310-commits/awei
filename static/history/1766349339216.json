@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766349339216,
+  "original_prompt": "给这个手串做一张详情页，要求有质感背景，四宫格排版，排版内容分别是，事业，辟邪，财运，气场。",
+  "optimized_prompt": "[Visual Description]\n\"A premium infographic-style product photography shot using a Four-Quadrant Composition. The subject [Beaded Bracelet with Obsidian and Tiger's Eye] is showcased centrally or with detailed macro shots in a split-screen effect. The background features high-end dark textures: matte black slate, deep velvet, and subtle golden light rays to represent energy. The lighting is dramatic, specifically highlighting the iridescent purple sheen of the obsidian and the chatoyant band of the golden tiger's eye bead.\"\n\n[Text & UI Layout]\n\"***Layout Style**: 4-Grid Feature Matrix (四宫格卖点排版).\nText Rendering Instructions:\n1. **Grid 1 Title**: Content: '事业' (Career). Position: Top-Left quadrant.\n2. **Grid 2 Title**: Content: '辟邪' (Warding Evil). Position: Top-Right quadrant.\n3. **Grid 3 Title**: Content: '财运' (Wealth). Position: Bottom-Left quadrant.\n4. **Grid 4 Title**: Content: '气场' (Aura). Position: Bottom-Right quadrant.\n5. **Style**: Bold, traditional Calligraphy or serif font in Gold color.\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the user specifically requested a 'Four-Grid Layout' (四宫格), the prompt instructs the AI to either create a split-screen composition or leave clearly defined negative spaces in four corners. The visual focus is on 'Texture' (obsidian sheen and stone texture) to support the high-end feel. The text instructions place the four key benefits (Career, Protection, Wealth, Aura) into their respective quadrants to maximize information efficiency.",
+  "original_images_count": 1
+}

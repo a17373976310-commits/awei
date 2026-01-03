@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766974094280,
+  "original_prompt": "帮我把图片背景改成红色，其他保持不变",
+  "optimized_prompt": "[Visual Description]\nSubject: A wide, multi-row cuff bracelet composed of spherical clear beads on a human wrist. The beads are transparent and refractive.\nAction: Background replacement only. Keep the hand and jewelry unchanged.\nEnvironment: A solid, vibrant red background replaces the original black void.\nLighting: Maintain original lighting on the hand, ensure highlights on beads reflect the new environment subtly.\n\n[Text & UI Layout]\n(No text requested)",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the request is purely for background replacement, no specific layout logic for text is needed. The focus is on the precise masking of the transparent beads against the new red background.",
+  "original_images_count": 1
+}

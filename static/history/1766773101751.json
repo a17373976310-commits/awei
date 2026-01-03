@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766773101751,
+  "original_prompt": "给这套产品穿戴在一个欧洲模特身上，场景白色博物馆建筑，要求场景明亮，模特摆好姿势，专业摄影",
+  "optimized_prompt": "[Visual Description]\n\"A professional high-end fashion photography shot featuring an elegant European female model. She is wearing the specific [Subject Lock] bridal jewelry set: a high-profile silver tiara with scalloped peaks on her head, a V-shaped statement necklace with a pear-shaped drop resting on her collarbones, and matching chandelier earrings. The jewelry sparkles intensely against her skin. The setting is a bright, white museum interior with grand architectural lines, marble columns, and high ceilings. The lighting is soft, high-key natural light, creating a clean, airy, and luxurious atmosphere. The model poses gracefully, looking like a piece of living art.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Minimalist Editorial (极简杂志风).\nText Rendering Instructions:\n1. **Mood Title**: Content: “光影加冕” (Crowned by Light). Style: [Elegant Serif, Thin weight]. Position: [Floating in the clean white negative space of the museum wall].\n2. **Description**: Content: “凝固永恒的奢华美学” (Solidifying the eternal luxury aesthetics). Style: [Modern Sans-serif, small tracking].\n\"",
+  "scenario": "taobao_detail",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the background is a 'white museum architecture', there will be ample clean, bright negative space (white walls or marble floors). Place the text in these open areas to maintain a 'high-end magazine' look without obstructing the jewelry details. Use dark grey or silver foil color for the font to contrast elegantly with the white background.",
+  "original_images_count": 1
+}

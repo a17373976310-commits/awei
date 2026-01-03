@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766648199567,
+  "original_prompt": "给这个手串做一张淘宝详情页，要求一个模特戴着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"一张极具东方韵味的生活场景摄影，专为淘宝详情页设计。画面特写一位模特的纤细手腕，佩戴着主体[Subject Lock: 橘红玛瑙手串，搭配银色珐琅莲花珠和磨砂米色配珠]。模特的手势自然优雅，或许正轻抚过一袭素雅的棉麻衣物，或者轻轻托着一只白瓷茶盏。光线是午后温暖的侧逆光，穿透红玛瑙珠子呈现出果冻般的胶质感和高光泽度，衬托得肤色白皙温润。背景虚化，隐约可见木质纹理或绿植剪影，营造出岁月静好、禅意优雅的氛围。\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (场景融合排版).\nText Rendering Instructions:\n1. **Mood Title**: 内容: “好运‘莲’连”. Style: [新中式书法字体或优雅宋体，深棕色或暗金色]. Position: [画面留白处，建议右上方].\n2. **Description**: 内容: “温润玛瑙 · 东方雅韵”. Style: [纤细的无衬线字体，字号较小]. Position: [紧随主标题下方].\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the product is a bracelet on a wrist, the composition will likely be diagonal or central. Place the text in the largest area of 'negative space' (usually the blurred background area opposite the hand) to ensure readability without covering the product details. The copy uses a pun on 'Lotus' (莲) and 'Continuous' (连) to imply good luck.",
+  "original_images_count": 1
+}

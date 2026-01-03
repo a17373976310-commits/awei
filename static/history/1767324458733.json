@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767324458733,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的女性高级礼盒面板或者放点黑白的玫瑰，文案居中",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce [Jewelry & Accessories] scene, [Dark Luxury & Romantic] commercial photography style. [A bracelet composed of approximately 16-18 perfectly spherical, transparent crystal beads threaded on an internal elastic cord] is positioned in the [Center Lower Half].\n[Props]: The bracelet rests on a texture of [premium black velvet gift box lining]. Elegantly arranged [Black and White Roses] surround the product, adding an artistic, desaturated floral frame that enhances the clarity of the crystals.\n[Background]: [Deep dark vignette], creating a mysterious and expensive atmosphere.\nLighting is [Pin-point Jewelry Spotlight], focusing strictly on the clear quartz beads to create dazzling refractive caustics and high-contrast sparkle against the dark shadows.\n\n[Text & UI Layout]\n***Layout Style**: Center Alignment / Vertical Stack (居中构图).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “至纯白水晶”. Position: [Center Top, floating above the bracelet]. Style: [Serif Font, Elegant Gold or White Gradient, Glowing].\n2. **Sub Title**: Content: “高定礼赠 · 灵气守护”. Style: [Minimalist Thin Line, tracking wide].\n3. **Marketing Banner**: Content: “甄选6A级”. Style: [Small Metallic Tag effect below title].\n4. **Trust Badge**: Content: “顺丰包邮”. Style: [Gold Circular Seal].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the request specifies 'Text Centered' and 'Dark Background', the composition should place the crystal bracelet slightly lower than the visual center to create 'Negative Space' at the top for the text. The dark background is perfect for White/Gold text which ensures high readability. The 'Black and White Roses' should act as a frame or background texture, not obscuring the text or the product.",
+  "original_images_count": 1
+}

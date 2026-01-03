@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766593781153,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, High-End Commercial Photography style. A circular wrist bracelet composed of approximately 19-20 uniformly sized, spherical beads with a pale, milky celadon or soft mint-white hue, indicative of polished nephrite jade, situated in the Center. \n[Props]: Surrounded by elegant Zen elements to enrich the scene: a few scattered dried lotus pods, a small antique ceramic tea cup with steam, and a textured linen cloth draped artistically.\n[Background]: A soft gradient of pale sage green and warm beige, creating a calm, premium atmosphere.\nLighting is bright Commercial Studio Softbox, emphasizing the vitreous luster and distinct white specular highlights on each bead, ensuring the jade texture looks oily and smooth.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Classic E-commerce Layout).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉·温润如脂”. Position: [Top Right Negative Space]. Style: [3D Bold Serif font with subtle gold texture]. Color: [Dark Emerald Green].\n2. **Sub Title**: Content: “手工打磨 · 质地细腻”. Style: [Clean Sans-serif, smaller].\n3. **Marketing Banner**: Content: “源头直供 | 假一赔三”. Style: [Slim Gold-Bordered Capsule].\n4. **Trust Badge**: Content: “国检证书”. Style: [Translucent Glass Seal with Red Stamp effect].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested 'more elements to enrich the scene', the layout should avoid placing the product strictly in a void. Place the bracelet on a textured surface (wood or linen) in the lower-center. Use the upper-right or upper-left corner for the main text stack to balance the 'Zen props' (flower branch or tea cup) placed in the opposite corner. Ensure the text color (Dark Green/Gold) contrasts well with the pale background.",
+  "original_images_count": 2
+}

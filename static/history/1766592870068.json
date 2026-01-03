@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766592870068,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Premium Oriental Commercial Photography style. [Subject Lock]: A minimalist circular array of glossy, pale green spherical beads with a translucent, jade-like finish located in the center. \n[Props]: The bracelet rests on a textured white sandstone rock or a piece of aged driftwood. Surrounded by delicate elements like a few scattered fresh bamboo leaves, a small porcelain tea cup, or white pebbles to add richness without clutter.\n[Background]: Soft gradient of misty mountain green and white, or a blurred traditional Chinese window lattice pattern, evoking a Zen atmosphere.\nLighting is Soft and Diffused, emphasizing the 'watery' translucency and glossy cat's-eye reflections of the jade beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “Genuine Hetian Jade”. Position: Top Left Negative Space. Style: 3D Bold Serif font with a gold metallic texture. Color: Deep Emerald Green.\n2. **Sub Title**: Content: “Moist & Translucent”. Style: Elegant handwritten script, smaller than main title.\n3. **Marketing Banner**: Content: “Master Craftsmanship”. Style: Frosted Glass Bar with a thin gold border.\n4. **Trust Badge**: Content: “Certified Authentic”. Style: Translucent Glass Badge with Gold Rim.\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Suggestions: 1. Keep the bracelet in the lower-center to allow ample 'breathing room' at the top for the main title. 2. Use the props (bamboo/stones) to frame the product, leading the eye towards the center. 3. Ensure the text color (Deep Green/Gold) contrasts well against the lighter, misty background.",
+  "original_images_count": 2
+}

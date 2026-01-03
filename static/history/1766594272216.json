@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766594272216,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce [Jewelry & Accessories] scene, [Premium Zen] commercial photography style. [A minimalist, circular beaded bracelet composed of uniformly sized, polished spherical beads of pale milky celadon green] is placed at [Center].\n[Props]: Surrounded by [natural smooth river stones], [delicate ginkgo leaves], and [flowing water ripples] (enhancing value).\n[Background]: [Clean light beige textured stone surface with soft dappled sunlight shadows].\nLighting is [Studio Softbox with warm accent light], ensuring product details are sharp.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “温润如玉”. Position: [Top Right Negative Space]. Style: [3D Bold Serif with gold texture]. Color: [Dark Emerald Green].\n2. **Sub Title**: Content: “和田青白玉手串”. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: “甄选源头好料”. Style: [Premium UI, e.g. 'Frosted Glass Bar' with gold border].\n4. **Trust Badge**: Content: “国检证书”. Style: [Translucent Glass Badge with Gold Rim].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Considering the pale green color of the jade, a warm beige or light grey background will create a gentle contrast. Placing the product on a natural stone prop elevates the 'natural' aspect. Text should be placed in the top right or left empty space to avoid covering the product. Using a serif font (宋体/楷体) reinforces the cultural/traditional value of the jade.",
+  "original_images_count": 2
+}

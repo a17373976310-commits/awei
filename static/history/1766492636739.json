@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766492636739,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特上（非真人），纯白背景，无文案",
+  "optimized_prompt": "[Visual Description]\nA studio product photography shot featuring a sleek, matte black mannequin bust displaying a coordinated luxury jewelry set. The mannequin has no facial features, emphasizing the jewelry. Adorning the head is an arching tiara with graduated, spire-like peaks constructed from intricate open-work metal filigree and densely paved crystals. Draped elegantly on the neck is a V-shaped necklace with lattice detailing and a large pear-shaped pendant drop. Matching chandelier-style drop earrings are positioned as if wearing them. The jewelry contrasts sharply against the black mannequin form. The materials are silver-tone metal alloy with clear Austrian crystals, shining brilliantly.\n\n[Text & UI Layout]\n(No Text Request) The composition focuses entirely on the product display. Pure white background (Hex #FFFFFF) providing maximum contrast. No text, no logos, clean commercial catalog style.",
+  "scenario": "free_mode",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the request specifies 'no text', the layout should be centered and symmetrical. The black mannequin acts as a high-contrast anchor in the center of the pure white space, ensuring the silver jewelry pops. Lighting should be studio-grade, emphasizing the sparkle of the crystals without creating distracting shadows on the white background.",
+  "original_images_count": 1
+}

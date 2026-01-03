@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766492131944,
+  "original_prompt": "给这套产品穿戴在一个人体模特上（非真人）",
+  "optimized_prompt": "[Visual Description]\nSubject: An elegant, stylized female mannequin bust (non-human, smooth velvet or porcelain texture) wearing a luxurious bridal jewelry set. The mannequin has a graceful neck and collarbone structure, finished in a matte cream or soft beige color to contrast with the jewelry.\nJewelry Details: The mannequin is wearing the 'Subject Lock' set: a cathedral-style silver tiara with intricate scrollwork placed atop the head form, a V-shaped crystal drop necklace draped perfectly around the neckline, and matching teardrop earrings attached to abstract ear forms. The crystals exhibit a brilliant 'starburst' sparkle.\nEnvironment: A soft, dreamy studio setting with blurred white floral bokeh in the background. Subtle lighting highlights the facets of the cubic zirconia.\nCamera: 85mm portrait lens, shallow depth of field, sharp focus on the necklace pendant and tiara center.\n\n[Text & UI Layout]\nHeadline: \"Radiant Elegance\" (Elegant Serif font, Silver foil texture, centered at the top).\nSub-headline: \"Bridal Crystal Collection\" (Smaller Sans-serif, below the headline).\nCTA Button: \"Shop the Look\" (Minimalist outlined button, bottom center).",
+  "scenario": "free_mode",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "The composition should center the mannequin bust to showcase the symmetry of the tiara and necklace. The text should be placed in the negative space above the tiara (header) and below the necklace drop (footer/CTA) to avoid obscuring the jewelry's intricate details. Use a clean, high-fashion editorial layout style.",
+  "original_images_count": 1
+}

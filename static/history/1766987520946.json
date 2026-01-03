@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766987520946,
+  "original_prompt": "帮我给这个产品添加一个场景，无文案",
+  "optimized_prompt": "[Visual Description]\n- **Core Subject**: The multi-row amber translucent spherical bead cuff bracelet, worn snugly on a wrist. The beads must retain their 'DNA Summary': high-gloss refraction, peach-to-amber tint, and tightly packed bubbly texture.\n- **Environment**: A soft, sun-drenched minimalist interior setting. A mix of warm beige silk fabric and rough sandstone textures in the background. Gentle shafts of golden hour sunlight filtering through sheer curtains, casting dappled light and shadows across the arm and the bracelet.\n- **Atmosphere**: Serene, elegant, and ethereal. High-key lighting with soft contrast to emphasize the transparency and inner glow of the amber beads.\n- **Camera**: Macro shot, shallow depth of field (bokeh), focusing sharply on the texture of the beads while blurring the background details.\n\n[Text & UI Layout]\n- **Main Title**: \"Amber Glow\" (Simulated commercial text, elegant serif font, placed in the upper empty space)\n- **Sub Title**: \"Captured Light\" (Smaller sans-serif, minimalist)\n- **Text Placement**: Since the user requested 'no copy', these are optional visual placeholders. Keep the composition clean with ample negative space in the top left corner for potential future branding.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the arm enters from the bottom right diagonally upwards, the best layout strategy is to keep the top left and center left areas open as 'negative space'. This balances the visual weight of the arm. The lighting should come from the top left to illuminate the transparent beads properly, enhancing their refraction. If text were added later, it would sit naturally in that top-left void.",
+  "original_images_count": 1
+}

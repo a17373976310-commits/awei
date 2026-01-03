@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767324255585,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的女性高级礼盒面板或者放点黑白的玫瑰，主文案居中，主文案：晶耀乾坤 灵佑安康  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry Scene, Dark Luxury Gift Vibe. The product is a [single-strand beaded bracelet composed of uniformly sized, clear quartz crystal beads], positioned in the lower center to allow for centered text above. \n[Props]: Artistic monochrome black and white roses, premium dark velvet or matte paper gift box texture underneath. \n[Background]: Deep, rich dark tones (Black/Charcoal) to maximize contrast with the transparent beads. \nLighting is [Dramatic Jewelry Spotlighting], focusing on the 'high refractive index' and 'specular highlights' of the spheres, making the clear quartz look icy, pristine, and glowing against the dark scene.\n\n[Text & UI Layout]\n***Layout Style**: Center-Aligned Vertical Layout (Upper Text, Lower Product).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “晶耀乾坤 灵佑安康”. Position: [Center Top Negative Space]. Style: [Elegant Serif or Calligraphy, Metallic Silver/White, slight glow].\n2. **Sub Title**: Content: “平安顺遂 白水晶”. Style: [Modern Sans-serif, White, smaller and spaced out].\n3. **Marketing Banner**: Content: “礼赠首选”. Style: [Minimalist Gold Foil Stamp effect].\n4. **Trust Badge**: Content: “天然甄选”. Style: [Translucent Glass Icon].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Considering the user requested 'Centered Main Text' (主文案居中) and a 'Dark Background', the most effective layout is a vertical stack. Place the text block in the upper 40% of the image (Negative Space) and the bracelet in the lower 60%, resting on the dark texture or roses. This prevents the text from obscuring the product details while maintaining a poster-like, premium hierarchy.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767410595471,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），打开的首饰盒——包装盒——里面带有白色泡沫棉首饰盒包装——带logo的包装袋，做一张淘宝主图。要求几何背景。",
+  "optimized_prompt": "[Visual Description]\nModern high-end E-commerce product photography featuring a 4-piece luxury jewelry packaging set. [Subject Lock]: The set includes an orange shopping bag with 'Vaubel' logo in black serif, a large square box base revealing a white foam insert, a matching lid standing vertically, and a small open clamshell jewelry box with plush white interior. All items feature matte orange paper texture and gold foil trim. \n[Composition]: The items are arranged artfully on a podium. The bag stands in the back, the large box components in the mid-ground, and the small open box in the foreground to show detail. \n[Background]: Abstract 3D geometric stage composed of clean cubes, cylinders, and arches in soft beige and matte white tones to contrast with the vibrant orange products.\n[Lighting]: Professional studio lighting, soft yet directional to highlight the gold edges and the texture of the paper.\n\n[Text & UI Layout]\n***Layout Style**: Left-Side Text Focus.\nText Rendering Instructions:\n1. **Main Title**: Content: “轻奢礼盒定制”. Position: [Top Left Negative Space]. Style: [3D Modern Sans-serif, Glossy Black or Gold].\n2. **Sub Title**: Content: “烫金工艺 · 质感非凡”. Style: [Clean, thinner font, dark grey].\n3. **Marketing Banner**: Content: “源头工厂直供”. Style: [Small floating capsule tag, semi-transparent].\n4. **Trust Badge**: Content: “现货速发”. Style: [Minimalist circular badge].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the four packaging items create a complex cluster, I recommend grouping them in a triangular composition on the right side or center-bottom of the frame. This leaves the Top-Left corner cleanly open for the Main Title '轻奢礼盒定制'. The geometric background shapes should guide the eye towards the product, not distract from it.",
+  "original_images_count": 1
+}

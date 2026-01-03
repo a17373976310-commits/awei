@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766596105195,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"淘宝天猫电商主图，新中式轻奢风格。核心主体是[Subject: 一串由约19-20颗完美圆珠组成的和田玉手串，淡青色，奶白半透明，玻璃光泽，具有油脂感]。\n[场景布置]: 手串放置在一块深色的、有岁月感的胡桃木茶盘或带有自然纹理的黑石板上。为了充实画面，画面左侧摆放一个精致的汝窑茶盏，右后方有一支斜插的腊梅或竹叶作为前景虚化，增添禅意。\n[背景]: 虚化的水墨山水屏风或透光的宣纸纹理，营造雅致氛围。\n[光影]: 柔和的侧逆光（Rembrandt Lighting），强调玉珠的圆润感和表面温润的'起胶'光泽，阴影柔和自然。\"\n\n[Text & UI Layout]\n\"***排版风格**: 经典电商海报布局。\n文字渲染指南:\n1. **主标题**: 内容: “羊脂级和田玉”. 位置: [画面左上角或正上方留白处]. 风格: [立体宋体字，深墨绿色或烫金质感].\n2. **副标题**: 内容: “细腻油润 颗颗精选”. 风格: [纤细黑体，清晰易读].\n3. **营销标签**: 内容: “顺丰包邮 · 假一赔三”. 风格: [红色渐变胶囊条].\n4. **信任背书**: 内容: “国检证书”. 风格: [金属质感盾牌图标].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the jade bracelet is pale and light (milky/celadon), a Darker Texture Bottom (wood or slate) is used to create contrast and make the product pop. The added 'Tea' and 'Plant' elements (tea cup, bamboo/plum blossom) reinforce the 'Traditional/Zen' cultural narrative associated with Hetian Jade, increasing perceived value. Text is placed in the top negative space to avoid covering the product details.",
+  "original_images_count": 2
+}

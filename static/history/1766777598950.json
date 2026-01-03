@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766777598950,
+  "original_prompt": "这套产品穿戴在一个欧洲模特身上，亮色客厅场景，有一个欧洲男性双手做出正在给女性（看向男性微笑）带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\n\"A cinematic lifestyle photography shot capturing a romantic 'crowning moment'. A beautiful European female model wears the [Subject Lock: ornate silver-tone V-shape necklace with heavy crystal paving and matching teardrop earrings]. She is looking up at a handsome European male model with a loving smile. The male model stands affectionately, his hands raised in a gesture of gently placing the [Subject Lock: classic arch tiara with scrollwork and prominent teardrop crystals] onto her head. The setting is a bright, sun-drenched European living room with white wainscoting and soft beige furniture. The lighting is high-key morning sun, creating a dreamy, ethereal glow that highlights the sparkle of the clear rhinestones and faceted crystals.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Romantic Storytelling (情感叙事排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: '为爱加冕'. Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Upper left negative space, near the window light].\n2. **Description**: Content: '璀璨晶钻，见证永恒誓言'. Style: [Minimalist Sans-serif, dark grey, small size].\"\n",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Composition should follow the Rule of Thirds, placing the couple's interaction slightly off-center to allow clean negative space (the bright living room wall or window area) for the text overlay. The lighting must be positioned to catch the facets of the 'teardrop crystals' on the tiara and necklace to create starburst flares (star filter effect) without washing out the skin tones.",
+  "original_images_count": 1
+}

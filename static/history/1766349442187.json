@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766349442187,
+  "original_prompt": "给这个手串做一张详情页，要求四宫格排版，排版内容分别是，事业，辟邪，财运，气场。",
+  "optimized_prompt": "[Visual Description]\n\"A high-quality 4-grid split composition (2x2 layout) designed for an e-commerce detail page, showcasing the bracelet's spiritual benefits. \nTop-Left Panel (Career): A modern executive desk setting, blurred laptop and coffee, cool blue-tinted professional lighting. The bracelet sits on a planner.\nTop-Right Panel (Protection/Warding Evil): A mystical, dark atmospheric shot with swirling incense smoke and deep shadows. The carved dragon beads are highlighted.\nBottom-Left Panel (Wealth): Warm golden lighting, rich textures like velvet or gold leaf background. The central Tiger's Eye bead glows intensely.\nBottom-Right Panel (Aura): A high-fashion style close-up of the bracelet on a confident wrist wearing a suit sleeve, dramatic high-contrast spotlight. \nSubject Lock: The bracelet is consistent in all panels: dark iridescent obsidian beads, central golden tiger's eye, and two matte carved beast beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: 2x2 Grid Collage (四宫格拼图).\nText Rendering Instructions (Use Simplified Chinese):\n1. **Top-Left Label**: Text: '事业'. Style: [Clean, Professional Sans-serif]. Position: [Corner of the panel].\n2. **Top-Right Label**: Text: '辟邪'. Style: [Traditional Calligraphy brush style]. Position: [Corner of the panel].\n3. **Bottom-Left Label**: Text: '财运'. Style: [Bold, Gold Metallic effect]. Position: [Corner of the panel].\n4. **Bottom-Right Label**: Text: '气场'. Style: [Strong, Impactful font]. Position: [Corner of the panel].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议使用Midjourney的'Pan'或'Vary Region'功能，或者直接生成四张单独的图后在PS中拼合，以保证每个格子的光影风格独立且准确。如果直接生成一张四宫格，需确保分割线清晰。文字部分建议后期添加以获得最佳排版效果。",
+  "original_images_count": 1
+}

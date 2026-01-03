@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766994147836,
+  "original_prompt": "帮我把这个消磁碗和盖子添加一个红色背景，无文案",
+  "optimized_prompt": "[Visual Description]\n- 主体锁定：复古风格的水晶消磁碗与配套的圆顶盖，具有复杂的几何菱形和星芒切割纹理。碗内装满了白色的粗颗粒半透明水晶碎石。\n- 构图：居中产品特写，盖子轻靠在碗边或置于其侧，展示内部晶石。高角度俯拍视角。\n- 背景：深沉奢华的红色背景。选用如勃艮第红或深绯红的色调，质感细腻如丝绒，与晶莹剔透的玻璃形成强烈对比。\n- 光影：柔和的演播室布光，在切割玻璃的刻面上制造出锐利而璀璨的高光反射。红色背景透过透明的水晶边缘投射出微妙的暖色光晕。\n\n[Text & UI Layout]\n- 无文案：纯净的产品摄影风格，无任何文字排版，纯粹聚焦于玻璃材质与红色背景的美学呈现。",
+  "scenario": "image_modify",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since no copy is requested, center the product to maximize visual impact. The red background should be uniform or have a slight gradient to add depth without distracting from the intricate glass details. Ensure the lighting highlights the 'sparkle' of the crystal against the dark red.",
+  "original_images_count": 1
+}

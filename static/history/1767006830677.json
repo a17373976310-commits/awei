@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767006830677,
+  "original_prompt": "帮我做一张淘宝主图背景是一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。底部有一个框框，框框上面是一架顺丰标志logo的飞机，框框里面有内容文案是：一物一证   高档礼盒    精美礼品（可以用图标），排版参考图片",
+  "optimized_prompt": "[Visual Description]\n淘宝电商大促主图，红色现实主义风格场景。画面具有强烈的商业质感和信任感。\n1. **背景主体**：一位身穿顺丰制服（黑灰红配色，戴帽子）的快递小哥，全身照，面带职业微笑，手中捧着一个印有顺丰Logo的快递纸箱，背景是高饱和度的红色都市或物流中心虚化场景。\n2. **前景UI容器**：画面底部放置一个高质感的圆角矩形信息框（白色或磨砂玻璃材质）。\n3. **视觉指纹植入 (飞机)**：在底部信息框的顶边缘，叠加一架起飞姿态的货运飞机 [机身上白下黑，中间有红灰流线型腰线，机身印有 'SF AIRLINES 顺丰航空'，引擎黑色带白圈，起落架放下]。飞机呈现出从框体上方冲出的3D视觉效果。\n\n[Text & UI Layout]\n***Layout Style**: 上人下框式布局，飞机作为破格元素。\n文字渲染指南 (位于底部框内，建议搭配极简图标):\n1. **卖点文案 1**: 内容：“一物一证” (字体工整，深色，可搭配证书小图标)。\n2. **卖点文案 2**: 内容：“高档礼盒” (可搭配礼盒小图标)。\n3. **卖点文案 3**: 内容：“精美礼品” (可搭配精品小图标)。\n排版要求：文字横向排列，清晰易读，飞机位于框体上方正中或略偏位置，形成视觉焦点。",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "1. **Human Element (Trust)**: The courier in the background builds immediate trust and service connection. 2. **Aircraft (Speed/Scale)**: Placing the specific SF aircraft 'taking off' from the text box utilizes the 'Subject Lock' to imply speed and logistical capability. 3. **The Box (Conversion)**: The text box at the bottom anchors the eye and clearly delivers the value proposition (Gift/Certificate) without obstructing the main visual.",
+  "original_images_count": 1
+}

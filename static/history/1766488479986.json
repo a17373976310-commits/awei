@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766488479986,
+  "original_prompt": "给这套产品做一张详情页，要求穿戴在模特身上",
+  "optimized_prompt": "[Visual Description]\n\"A high-end bridal portrait photography shot. The subject is an elegant bride with glowing skin, wearing a strapless white wedding gown to showcase the neckline. She is wearing the specific [Subject Lock] jewelry set: a silver-toned tiara with graduated peaks and marquise stones atop her styled hair, a V-shaped necklace with a large pear-shaped teardrop pendant resting on her collarbone, and matching chandelier-style drop earrings. The lighting is soft, dreamy morning sunlight filtering through a sheer veil, creating a halo effect. The jewelry catches the light, producing realistic starburst lens flares and intense sparkle against the soft skin tones. Background is a blurred, high-key luxury wedding venue.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Romantic & Elegant).\nText Rendering Instructions:\n1. **Mood Title**: Content: '璀璨时刻' (Radiant Moment). Style: [Elegant Serif, Thin weight, Gold or Silver foil texture]. Position: [Floating in the negative space near the shoulder].\n2. **Description**: Content: '加冕你的幸福瞬间' (Crowning your happy moment). Style: [Minimalist Sans-serif, small size, tracking wide].\"\n",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "1. 图片构图建议采用三分法，模特位于画面一侧（左侧或右侧），留出另一侧作为负空间放置文案。\n2. 拍摄角度建议为特写（Close-up）或半身像（Medium Shot），重点展示头部（皇冠）、耳部（耳环）和颈部（项链）的佩戴效果。\n3. 文案字体需要纤细、优雅，避免过于厚重，以呼应婚礼的轻盈感和首饰的精致感。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767348520761,
+  "original_prompt": "给这个手串做一张淘宝主图，要求换一个深色背景，手串透明干净，主文案：透光如星 驱散浊气  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\n[Subject Lock]: A perfectly round, transparent clear quartz beaded bracelet resting on a premium dark surface. The beads are 14-16 high-purity polished spheres with intense specular highlights and internal refraction, appearing glass-like and incredibly clean. \nBackground: A deep, luxurious dark aesthetic (navy blue or charcoal black gradient) to maximize the contrast with the crystal's transparency. Subtle light beams or star-like glints interact with the beads to emphasize the \"starlight\" concept. The lighting is dramatic and focused, creating sharp reflections on the beads while keeping the background mysterious and moody.\n\n[Text & UI Layout]\nMain Title: \"透光如星 驱散浊气\" (Positioned at the top or upper right, large, elegant serif font, glowing white or silver).\nSub Title: \"平安顺遂 白水晶\" (Placed below the main title, smaller font size, minimalist sans-serif).\nLayout: The bracelet is centered or slightly lower-center. The text is arranged vertically or horizontally in the negative space above the product to ensure readability against the dark background. Taobao main image style: high-click-through visual hierarchy.",
+  "scenario": "image_modify",
+  "model": "nano_banana_official",
+  "ratio": "3:4",
+  "layout_logic": "This is a classic 'Dark Mode' jewelry layout. The product should be the brightest element in the scene. Place the bracelet in the lower center to ground the image. The text block ('透光如星...') should float in the upper third of the image, using a bright white or metallic silver color to stand out against the deep background. The contrast between the crystal's clarity and the dark void is key.",
+  "original_images_count": 1
+}

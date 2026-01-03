@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767409157256,
+  "original_prompt": "给这四个包装做一张淘宝详情页",
+  "optimized_prompt": "[Visual Description]\n\"一张极具高级生活气息的淘宝详情页海报。主体是[Subject Lock: 鲜艳的蜜橘色珠宝包装套装]，包含印有'Vaubel'标志的手提袋、展示金边细节的礼盒以及高光漆面的方形首饰盒。场景设定在一个充满阳光的午后，产品放置在米色的大理石或丝绸质感台面上。光线温暖而柔和，侧逆光强调出哑光纸张与高光首饰盒的材质对比，以及金箔边缘的奢华反光。画面中可以隐约看到百叶窗的光影，营造出精致、私密的开箱氛围。\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (场景融合排版).\nText Rendering Instructions:\n1. **Mood Title**: 内容: “橙意甄选”. Style: [优雅的衬线字体, 深褐色或烫金质感]. Position: [画面左上方留白处].\n2. **Description**: 内容: “奢华礼赠仪式感”. Style: [干净的无衬线字体, 字号较小].\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the packaging is a very strong, vivid orange, the background needs to be neutral (cream, beige, or soft grey) to let the product pop. The composition should be asymmetrical, with the products grouped on one side (likely bottom-right or center-bottom), leaving ample 'negative space' in the upper-left for the text. The lighting should highlight the mix of textures (matte paper vs. glossy case vs. metallic gold).",
+  "original_images_count": 1
+}

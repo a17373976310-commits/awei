@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766767781678,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景是成人礼，旁边有家人和朋友为她庆生。",
+  "optimized_prompt": "[Visual Description]\n\"A cinematic, high-end lifestyle photography shot. The central subject is a beautiful young European girl (approx 18 years old) at her coming-of-age party or debutante ball. She is wearing the [Subject Lock: Ornate Baroque-inspired bridal set with heavy crystal density, symmetrical pear-cut focal points, and silver-tone filigree metalwork] including the high-profile tiara, V-shaped necklace, and drop earrings. The jewelry sparkles intensely under warm, lavish chandelier lighting. She wears a formal white or pastel evening gown and is smiling radiantly. In the soft-focus background, blurred figures of family and friends are clapping and celebrating, creating a joyous and luxurious atmosphere.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Emotional Storytelling (情感叙事排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: '成长的加冕'. Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Upper Right or Bottom Right in negative space].\n2. **Description**: Content: '这一刻，做自己的公主'. Style: [Slim Sans-serif, white with drop shadow].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用中景构图（Medium Shot），以少女的上半身为主，确保皇冠、项链和耳环同时清晰可见且处于视觉中心。文字应放置在背景较暗或较模糊的区域（如虚化的人群或墙面），避免遮挡面部和珠宝细节。字体颜色建议使用与珠宝呼应的银白色或香槟金。",
+  "original_images_count": 1
+}

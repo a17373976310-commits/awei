@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766593249161,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Premium New Chinese Style E-commerce photography for Jewelry. The main product, [Subject Lock: A single-strand beaded bracelet composed of approximately 22 spherical beads arranged in a perfect circle, soft semi-translucent milky quartz appearance with glossy highlights], is skillfully placed on a textured, dark walnut wooden tray or a piece of rough slate stone to create contrast. \n[Props]: The scene is enriched with cultural elements: a vintage folding paper fan in the blurred background, a small white porcelain tea cup, and a few scattered dried lotus pods or green bamboo leaves nearby. \n[Background]: A soft, beige textured paper background with subtle dappled light (bamboo leaf shadows) falling across the scene. \nLighting is warm and soft (golden hour feel), enhancing the 'oily' and translucent texture of the jade beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Right-Side Vertical Layout or Top-Left Standard. \nText Rendering Instructions (Elegant & Cultural): \n1. **Main Title**: Content: “和田玉·羊脂级” (Hetian Jade · Mutton Fat Grade). Position: [Top Right or Top Left]. Style: [3D Glossy Serif or Calligraphy Style Font, Gold or Dark Green]. \n2. **Sub Title**: Content: “细腻油润 颗颗精选” (Fine & Oily, Hand-picked). Style: [Small, elegant Serif font]. \n3. **Marketing Banner**: Content: “源头直供” (Direct from Source). Style: [Vertical Seal/Stamp style in Red]. \n4. **Trust Badge**: Content: “附鉴定证书” (Certificate Included). Style: [Minimalist Gold Line Border].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘新中式’构图逻辑。由于手串是圆形的，建议将其放置在画面中心偏下位置。文字信息建议采用竖排布局（类似书法题词）放置在右上角或左上角，与画面中的道具（如树枝、扇子）形成视觉平衡。增加的道具（扇子、茶杯、石头）应主要分布在产品周围的对角线上，避免遮挡手串主体，利用光影的虚实变化来增加画面的层次感和丰富度。",
+  "original_images_count": 1
+}

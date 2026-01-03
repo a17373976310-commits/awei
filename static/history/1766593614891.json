@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766593614891,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Premium Commercial Photography style. A minimalist beaded bracelet composed of uniformly sized, perfectly spherical beads of pale, milky translucent green jade located in the Center. [Subject Lock]: The beads feature high-gloss surfaces with sharp specular highlights, strung in a continuous loop. \n[Props]: Surrounded by scattered white dried branches, a few raw jade stones, and delicate ripples of water (enhancing zen and value). \n[Background]: A textured light grey stone surface with soft water reflections. \nLighting is Studio Softbox with a focused rim light, ensuring the translucent texture of the jade is sharp and glowing.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉·温润如酥”. Position: Top Left Negative Space. Style: 3D Bold Serif (Songti) with soft shadow. Color: Deep Emerald Green.\n2. **Sub Title**: Content: “甄选老料 | 细腻油润”. Style: Clean and sharp, slightly smaller than main title.\n3. **Marketing Banner**: Content: “新品首发”. Style: Premium UI, 'Frosted Glass Bar' with gold border.\n4. **Trust Badge**: Content: “官方正品”. Style: Translucent Glass Badge with Gold Rim.\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘静物置景’构图。手串居中或微斜放置于石台之上，利用枯枝和原石在画面四周（主要是右下角和左侧）形成半包围结构，增加画面的层次感和故事感，但不要遮挡手串主体。文案集中在左上角或正上方空白处，避免压住复杂的背景道具。",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766764536540,
+  "original_prompt": "给这套产品穿戴在一个欧洲新娘身上，场景是生日聚会",
+  "optimized_prompt": "[Visual Description]\nSubject: A stunning young European bride wearing the [Subject Lock: luxurious Baroque-inspired silver bridal jewelry set]. She is wearing the ornate silver tiara with its central teardrop crystal atop her elegantly styled blonde updp hair. The V-shaped crystal necklace rests perfectly on her décolletage, gleaming against her skin, and the chandelier earrings frame her face with sparkling light. Her dress is a sophisticated white satin evening gown suitable for a grand celebration.\n\nSetting: A lavish, high-end birthday party banquet hall at night. The background is soft-focused but filled with warm, golden bokeh lights from chandeliers, candles on tables, and perhaps a glimpse of a tiered birthday cake in the distance. The atmosphere is festive, elegant, and romantic.\n\nLighting: Cinematic portrait lighting. Soft key light illuminates her face and the jewelry, making the crystals sparkle intensely (caustics, refraction). Warm ambient backlight separates her from the background.\n\n[Text & UI Layout]\nMain Title: \"Shine Your Way\" (Elegant serif font, centered at the bottom or top third, gold or silver metallic texture)\nSub Title: \"Make Every Moment A Celebration\" (Smaller sans-serif font, below the main title)\nPrice Tag: \"$199.99\" (Small, minimal style near the product focus area)",
+  "scenario": "free_mode",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a set (head, neck, ears), the composition should be a Medium Close-Up (MCU) portrait. The model should face slightly off-center to allow space for text on one side, or center-framed with text at the bottom. The lighting must prioritize the reflection of the crystals to make them look expensive. Ensure the background 'birthday party' elements are blurry enough not to compete with the jewelry.",
+  "original_images_count": 1
+}

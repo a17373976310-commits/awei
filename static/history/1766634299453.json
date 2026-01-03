@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766634299453,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄墨凝瑞，静心绕腕  黑曜澄明养心性",
+  "optimized_prompt": "[Visual Description]\nModern Chinese Zen e-commerce jewelry scene, high-end commercial photography style. The product is [A beaded bracelet featuring 18-20 glossy black obsidian spheres, a semi-translucent apricot agate bead, and an intricate cloisonné lotus metal bead with teal/copper tones]. It rests elegantly on a textured dark slate or weathered wood platform.\n[Props]: The scene is enriched with flowing ink-like smoke effects, smooth river stones scattered nearby, and a blurred artistic branch of dried plum blossoms in the background to add depth and Zen atmosphere.\n[Background]: A gradient dark grey background with subtle abstract mountains or ink wash textures.\nLighting is [Studio Softbox with Rim Light], ensuring the black beads have sharp specular reflections and the orange bead glows warmly.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (上文下图).\nText Rendering Instructions (Must be High Contrast & Legible in Simplified Chinese):\n1. **Main Title**: Content: “玄墨凝瑞，静心绕腕”. Position: [Top Center or Top Left Negative Space]. Style: [3D Golden Calligraphy Font with soft glow].\n2. **Sub Title**: Content: “黑曜澄明养心性”. Style: [Clean Sans-serif white text, smaller scale].\n3. **Marketing Banner**: Content: “甄选黑曜石”. Style: [Vertical tag on the side, frosted glass effect].\n4. **Trust Badge**: Content: “匠心手作”. Style: [Small Gold Seal stamp style].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Considering the circular shape of the bracelet, center the product in the lower 2/3rds of the frame. Use the upper 1/3rd (Negative Space) for the text block. The 'ink smoke' or 'branches' should frame the product without obscuring the bead details. Gold text color is recommended to contrast against the dark obsidian and background.",
+  "original_images_count": 1
+}

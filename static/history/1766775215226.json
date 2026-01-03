@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766775215226,
+  "original_prompt": "给这套产品做一张亚马逊主图，调整产品位置（60度侧放）精修产品两边黑色位置，并且添加合适阴影",
+  "optimized_prompt": "[Visual Description]\n\"A high-end, studio-quality jewelry photograph suitable for an Amazon main listing. The [Subject: luxury bridal jewelry set comprising a tiara, necklace, and drop earrings] is arranged elegantly at a 60-degree side angle to showcase the depth of the metalwork and the height of the tiara. The items rest on a pristine, glossy white acrylic surface that offers a subtle, high-class reflection. The lighting is professional high-key studio strobe, specifically tuned to eliminate dark/black edges on the silver chrome, rendering the metal as bright and polished. The crystals and rhinestones sparkle intensely with refractive light. Soft, realistic contact shadows ground the jewelry, avoiding a floating look.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Amazon Commercial Clean (Minimalist & Product-Focused).\nText Rendering Instructions:\n1. **Mood Title**: Content: 'Royal Elegance'. Style: [Sophisticated Serif, Silver or Dark Grey]. Position: [Upper center or unobtrusive corner, mimicking a brand header].\n2. **Description**: Content: 'Exquisite Bridal Collection'. Style: [Minimalist Sans-serif, small].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "1. **Composition**: The product should occupy approximately 80-85% of the frame to meet Amazon's zoom requirements while maintaining the 60-degree angle for visual interest. \n2. **Lighting Fix**: The prompt emphasizes 'bright silver' and 'no dark reflections' to address the user's request to fix the black edges seen in raw metal photography. \n3. **Shadows**: Shadows should be 'contact shadows' directly underneath the items, not cast shadows that stretch far away, keeping the look clean.",
+  "original_images_count": 1
+}

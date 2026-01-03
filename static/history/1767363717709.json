@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767363717709,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如木桌，桌子或者其他）中间，比例合适，有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如木桌，桌子或者其他）中间，比例合适，有一个欧洲男性和满脸惊喜的女性, high quality, 4k",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Default layout (Fallback due to error).",
+  "original_images_count": 2
+}

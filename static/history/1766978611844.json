@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766978611844,
+  "original_prompt": "帮我给这个产品和手臂添加一个室内场景",
+  "optimized_prompt": "[Visual Description]\nSubject: A realistic female hand wearing a wide, multi-strand beaded cuff bracelet. The bracelet is made of translucent peach-tinted spheres, arranged in 9-10 parallel rows. The beads have a glossy, glass-like refraction.\nSetting: A warm, minimalist interior scene. A soft, creamy beige textured wall in the background. Partial view of a wooden coffee table with a linen tablecloth. Gentle sunlight filtering through sheer curtains, casting soft, dappled shadows on the arm and bracelet, enhancing the transparency of the beads.\nAtmosphere: Cozy, elegant, warm lighting, soft focus bokeh background, lifestyle photography style, high resolution.\n\n[Text & UI Layout]\nMain Title: \"Eternal Elegance\" (Elegant Serif font, centered top, soft gold color)\nSub Title: \"Handcrafted Glass Beads\" (Minimalist Sans-serif, below title, smaller size)\nTagline: \"Shine with every movement\" (Bottom center, small italic font)",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议将手臂和手排置于画面中心略偏右的位置，以展示光影效果。背景保持简洁干净，使用奶油色或浅米色调来衬托桃粉色的手排。文字信息放置在左侧或顶部的留白区域，确保不遮挡产品主体，字体选用纤细优雅的风格以匹配产品的精致感。",
+  "original_images_count": 1
+}

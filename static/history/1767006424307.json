@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767006424307,
+  "original_prompt": "帮我做一张淘宝详情页背景是一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。底部有一个框框，框框上面是一架顺丰标志logo的飞机，框框里面有内容文案是：一物一证   高档礼盒    精美礼品",
+  "optimized_prompt": "[Visual Description]\n\"一张极具商业质感的淘宝详情页海报。画面主体是一位穿着顺丰制服的快递小哥，全身照，神采奕奕。他手中稳稳托着[极简工业风的牛皮纸箱，表面有粗糙哑光质感，印有醒目的黑色SF logo]，展示配送的安全性。背景是具有现实感的场景（如高档小区或街道），但在色调上统一渲染为‘顺丰红’的主题色，营造出喜庆、高端且高效的氛围。光线明亮清晰，聚焦在人和箱子上。\"\n\n[Text & UI Layout]\n\"***Layout Style**: Professional Service UI (专业服务UI风格).\nText Rendering Instructions:\n1. **Visual Icon**: 在底部文案框的上方居中位置，悬停一架具有顺丰品牌特征的货运飞机图标，象征速度。\n2. **UI Frame**: 画面底部放置一个清晰的矩形框（白色底或磨砂玻璃质感）。\n3. **Copywriting**: 框内排版三个核心卖点词。内容：“一物一证   高档礼盒    精美礼品”。字体：[粗体无衬线字，商务风格，整齐排列，中间可用竖线分隔].\"\n",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the courier is a full-body shot, the 'feet' area is the safest place for the UI Frame without obstructing the face or the product box. The 'Plane Icon' should bridge the gap between the realistic photo and the flat UI box at the bottom.",
+  "original_images_count": 1
+}

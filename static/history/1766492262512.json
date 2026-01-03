@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766492262512,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特上（非真人），纯白背景",
+  "optimized_prompt": "[Visual Description]\nA studio product photography shot featuring a sleek, matte black jewelry mannequin bust against a pure white background. The mannequin is adorned with a luxurious bridal jewelry set. The tiara sits atop the mannequin's head form, displaying its classic arch shape with baroque-inspired filigree metalwork and distinct peaked points. The V-shaped necklace is draped elegantly around the neck area, highlighting the central pear-cut teardrop pendant and intricate crystal clusters. Matching teardrop earrings are positioned where ears would be, suspended cleanly. The jewelry contrasts sharply with the black mannequin, emphasizing the high reflectivity, stark silver tones, and intense sparkle of the clear rhinestones and cubic zirconia. High-key lighting ensures the silver plating shines brilliantly.\n\n[Text & UI Layout]\nMain Title: \"Radiant Elegance\" (Serif font, silver metallic texture, centered at top)\nSub Title: \"Bridal Crystal Collection\" (Sans-serif, thin weight, below title)\nCall to Action: \"Shine on Your Special Day\" (Small text, bottom center)",
+  "scenario": "free_mode",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "The black mannequin provides a strong visual anchor in the center. Text should be placed in the negative white space, preferably at the top or bottom to avoid obscuring the jewelry's details. Using silver or grey fonts for the text will harmonize with the jewelry while maintaining readability against the white background.",
+  "original_images_count": 1
+}

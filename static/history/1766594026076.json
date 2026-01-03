@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766594026076,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce [Jewelry] scene, [Zen Luxury] commercial photography style. [A minimalist single-strand beaded bracelet composed of uniformly sized, pale green spherical beads with soft translucency] is placed on [a textured light grey stone surface or raw silk fabric].\n[Props]: Surrounded by [delicate white orchids], [antique wooden tea tray], and [scattered loose jade beads] (enhancing value).\n[Background]: [Softly blurred traditional Chinese screen window pattern / Clean studio background with dappled light shadows].\nLighting is [Soft Natural Sunlight], highlighting the subsurface scattering (SSS) and high-gloss specular highlights of the beads.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉手串”. Position: [Top Right Negative Space]. Style: [Elegant Serif Font with gold texture]. Color: [Dark Emerald Green].\n2. **Sub Title**: Content: “温润如脂 细腻油润”. Style: [Clean and sharp, vertical layout preferred].\n3. **Marketing Banner**: Content: “国风雅韵”. Style: [Premium UI, e.g. 'Ink Wash Stroke' background].\n4. **Trust Badge**: Content: “严选好料”. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "For this jade product, the layout should emphasize 'Zen' and 'Premium Quality'. 1. **Props**: Do not clutter. Use 'less is more'. Orchids, tea leaves, or wood elements suggest nature and origin. 2. **Text Placement**: Use vertical text alignment (竖排文字) for the Chinese copy to enhance the 'Oriental Aesthetic'. 3. **Lighting**: Ensure the light passes through the edges of the beads to show translucency (the 'jelly' look).",
+  "original_images_count": 2
+}

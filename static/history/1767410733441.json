@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767410733441,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），打开的首饰盒——包装盒——里面带有白色泡沫棉首饰盒包装——带logo的包装袋，做一张淘宝主图。下面有三个图标并且带有文案",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry Packaging scene, Luxury Commercial Photography style. The subject is a cohesive set of [Vaubel Jewelry Packaging] in vibrant persimmon orange. \nComposition: 1. The tall shopping bag with 'Vaubel' logo stands in the back right. 2. The flat rigid box stands upright in the mid-ground. 3. The large open display box with white foam insert lies flat in the center. 4. The small open clam-shell jewelry case sits in the front left foreground. \n[Background]: A clean, soft warm beige or white studio podium. \n[Lighting]: High-key commercial lighting, soft shadows, accentuating the gold rim details and the glossy orange texture. Ensure the 'Vaubel' logo is crisp.\n\n[Text & UI Layout]\n***Layout Style**: Top-Text, Center-Product, Bottom-Features Layout.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: \"奢华质感 礼赠首选\". Position: [Top Left]. Style: [Bold 3D Gold or Dark Brown Sans-serif].\n2. **Sub Title**: Content: \"支持轻定制 | 现货速发\". Style: [Smaller, minimalist black text below main title].\n3. **Feature Bar (Bottom)**: A horizontal UI strip at the bottom containing 3 distinct icons with text underneath:\n   - Icon 1 (Diamond/Star): Text \"精湛工艺\"\n   - Icon 2 (Leaf/Shield): Text \"优选材质\"\n   - Icon 3 (Rocket/Truck): Text \"极速发货\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "This layout uses a classic 'Pyramid Composition' for the products to create depth and stability. The tallest item (bag) anchors the back, while smaller open boxes create a welcoming foreground. The 'Three Icons' request is handled by creating a dedicated 'Service Bar' footer at the bottom of the image, which is a standard high-conversion practice on Taobao to establish trust immediately. The main copywriting is placed in the top-left 'F-pattern' reading zone.",
+  "original_images_count": 1
+}

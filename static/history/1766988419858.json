@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766988419858,
+  "original_prompt": "帮我给这个产品添加一个场景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description] High-end fashion editorial photography. A model's arm is gracefully posed wearing a [Subject Lock: Voluminous multi-row beaded cuff made of translucent, amber-tinted spherical elements]. The background features soft, flowing beige silk or linen fabric, evoking a warm summer breeze. Golden hour sunlight filters through shadows of palm leaves, casting dappled light patterns across the scene. The translucent amber beads glow intensely as the light passes through them, highlighting the bubble-like texture. \\n\\n[Text & UI Layout] \\n- Main Title: \\\"AMBER GLOW\\\" (Elegant Serif font, positioned in the top left negative space). \\n- Sub Title: \\\"Summer Translucency\\\" (Smaller Sans-serif, below the main title). \\n- Layout: Asymmetrical composition with the arm flowing diagonally from bottom right, leaving ample clean space at the top left for text.\",\n    \"seadream_cn\": \"[Visual Description] 高级杂志风格静物摄影。特写镜头展示模特佩戴的[Subject Lock: 宽版多排圆珠手镯，由半透明琥珀色球体紧密排列而成]。背景设定在午后阳光下的极简艺术空间，浅杏色或暖沙色的肌理墙面，斑驳的树影（丁达尔效应）投射在手臂和背景上。光线穿透亚克力珠体，折射出像果冻般晶莹剔透的质感，强调清透与清凉的夏日氛围。\\n\\n[Text & UI Layout] \\n- 主标题：“琥珀流光”（使用纤细优雅的宋体或衬线体，位于画面左上角）。\\n- 副标题：“晶莹剔透的夏日重奏”（小字号非衬线体，居于主标题下方）。\\n- 构图：对角线构图引导视线，利用光影分割画面，保证文字区域的纯净度。\",\n    \"layout_logic\": \"建议采用对角线构图。将佩戴手镯的手臂安排在画面右下侧，向左上延伸，或者垂直居中偏右。左上角或左侧大面积留白，用于放置“琥珀流光”等文案。利用光影（树影、百叶窗影）增加画面的层次感，同时确保光线穿透手镯的珠子，使其看起来通透发光，这是该产品的核心视觉卖点。\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

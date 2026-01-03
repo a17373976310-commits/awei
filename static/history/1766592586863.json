@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766592586863,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求绸缎面为主色并且添加一下元素充实画面",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Elegant Commercial Photography style. A circular single-strand bracelet composed of approximately 18-20 uniform spherical beads (pale, milky celadon green nephrite) is placed centrally on a surface of luxurious, flowing silk satin. The silk fabric is a soft champagne gold color, with gentle folds creating a premium texture. \n[Props]: A delicate branch of white magnolia flowers extends from the side, adding a Zen aesthetic. A small, dark walnut wood coaster is placed partially underneath the bracelet to provide contrast. \n[Background]: The background is the continuous flow of the champagne silk, creating a soft, blurred depth of field. \nLighting is [Studio Softbox], focusing on the 'greasy' luster (oily sheen) of the jade beads and the shimmer of the silk.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard. \nText Rendering Instructions (Must be High Contrast & Legible): \n1. **Main Title**: Content: “和田玉臻品”. Position: [Top Center Negative Space]. Style: [3D Serif Font, Gold Texture, Elegant]. \n2. **Sub Title**: Content: “温润细腻 · 油性十足”. Style: [Clean Mincho/Serif font, dark grey]. \n3. **Marketing Banner**: Content: “附带国检证书”. Style: [Minimalist Gold Line Border]. \n4. **Trust Badge**: Content: “天然保真”. Style: [Round Seal Stamp style].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用‘居中构图’或‘黄金分割构图’。将和田玉手串置于丝绸褶皱最平缓的区域，利用丝绸的纹理引导视线指向产品。文案应放置在画面上方或左上角的丝绸留白处，避免遮挡玉珠的光泽细节。配色上，使用香槟金、暖米色与玉石的淡青色形成‘同色系’的高级搭配，文字颜色选用深咖色或深金色以确保可读性。",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766978679966,
+  "original_prompt": "帮我给这个产品和手臂添加一个红色场景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nSubject: [Subject Lock] A close-up shot of a human arm wearing a wide multi-row cuff of transparent spherical beads with distinctive internal warm amber phantom inclusions. The arm is positioned elegantly in the center.\\nBackground: A sophisticated, monochromatic deep red studio setting. The backdrop features crimson velvet drapes with soft folds, creating a sense of luxury and depth. Soft, directional lighting highlights the glossy texture of the beads and the warmth of the amber inclusions against the cool, dark red background. Floating rose petals or abstract red silk ribbons could add dynamic movement around the wrist.\\nStyle: High-end fashion jewelry photography, cinematic lighting, 8k resolution, photorealistic, sharp focus on the bracelet texture.\\n\\n[Text & UI Layout]\\n(No text provided by user. Auto-generated commercial copy suggestions)\\nLayout: Minimalist layout with text placed in the negative space (top left or bottom right) to balance the composition.\\nMain Title: \\\"Amber Elegance\\\"\\nSub Title: \\\"Timeless Warmth\\\"\\nCTA Button: \\\"Shop Now\\\"\",\n    \"seadream_cn\": \"[Visual Description]\\n主体：[Subject Lock] 特写拍摄一只佩戴着宽版多排圆珠手镯的手臂，手镯由透明圆珠组成，内部含有明显的暖琥珀色幻影包裹体。手臂姿态优雅。\\n背景：一个充满高级感的深红色调场景。背景使用深红色的丝绒质感布料，带有柔和的褶皱，营造出奢华和深邃的氛围。柔和的定向光打在手镯上，强调珠子的光泽感和琥珀色包裹体与深红背景的色彩对比。周围可以点缀少许飘落的红玫瑰花瓣或流动的红色丝绸带，增加画面的动感。\\n风格：高端时尚珠宝摄影，电影级布光，8k分辨率，极致写实，对焦锐利。\\n\\n[Text & UI Layout]\\n(用户未提供文案，以下为自动生成的商业文案建议)\\n排版：极简主义排版，文字置于画面的留白处（如左上角或右下角），保持视觉平衡。\\n主标题：“琥珀流光”\\n副标题：“腕间的一抹温润”\\n行动按钮：“立即探索”\",\n    \"layout_logic\": \"Since the arm is diagonal, place the Main Title in the upper left empty space to counterbalance the visual weight. Use a serif font (like Didot or Songti) in white or pale gold to stand out against the deep red background. The product needs to be the brightest element.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

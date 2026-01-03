@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767003365557,
+  "original_prompt": "帮我做一张淘宝详情页一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。",
+  "optimized_prompt": "帮我做一张淘宝详情页一个顺丰小哥在红色现实场景里，全身照，拿着上面有顺丰logo的箱子。, 高质量, 4k",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "4:3",
+  "layout_logic": "Default layout.",
+  "original_images_count": 1
+}

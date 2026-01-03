@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766631551540,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，",
+  "optimized_prompt": "[Visual Description]\n\"新中式电商珠宝场景，大气祥瑞商业摄影风格。[Subject Lock: 一串由球形银曜石宝石组成的高级手串，珠子圆润，直径约10-12mm... 每个珠子都呈现出深邃的亮黑色底色，并带有醒目的金属银色光泽或‘猫眼’效应...] 陈列在深色胡桃木或黑金石茶盘之上。\n[Props]: 为了充实画面，前景增加缭绕的檀香烟雾（营造意境），侧面点缀几枚虚化的古铜钱（寓意招财）和一枝枯山水风格的松柏枝。\n[Background]: 深邃的暗调背景，隐约可见的中式窗棂光影或水墨纹理，突出手串的‘银光’。\nLighting: 专业珠宝布光，使用侧逆光完美呈现珠子表面的银色猫眼光泽，质感通透硬朗。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 上文下图经典布局。\n文字渲染指南 (必须高对比度且清晰):\n1. **Main Title**: 内容: “银曜护体 招财纳福”. 位置: [画面上方留白处]. 风格: [流光金立体字体，带有微弱投影].\n2. **Sub Title**: 内容: “天然原矿 · 强光猫眼”. 风格: [精致衬线体，白色或浅银色].\n3. **Marketing Banner**: 内容: “开光加持 · 顺遂安康”. 风格: [新中式卷轴底纹或红金胶囊条].\n4. **Trust Badge**: 内容: “真品保证”. 风格: [半透明磨砂玻璃金边徽章].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "9:16",
+  "layout_logic": "Since the user asked to 'enrich the scene', the layout suggests using a 'Tabletop/Still Life' composition rather than a floating product. The text should be placed at the top (negative space created by the background) to balance the visual weight of the bracelet and the added props (coins, wood, smoke) at the bottom. The gold text color will harmonize with the 'Silver' sheen of the obsidian, creating a 'Black & Gold' premium aesthetic.",
+  "original_images_count": 1
+}

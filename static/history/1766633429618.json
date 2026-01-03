@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766633429618,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄墨凝瑞，静心绕腕 黑曜澄明养心性 莲花绽芳享宁年",
+  "optimized_prompt": "[Visual Description]\n“现代中国风电商[珠宝首饰]场景，[禅意奢华]商业摄影风格。[一串色泽油润的黑曜石手串，配有精致的莲花吊坠] 位于[画面正中前景]。\n[道具]: 周围环绕着[打磨光滑的黑石]、[飘渺的白色香道烟雾]、[干莲蓬]以及[悬浮的水珠或墨滴]（增强画面的动态张力）。前景处有几片[虚化的青翠竹叶]增加层次感。\n[背景]: [水墨风格的抽象云山与3D深色岩板纹理结合]。\n光影采用[戏剧性轮廓光结合柔和补光]，强调珠子的油润质感和莲花吊坠的通透感。”\n\n[Text & UI Layout]\n“***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: 内容: “玄墨凝瑞，静心绕腕”. Position: [Top Center or Top Left Negative Space]. Style: [3D Bold Chinese Calligraphy Font with Gold texture]. Color: [Luxury Gold].\n2. **Sub Title**: 内容: “黑曜澄明养心性”. Style: [Clean Sans-serif, white with soft shadow].\n3. **Marketing Banner**: 内容: “莲花绽芳享宁年”. Style: [Vertical Traditional Bookmark style tag on the right side].\n4. **Trust Badge**: 内容: “天然原矿”. Style: [Translucent Frosted Glass Circle with Gold Rim].”",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘新中式’构图。手串作为绝对主体置于画面中下部，利用黑色岩石和水面作为底座，展现‘稳重’感。文案‘玄墨凝瑞’建议使用烫金毛笔书法字体，置于上方留白处，与黑色背景形成强烈的高级对比（黑金配色）。‘莲花绽芳享宁年’可以做成竖排的闲章或标签形式，放在画面右侧，平衡左侧的光影，增加文化韵味。烟雾和水墨元素不要遮挡产品本体，而是作为氛围衬托。",
+  "original_images_count": 0
+}

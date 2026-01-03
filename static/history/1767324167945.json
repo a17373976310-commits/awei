@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767324167945,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的女性高级礼盒面板或者放点黑白的玫瑰，主文案居中，主文案：晶耀乾坤 灵佑安康  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, High-End Noir Gift vibe. A minimalist spherical bead bracelet composed of 18-20 uniform transparent clear quartz orbs is positioned in the lower center. The beads feature high-gloss transparent spherical repetition with pure optical clarity. [Props]: Elegant monochrome black and white roses are artistically arranged in the background, suggesting a premium female gift box aesthetic. [Background]: Deep dark velvet or matte black gift box texture to maximize contrast. Lighting is dramatic studio spotlighting (Chiaroscuro), creating strong specular highlights and refraction on the glass-like beads, making them sparkle against the darkness.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Center-Aligned Composition (Text floating in optical center, Product anchoring the bottom). Text Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “晶耀乾坤 灵佑安康”. Position: [Center Top]. Style: [Luxury 3D Metallic Gold or Silver Serif Font, glowing against dark background].\n2. **Sub Title**: Content: “平安顺遂 白水晶”. Style: [Elegant thin Sans-serif, white, spaced out, below main title].\n3. **Marketing Banner**: Content: “甄选礼盒”. Style: [Minimalist Gold Line Border Capsule].\n4. **Trust Badge**: Content: “天然材质”. Style: [Translucent Frosted Glass Icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the user requested 'Centered Main Text', the best composition is to place the bracelet in a gentle 'U' shape or a flat circle in the lower half of the frame. This creates a negative space in the upper center perfect for the 8-character main slogan '晶耀乾坤 灵佑安康'. The dark background ensures the white text and transparent crystal both pop effectively.",
+  "original_images_count": 1
+}

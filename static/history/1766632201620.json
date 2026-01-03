@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766632201620,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄眸缀曜，能量绕腕 银曜猫眼聚气场 顺遂满程耀华年",
+  "optimized_prompt": "[Visual Description]\n现代中国电商珠宝饰品场景，高端商业摄影风格。画面主体为一串极具质感的银曜石手串，圆珠展现出独特的猫眼效应，银色光晕浮于深黑底色之上。\n[Props]: 为了充实画面，周围布置了流动的银色丝绸缎带，散落的天然黑曜石原矿碎石，以及一个精致的新中式胡桃木或深色石质底座，增加画面的层次感和厚重感。\n[Background]: 暖米色过渡到柔和灰色的渐变背景，带有微妙的聚光灯效果，专注于展现珠子的猫眼光泽。\n灯光采用影棚柔光箱配合强烈的轮廓光，专门强调珠子表面的金属银闪效果，确保产品细节锐利清晰。\n\n[Text & UI Layout]\n***Layout Style**: 上文下图经典布局。\nText Rendering Instructions (必须高对比度且清晰):\n1. **Main Title**: 内容: “玄眸缀曜，能量绕腕”. 位置: 顶部居中留白处. 风格: 3D立体宋体，金属银质感，带有柔和投影。\n2. **Sub Title**: 内容: “银曜猫眼聚气场”. 风格: 优雅锐利的行楷书法风格，比主标题略小。\n3. **Marketing Banner**: 内容: “顺遂满程耀华年”. 风格: 高级UI，金边半透明胶囊条。\n4. **Trust Badge**: 内容: “天然甄选”. 风格: 右下角金色印章。",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested 'more elements to fill the scene', the layout should ensure the product remains the focal point (center/bottom-center) while the text floats clearly in the upper negative space. The 'props' (silk, raw stones) should frame the product without overlapping the text area. The silver sheen of the beads should be the brightest point in the image.",
+  "original_images_count": 1
+}

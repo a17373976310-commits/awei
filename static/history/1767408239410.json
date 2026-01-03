@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767408239410,
+  "original_prompt": "给这个一套包装做一张详情页",
+  "optimized_prompt": "[Subject Lock]: A luxury jewelry packaging set in vibrant 'Hermès orange' with dark chocolate brown accents, featuring a vertical shopping bag with 'Vaubel' logo, a lid-and-base box, and an open display case with a white inlay. \n\n[Visual Description]: A high-end vertical e-commerce product detail page design. The packaging suite is artfully arranged on a smooth, warm beige marble surface or premium textured fabric. Soft, cinematic studio lighting emphasizes the matte coated cardstock texture and the metallic gold trim on the open box. The composition is elegant and minimalist, conveying a sense of ceremonial gifting and premium quality.\n\n[Text & UI Layout]: The top section displays the 'Vaubel' logo clearly. Below it, large elegant Chinese serif typography displays the main headline '经典橙调' (Classic Orange Tone). A smaller subtitle reads '奢华质感 礼赠首选' (Luxury Texture, Preferred for Gifting). The layout uses generous whitespace to maintain a luxury fashion magazine aesthetic.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用经典的'总-分'垂直构图：\n1. 顶部（首屏）：品牌Logo + 核心Slogan（经典橙调）+ 全家福主图，强调视觉冲击力。\n2. 中部：特写展示'Vaubel'烫金Logo细节、手提绳材质和内衬的细腻质感，配以简短的材质说明。\n3. 底部：展示产品实际装入珠宝的效果（如放入戒指或项链），强化'礼赠'场景感。",
+  "original_images_count": 1
+}

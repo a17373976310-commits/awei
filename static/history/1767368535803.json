@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767368535803,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求展示产品细节",
+  "optimized_prompt": "[Visual Description]\nProfessional Amazon product photography, macro close-up shot focusing on exquisite craftsmanship. \n[Subject Lock]: A luxurious three-piece bridal jewelry set (tiara, V-drop necklace, earrings) in Baroque style. Center stage features large, pear-cut teardrop clear crystals surrounded by dense pavé and prong-set round brilliant-cut crystals. The metal is polished Rhodium plating with a high-gloss silver finish. \nLighting: High-key studio lighting with softboxes to create distinct specular highlights on the crystal facets, enhancing the sparkle without blowing out details. \nBackground: Pure white (#FFFFFF) infinite background with a subtle, natural contact shadow to ground the items. \nQuality: 8K resolution, ultra-sharp focus, commercial grade.\n\n[Text & UI Layout]\nText Content (English Only for Amazon): \nMain Title: \"ROYAL ELEGANCE\"\nSub Title: \"Premium Zirconia & Silver Plating\"\nFont Style: Minimalist, thin sans-serif font, dark grey color. \nPosition: Text placed discreetly in the bottom right corner or floating in negative space, ensuring the jewelry remains the absolute focal point.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "1. 亚马逊主图规范（Listing Main Image）通常严禁出现文字和非纯白背景。因此，如果此图用于搜索结果第一张图，请在生成后移除所有文字层，仅保留纯白底和产品。 \n2. 提示词中的文字配置更适合用于Listing的第2-3张细节展示图（Feature Image）或A+页面。 \n3. 构图上，建议将皇冠置于上方，项链呈V字形自然下垂环绕，耳环置于中间或两侧，形成对称、平衡的视觉结构。",
+  "original_images_count": 2
+}

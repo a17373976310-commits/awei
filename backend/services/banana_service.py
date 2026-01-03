@@ -30,6 +30,51 @@ OPENAI_SIZE_MAP = {
 }
 
 class BananaService:
+    def _make_request(self, method, url, headers, json_data=None, files=None, data=None, timeout=120):
+        import time
+        max_retries = 3
+        retry_count = 0
+        last_error = None
+
+        while retry_count <= max_retries:
+            try:
+                if method == "POST":
+                    if files:
+                        response = requests.post(url, headers=headers, files=files, data=data, timeout=timeout, proxies={"http": None, "https": None})
+                    else:
+                        response = requests.post(url, json=json_data, headers=headers, timeout=timeout, proxies={"http": None, "https": None})
+                else:
+                    response = requests.get(url, headers=headers, timeout=timeout, proxies={"http": None, "https": None})
+                
+                if response.status_code in [502, 503, 504]:
+                    raise requests.exceptions.HTTPError(f"Server Error {response.status_code}", response=response)
+                
+                response.raise_for_status()
+                return response
+            except (requests.exceptions.ProxyError, requests.exceptions.ConnectionError, 
+                    requests.exceptions.ChunkedEncodingError, requests.exceptions.HTTPError,
+                    requests.exceptions.Timeout) as e:
+                last_error = e
+                retry_count += 1
+                print(f"DEBUG_LOG: Request failed (Attempt {retry_count}/{max_retries + 1}): {type(e).__name__}: {e}")
+                if retry_count <= max_retries:
+                    wait_time = 2 * retry_count
+                    print(f"DEBUG_LOG: Retrying in {wait_time}s...")
+                    time.sleep(wait_time)
+                else:
+                    break
+            except Exception as e:
+                raise e
+        
+        if last_error:
+            error_detail = ""
+            if hasattr(last_error, 'response') and last_error.response is not None:
+                try:
+                    error_detail = f" - Detail: {last_error.response.text}"
+                except:
+                    pass
+            raise Exception(f"API请求失败(已重试{max_retries}次): {str(last_error)}{error_detail}")
+
     def generate_image(self, prompt: str, ratio: str, image: bytes = None, mask: bytes = None, model_id: str = "nano_banana_2", api_key: str = None):
         # Get model config
         model_config = MODEL_REGISTRY.get(model_id)
@@ -48,38 +93,9 @@ class BananaService:
         width = size_config["width"]
         height = size_config["height"]
         
-        # 使用局部变量，避免污染全局 MODEL_REGISTRY
         base_url = model_config["url"].rstrip('/')
         real_model_id = model_config["model_key"]
         provider = model_config.get("provider", "default")
-
-        payload = {
-            "prompt": prompt,
-            "negative_prompt": "",
-            "width": width,
-            "height": height,
-            "guidance_scale": 7.5,
-            "num_inference_steps": 30,
-            "model": real_model_id,
-            "aspect_ratio": ratio,
-            "size": f"{width}x{height}"
-        }
-
-        if image:
-            base64_data = base64.b64encode(image).decode('utf-8')
-            # For comfly_json, we use Data URL prefix. For others, just base64.
-            if provider == "comfly_json":
-                payload["image"] = f"data:image/png;base64,{base64_data}"
-            else:
-                payload["image"] = base64_data
-            payload["strength"] = 0.7 
-        
-        if mask:
-            base64_mask = base64.b64encode(mask).decode('utf-8')
-            if provider == "comfly_json":
-                payload["mask"] = f"data:image/png;base64,{base64_mask}"
-            else:
-                payload["mask"] = base64_mask
 
         # Determine API Key
         final_api_key = api_key if api_key else config.BANANA_API_KEY
@@ -91,21 +107,15 @@ class BananaService:
             "Authorization": f"Bearer {final_api_key}"
         }
 
-        # 4. 【添加调试日志】
         print(f"DEBUG_LOG: 用户选择={ratio}, 正在发送尺寸: {width} x {height}, 模型ID: {real_model_id}")
 
         if image and provider == "comfly":
             # --- Image-to-Image (Multipart) ---
             url = f"{base_url}/images/edits"
-            
-            # 1. Prepare Files
-            files = {
-                'image': ('image.png', image, 'image/png')
-            }
+            files = {'image': ('image.png', image, 'image/png')}
             if mask:
                 files['mask'] = ('mask.png', mask, 'image/png')
             
-            # 2. Prepare Data (Parameters)
             data = {
                 "prompt": prompt,
                 "model": real_model_id,
@@ -115,82 +125,63 @@ class BananaService:
                 "strength": 0.7,
                 "response_format": "url"
             }
-            
-            # Add image_size for nano-banana-2-2k
             if real_model_id == "nano-banana-2-2k":
-                data["image_size"] = "1K" # Default to 1K as per user screenshot
+                data["image_size"] = "1K"
             
-            # Remove Content-Type: application/json for multipart
             if "Content-Type" in headers:
                 del headers["Content-Type"]
                 
             print(f"DEBUG_LOG: Sending Multipart Request (Img2Img). URL={url}")
-            print(f"DEBUG_DATA: {data}")
-            response = requests.post(url, headers=headers, files=files, data=data, timeout=120, proxies={"http": None, "https": None})
+            response = self._make_request("POST", url, headers=headers, files=files, data=data)
+            
+        elif provider == "openai":
+            # --- OpenAI Format ---
+            url = f"{base_url}/images/generations"
+            openai_size = OPENAI_SIZE_MAP.get(ratio, "1024x1024")
+            current_payload = {
+                "model": real_model_id,
+                "prompt": prompt,
+                "size": openai_size,
+                "n": 1,
+                "response_format": "url"
+            }
+            print(f"DEBUG_LOG: Sending OpenAI Request. URL={url}")
+            response = self._make_request("POST", url, headers=headers, json_data=current_payload)
             
         else:
-            # --- Text-to-Image or Image-to-Image (JSON) ---
+            # --- Standard JSON Request ---
             url = f"{base_url}/images/generations"
-            print(f"DEBUG_LOG: Sending JSON Request. URL={url}")
-            print(f"DEBUG_PAYLOAD: { {k: v for k, v in payload.items() if k not in ['image', 'mask']} }") # Don't log base64
-            
-            import time
-            max_retries = 2
-            retry_count = 0
-            while retry_count <= max_retries:
-                try:
-                    # For comfly_json, we use a cleaner payload
-                    if provider == "comfly_json":
-                        current_payload = {
-                            "model": real_model_id,
-                            "prompt": prompt,
-                            "size": f"{width}x{height}",
-                            "n": 1,
-                            "response_format": "url"
-                        }
-                        if real_model_id == "nano-banana-2-2k":
-                            current_payload["image_size"] = "1K"
-                        if image:
-                            base64_data = base64.b64encode(image).decode('utf-8')
-                            current_payload["image"] = f"data:image/png;base64,{base64_data}"
-                            current_payload["strength"] = 0.7
-                    else:
-                        current_payload = payload
-                        # For non-Doubao models, we clean width/height/size
-                        is_doubao = "doubao" in real_model_id.lower()
-                        if not is_doubao:
-                            if "width" in current_payload: del current_payload["width"]
-                            if "height" in current_payload: del current_payload["height"]
-                            if "size" in current_payload: del current_payload["size"]
+            if provider == "comfly_json":
+                current_payload = {
+                    "model": real_model_id,
+                    "prompt": prompt,
+                    "size": f"{width}x{height}",
+                    "n": 1,
+                    "response_format": "url"
+                }
+                if real_model_id == "nano-banana-2-2k":
+                    current_payload["image_size"] = "1K"
+                if image:
+                    base64_data = base64.b64encode(image).decode('utf-8')
+                    current_payload["image"] = f"data:image/png;base64,{base64_data}"
+                    current_payload["strength"] = 0.7
+            else:
+                current_payload = {
+                    "prompt": prompt,
+                    "negative_prompt": "",
+                    "model": real_model_id,
+                    "aspect_ratio": ratio
+                }
+                is_doubao = "doubao" in real_model_id.lower()
+                if is_doubao:
+                    current_payload["width"] = width
+                    current_payload["height"] = height
+                if image:
+                    current_payload["image"] = base64.b64encode(image).decode('utf-8')
+                    current_payload["strength"] = 0.7
 
-                    print(f"DEBUG_LOG: Sending JSON Request (Attempt {retry_count + 1}). URL={url}")
-                    response = requests.post(url, json=current_payload, headers=headers, timeout=120, proxies={"http": None, "https": None})
-                    
-                    print(f"DEBUG_LOG: API Response Status: {response.status_code}")
-                    if response.status_code != 200:
-                        print(f"DEBUG_LOG: API Error Response Body: {response.text}")
-                    
-                    response.raise_for_status()
-                    break
-                except (requests.exceptions.ProxyError, requests.exceptions.ConnectionError) as e:
-                    retry_count += 1
-                    print(f"CRITICAL_CONNECTION_ERROR: {type(e).__name__}: {e}")
-                    if retry_count <= max_retries:
-                        print(f"DEBUG_LOG: Retrying in 2s... ({retry_count}/{max_retries})")
-                        time.sleep(2)
-                    else:
-                        import traceback
-                        traceback.print_exc()
-                        raise e
-                except Exception as e:
-                    if hasattr(e, 'response') and e.response is not None:
-                        if e.response.status_code in [502, 503, 504]:
-                            retry_count += 1
-                            if retry_count <= max_retries:
-                                print(f"DEBUG_LOG: Server error {e.response.status_code}. Retrying...")
-                                time.sleep(2)
-                                continue
-                    raise e
+            print(f"DEBUG_LOG: Sending JSON Request. URL={url}")
+            response = self._make_request("POST", url, headers=headers, json_data=current_payload)
 
         try:
             response.raise_for_status()

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767337251402,
+  "original_prompt": "给这个手串做一张淘宝主图，要求深色背景的高级礼盒面板，主文案：透光如星 驱散浊气  副文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\n\"Modern E-commerce [Jewelry & Accessories] scene, [High-End Luxury] commercial photography style. [A minimalist, high-clarity spherical bead bracelet arranged in a continuous circular loop, consisting of approximately 14-16 identical, perfectly round Clear Quartz spheres strung together on a central, visible elastic cord. Each bead acts as a fisheye lens that refracts light, creating distinct specular highlights] located in the [Center].\n[Props]: Resting on a premium deep-colored velvet jewelry gift box cushion, surrounded by subtle starburst lighting effects.\n[Background]: Dark, elegant studio background with deep navy or charcoal tones to emphasize crystal clarity.\nLighting is [Focused Spot Lighting], highlighting the transparency and internal reflections of the beads, making them glow like stars against the dark backdrop.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “透光如星 驱散浊气”. Position: [Top Center/Left]. Style: [Elegant Serif Font, White with outer glow]. Color: [White/Silver].\n2. **Sub Title**: Content: “平安顺遂 白水晶”. Style: [Clean Sans-serif, slightly smaller].\n3. **Marketing Banner**: Content: “天然甄选”. Style: [Minimalist Gold Line Border].\n4. **Trust Badge**: Content: “权威鉴定”. Style: [Translucent Shield Badge].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "采用暗调背景（Dark Mode）策略，利用深色丝绒礼盒作为底托，最大化凸显白水晶的高折射率和通透感。文字部分应置于顶部较暗的区域，使用白色或银色字体，形成强烈的黑白对比，确保在移动端小屏上也能瞬间识别‘透光如星’的核心卖点。",
+  "original_images_count": 2
+}

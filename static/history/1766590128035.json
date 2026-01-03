@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766590128035,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求躺在浅红色背景里，旁边有一段米色丝带",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Premium Commercial Photography style. A spherical beaded bracelet arranged in a circular formation, featuring approximately 17-18 primary deep red high-gloss Cinnabar beads lying flat on a soft Light Red background. The beads exhibit sharp specular highlights and a subtle mineral sparkle. At the bottom, a unique focal point: one translucent peach-pink bead adjacent to an intricate silver metallic charm shaped like a lotus bud with blue and red cloisonné enamel. Beside the bracelet, a smooth Beige Silk Ribbon flows elegantly, adding texture and softness. Lighting is Studio Softbox, ensuring the red mineral texture and the enamel details are sharp and vivid, with gentle contact shadows.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “原矿高含量”. Position: Top Center or Top Left. Style: 3D Bold Sans-serif with soft gold trim. Color: White or Light Gold.\n2. **Sub Title**: Content: “招财莲花·本命红”. Style: Elegant Serif font, slightly smaller.\n3. **Marketing Banner**: Content: “甄选好礼”. Style: Frosted Glass Pill shape.\n4. **Trust Badge**: Content: “权威鉴定”. Style: Translucent Glass Badge with Gold Rim.\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用‘中心构图’或‘对角线构图’。手串居中偏下展示完整圆环，米色丝带从左上或右侧穿插，引导视线指向手串的‘莲花吊坠’核心卖点。文案集中在顶部浅红色留白区域，避免遮挡手串主体，使用白色或金色字体以在红底上形成良好对比。",
+  "original_images_count": 2
+}

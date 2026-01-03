@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766973808677,
+  "original_prompt": "帮我把图片背景改成红色，其他保持不变",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nSubject: A high-fidelity photograph of a human wrist wearing a wide, multi-strand crystal beaded cuff bracelet. The bracelet consists of 9-10 parallel rows of transparent spherical beads (6-8mm), exhibiting high refractive qualities. The beads show slight distortion and internal reflections typical of clear quartz or glass.\\nAction: Background Replacement. Change the original black background to a rich, solid red background (Hex #D32F2F or similar vibrant crimson). \\nLighting: Maintain the original studio lighting on the hand and beads. The transparent beads must now subtly refract and reflect the new red environment around their edges, picking up red tints instead of just black/skin tones, to ensure physical realism. \\n\\n[Text & UI Layout]\\nMain Title: \\\"Pure Clarity\\\" (Bold, white sans-serif, centered at top)\\nSub Title: \\\"Crystal collection\\\" (Smaller, minimal font, below title)\\nLayout Logic: Keep the hand and bracelet centrally positioned or slightly diagonal as in the original composition. The red background should be clean and uncluttered to allow text overlay.\",\n    \"seadream_cn\": \"[Visual Description]\\n主体：一张高保真的手腕佩戴多股水晶串珠宽手镯的照片。手镯由9-10排平行的透明球形珠子（6-8mm）组成，展现出高折射质感。珠子呈现出清透石英或玻璃特有的轻微变形和内部反射。\\n操作：背景替换。将原本的黑色背景更改为浓郁的纯红色背景（如中国红或深绯红）。\\n光影：保持手部和珠子上原本的摄影室布光。关键在于透明珠子的边缘和透射部分必须自然地折射出新的红色环境色，而不仅仅是原本的肤色，以确保物理真实感。\\n\\n[Text & UI Layout]\\n主标题：“纯净剔透”（白色粗黑体，顶部居中）\\n副标题：“臻选水晶系列”（简约细体，位于主标题下方）\\n排版逻辑：保持手和手镯在画面中的构图位置不变（中心或略微倾斜）。红色背景应保持干净，留出足够的负空间用于放置白色文案。\",\n    \"layout_logic\": \"Since the request is specifically to change the background to red, the layout logic focuses on ensuring the new background color interacts realistically with the transparent subject material (refraction). Text is placed in negative space created by the solid color.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766980705321,
+  "original_prompt": "帮我给这个产品和手臂添加一个场景，无文案",
+  "optimized_prompt": "[Visual Description]\nSubject: [Subject Lock: Wide multi-strand cuff featuring uniform, transparent champagne-hued spherical beads stacked in parallel rows] worn on a graceful female arm.\nEnvironment: A serene, high-end spa or vanity setting bathed in soft, warm morning light. The background features blurred elements of a silk dressing gown, a vintage mirror, and perhaps a vase of soft beige roses.\nLighting: Golden hour sunlight filtering through sheer curtains, creating gentle caustics and highlights on the transparent beads.\nStyle: Elegant, minimalist lifestyle photography, high-resolution commercial shot, creamy bokeh, luxurious atmosphere.\n\n[Text & UI Layout]\nMain Title: \"Golden Elegance\"\nSubtitle: \"Pure Champagne Glow\"\nSlogan: \"Timeless Beauty for Every Moment\"\nFont Style: Thin, elegant serif fonts in gold or dark warm grey, positioned in the negative space (top left or right).",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Considering the arm is diagonally placed, there is ample negative space in the top-left or top-right corners. The text should follow the visual flow of the arm but remain unobtrusive. Using a soft, blurred background ensures the detailed texture of the beads pops out as the focal point.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766349684681,
+  "original_prompt": "给这个手串做一张创意海报，要求四宫格排版，排版内容分别是，事业，辟邪，财运，气场。",
+  "optimized_prompt": "[Visual Description]\n\"A creative 2x2 grid poster layout featuring the [Subject Lock: beaded bracelet with obsidian, Tiger's Eye, and Pixiu beads]. \nQuadrant 1 (Top Left - Career): Minimalist abstract ascending stairs or mountain peaks, cool blue and slate grey tones, showcasing the bracelet's structural stability.\nQuadrant 2 (Top Right - Protection): Dark atmospheric background with a golden protective light barrier surrounding the Pixiu beads, mystical black and gold tones.\nQuadrant 3 (Bottom Left - Wealth): Background of flowing liquid gold or abstract coins, highlighting the chatoyant band of the central Tiger's Eye bead, rich warm yellow tones.\nQuadrant 4 (Bottom Right - Aura): Ethereal purple mist and light rays, emphasizing the iridescent sheen of the rainbow obsidian beads, mysterious violet tones.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Four-Quadrant Grid Poster (四宫格海报排版).\nText Rendering Instructions:\n1. **Q1 Title**: Content: “事业” (Career). Style: [Modern Sans-Serif, Professional].\n2. **Q2 Title**: Content: “辟邪” (Protection). Style: [Powerful Calligraphy, Gold Outline].\n3. **Q3 Title**: Content: “财运” (Wealth). Style: [Luxury Serif, Metallic Gold].\n4. **Q4 Title**: Content: “气场” (Aura). Style: [Glowing Neon, Ethereal].\n\"",
+  "scenario": "creative_poster",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Suggest using a 2x2 grid composition. Ensure the bracelet is photographed or rendered from slightly different angles in each grid to avoid visual monotony (e.g., Q1 focuses on structure, Q2 on Pixiu, Q3 on Tiger's Eye, Q4 on Obsidian texture). Place the Chinese text keywords centrally or in the corners of their respective quadrants using high-contrast fonts.",
+  "original_images_count": 1
+}

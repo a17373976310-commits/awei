@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766629959584,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，",
+  "optimized_prompt": "[Visual Description]\n新中式轻奢电商主图，高格调静物摄影。[Subject Lock]: 极品银曜石手串，圆润的珠体展现出明显的猫眼效应，在光线下呈现从深邃黑到金属银的渐变光泽。手串置于深色紫檀木托盘之上。\n[画面充实元素]: 为了丰富画面层次，在手串周围点缀几颗未经打磨的原矿石与零星的金箔碎片，呼应“招财”主题。前景增加流动的禅意烟雾（干冰效果），增加神秘感。\n[背景]: 景深虚化背景，隐约可见中式圆窗格栅或水墨山水屏风的投影，营造沉稳大气的氛围。\n光影采用“珠宝级聚光灯”，重点照亮珠体表面的银色光晕，强调材质的高级感。\n\n[Text & UI Layout]\n***排版风格**: 经典上下结构，文字位于上方留白处。\n文字渲染指南 (高对比度，清晰易读):\n1. **主标题**: 内容: “银曜凝辉”. 位置: [顶部居中]. 风格: [3D拉丝金质感，大气衬线体].\n2. **副标题**: 内容: “招财纳吉”. 位置: [紧随主标题]. 风格: [飘逸的金漆书法字体].\n3. **营销标签**: 内容: “开光加持 · 招财纳福”. 位置: [产品上方悬浮]. 风格: [磨砂玻璃质感胶囊条，金边装饰].\n4. **信任背书**: 内容: “天然甄选”. 位置: [画面右下角]. 风格: [立体金属浮雕印章].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "9:16",
+  "layout_logic": "Since the silver obsidian is dark, use a 'Dark & Gold' theme. Keep the background slightly darker (charcoal, deep wood, or slate grey) to make the 'silver sheen' of the beads pop. Use Gold text for the copy to create a 'Black Gold' (黑金) luxury aesthetic, which is very popular on Tmall for wealth-related jewelry. The additional props (smoke, ores, gold leaf) should fill the empty negative space without overcrowding the product.",
+  "original_images_count": 1
+}

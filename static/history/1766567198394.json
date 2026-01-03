@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766567198394,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，细节多一点，背景可以不是厨房，要求锅斜放。",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Cookware scene, Fresh & Minimalist Commercial Photography style. The [Sage Green Frying Pan] is positioned [Tilted diagonally in the center, floating slightly to show both the cream ceramic interior and the matte green exterior].\n[Props]: Surrounded by abstract floating ingredients like a fresh asparagus spear and a cracked eggshell (enhancing freshness without a messy kitchen scene).\n[Background]: [Clean Studio Background with soft beige and pale green geometric podiums]. Not a kitchen.\nLighting is [Studio Softbox], emphasizing the semi-gloss cream coating and the polished stainless steel handle.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Top text, Bottom product).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “森系高颜 陶瓷不粘”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with soft shadow]. Color: [Dark Green or White].\n2. **Sub Title**: Content: “一抹即净 轻油少烟”. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: “健康釉面 | 煎炒全能”. Style: [Premium UI, 'Frosted Glass Bar'].\n4. **Trust Badge**: Content: “顺丰包邮”. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested the pan to be 'tilted/slanted' (斜放), the layout should use the diagonal line of the pan handle to guide the eye. Place the Main Title in the top-left corner (the 'start' of the reading path), and let the pan handle point towards the bottom-right or top-right. Keep the background clean (abstract/solid color) to make the green and cream colors of the pan pop.",
+  "original_images_count": 2
+}

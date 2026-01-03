@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766349559027,
+  "original_prompt": "给这个手串做一张品牌故事，要求四宫格排版，排版内容分别是，事业，辟邪，财运，气场。",
+  "optimized_prompt": "[Visual Description]\nA high-end 2x2 quadtych (four-panel) editorial poster featuring a beaded wrist bracelet composed primarily of polished black obsidian and a golden tiger's eye center. \n- Top-Left Panel: A macro shot of the smooth, high-gloss black obsidian beads resting on a cool dark slate texture, symbolizing stability and focus. \n- Top-Right Panel: An intense close-up of the matte carved mythical beast (Pixiu) bead, lit with dramatic chiaroscuro lighting to highlight the protective expression, dark and mysterious.\n- Bottom-Left Panel: Focus on the single golden-brown chatoyant sphere (Tiger's Eye), catching a sharp ray of warm golden light, glowing with richness and fortune.\n- Bottom-Right Panel: The entire circular bracelet floating in a Zen-like, misty void, exuding a powerful, intangible magnetic field.\n\n[Text & UI Layout]\n- Layout Style: 2x2 Grid Split Screen Editorial.\n- Typography: Elegant, minimalist Serif or Songti font (Chinese characters).\n- Text Content per Panel:\n  1. Top-Left: \"事业\" (placed elegantly in the corner).\n  2. Top-Right: \"辟邪\" (placed elegantly in the corner).\n  3. Bottom-Left: \"财运\" (placed elegantly in the corner).\n  4. Bottom-Right: \"气场\" (placed elegantly in the corner).",
+  "scenario": "brand_story",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议使用细线将画面分割为均等的四个部分（田字格）。文字应当统一位置（例如每个格子的正下方居中，或者每个格子的右下角），字号要小而精致，不要喧宾夺主。整体色调保持统一的‘黑金’高级感，但每个格子的光影重点不同。",
+  "original_images_count": 1
+}

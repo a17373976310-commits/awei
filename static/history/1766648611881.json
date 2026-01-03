@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766648611881,
+  "original_prompt": "给这个手串做一张淘宝详情页，要求一个模特戴着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"一张极具东方美学韵味的生活场景摄影。画面聚焦于模特的纤细手腕，佩戴着[Subject Lock: 橙红色玛瑙手串，其中包含一颗精致的景泰蓝莲花珠和一颗哑光磨砂珠]。模特的肤色白皙透亮，身穿淡雅的米白色亚麻或新中式丝绸上衣，袖口微挽。她的姿态优雅自然，手部或许正轻抚书页或端着白瓷茶盏。光线是午后温暖的侧逆光，透过窗纱洒下斑驳光影，完美展现出玛瑙珠的高光泽度和半透明的胶质感，以及莲花珠的珐琅细节。氛围静谧、温婉、岁月静好。\"\n\n[Text & UI Layout]\n\"***Layout Style**: New Chinese Style Integration (新中式融合排版).\nText Rendering Instructions:\n1. **Mood Title**: 内容: “好运莲莲”. Style: [流畅的行书或宋体，深褐色或朱砂红]. Position: [画面留白处，建议竖排].\n2. **Description**: 内容: “温婉显白 · 玛瑙手串”. Style: [纤细的思源宋体，字号较小]. Position: [主标题下方或旁侧].\"",
+  "scenario": "taobao_detail",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Since this is a bracelet, the model's hand will form a diagonal or horizontal line across the frame. Keep the text layout 'Vertical' (竖排) to enhance the 'New Chinese Style' (新中式) aesthetic. Place the text in the blurry negative space (bokeh area) opposite the hand to balance the composition. Use a warm color palette for the text to match the agate.",
+  "original_images_count": 1
+}

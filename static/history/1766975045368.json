@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766975045368,
+  "original_prompt": "帮我把手臂和手串完美的融入背景",
+  "optimized_prompt": "{\n  \"task_type\": \"Image Harmonization / Blending\",\n  \"instructions\": \"Retain the original arm and the transparent beaded cuff exactly as they are. The goal is to improve the integration between the subject (arm + bracelet) and the red textured background. 1. Refine the lighting on the arm to better match the warm ambient light of the red background, adding subtle reddish bounce light to the skin tones. 2. Enhance the transparency effects of the clear beads so they refract the red background more realistically, showing distorted red textures through the spheres. 3. Soften the harsh cutout edges of the arm to eliminate any 'sticker' effect, ensuring a natural transition. Do not change the shape or position of the product.\"\n}",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

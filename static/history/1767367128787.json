@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767367128787,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个模特上（非人模特），比例合适（大概模特头部大小），有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "[Visual Description] A premium Amazon product main image. In the sharp foreground, a high-end, elegant velvet jewelry mannequin bust (non-human, life-size proportion) displays the [Subject Lock]. The tiara is perfectly perched on the mannequin's head, the V-shaped necklace drapes naturally over the neckline, and the drop earrings are pinned at ear height. The jewelry features ornate Baroque-style scrollwork, a pear-cut crystal tiara, and a crystal-encrusted V-shape collar necklace. The lighting is studio-grade, enhancing the brilliance of the clear cubic zirconia and chrome finish. In the soft-focus background, a romantic scene unfolds: a handsome European male stands next to a female who has an expression of pure surprise and delight, suggesting a proposal or luxury gift scenario. \n\n[Text & UI Layout] Amazon commercial style. Minimalist and clean. Positioned in a negative space area (top left or bottom right). Main Copy: \"Unforgettable Moment\". Sub Copy: \"Luxury Bridal Crystal Set\". Font: Modern Sans-Serif, metallic silver or dark grey color.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since this is for Amazon, the product (on the mannequin) must occupy at least 85% of the frame or be the absolute visual center. The 'European couple' should be placed in the background layer, slightly blurred to not steal focus but to provide emotional context (gifting/proposal). The text should be minimal, placed in a corner with high contrast.",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766594211352,
+  "original_prompt": "给这个和田玉手串做一张淘宝主图，要求多添加一点元素充实画面",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Premium Commercial Photography style. A circular bracelet composed of a single loop of uniform, spherical beads (pale milky celadon green color, resembling polished nephrite jade) lies gently in the Center. The beads feature a highly glossy vitreous luster with sharp white specular highlights and semi-translucent subsurface scattering.\n[Props]: Surrounded by delicate props to enrich the composition: a few scattered dried osmanthus flowers (golden yellow) or white magnolia petals, a vintage wooden tray or a piece of textured raw Xuan paper underneath, and perhaps a small ceramic tea cup in the blurred background to evoke a Zen atmosphere.\n[Background]: Soft gradient beige or light warm grey studio background with dappled light and shadows (gobo lighting) resembling tree leaves casting shadows.\nLighting is Studio Softbox with a warm rim light, ensuring the jade texture looks oily and moist.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard (Classic E-commerce Layout).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “和田玉·羊脂白”. Position: Top Left Negative Space. Style: 3D Bold Serif font with soft shadow. Color: Dark Emerald Green or Deep Gold.\n2. **Sub Title**: Content: “温润如脂 细腻油润”. Style: Clean and sharp, slightly smaller than main title, elegant calligraphy style.\n3. **Marketing Banner**: Content: “源头直供 | 假一赔十”. Style: Premium UI, 'Red Gradient Capsule' or 'Gold Border Tag'.\n4. **Trust Badge**: Content: “国检证书”. Style: Translucent Glass Badge with Gold Rim.",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "针对和田玉这种高客单价、重材质的品类，'充实画面'不代表堆砌杂物，而是营造'氛围感'。建议使用【新中式禅意】风格：\n1. **构图**：手串居中或略偏下，占据主要视觉中心。\n2. **道具**：加入'茶'、'香'、'花'（如桂花、玉兰）等元素，侧面烘托玉石的温润与文化属性。\n3. **文字**：主标题要用有衬线字体（宋体/楷体变体）体现文化感，配色以墨绿、深金为主，避免过于廉价的大红色块。",
+  "original_images_count": 2
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766973870096,
+  "original_prompt": "帮我把图片背景改成红色，其他保持不变",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nSubject: A wide, multi-row cuff bracelet made of clear, spherical crystal beads, worn on a pale human wrist. The beads are arranged in a structured grid, creating a transparent, refractive texture.\\nAction: Replace the original black background with a solid, vibrant red background.\\nConstraint: Keep the hand, the skin texture, and the crystal bracelet completely unchanged. Maintain the original lighting reflections on the beads, but ensure the refraction now hints at the red environment slightly at the edges if physically accurate, otherwise prioritize background isolation.\\n\\n[Text & UI Layout]\\n(No text requested)\",\n    \"seadream_cn\": \"[Visual Description]\\n主体：一只佩戴在手腕上的宽版多排透明水晶珠手镯，珠体圆润剔透，排列整齐。\\n操作：将原本的黑色背景替换为鲜艳的中国红（Vibrant Red）或深红色背景。\\n限制：严格锁定原本的手部皮肤和水晶手链主体像素，不做任何改变。保持珠子原本的高光反射，但背景的红色调需与水晶的透光边缘自然融合。\\n\\n[Text & UI Layout]\\n(未指定文案)\",\n    \"layout_logic\": \"This is a background replacement task. The mask should cover the entire black background area, strictly excluding the hand and the bracelet. The goal is to perform a background swap to 'Red' while preserving the subject's integrity.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

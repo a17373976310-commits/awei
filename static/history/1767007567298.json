@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767007567298,
+  "original_prompt": "给这张图片的背景更换一下",
+  "optimized_prompt": "[Visual Description]\n主体锁定：佩戴在人类手腕上的一串透明粉桃色水晶圆珠手链，尺寸从6mm到16mm依次排列。珠子晶莹剔透，具有高光泽度和内部折射感。手臂呈对角线构图。\n新背景：营造一种极简的禅意风格。背景替换为浅米色或白色的微纹理石材台面，旁边点缀着几片淡绿色的尤加利叶或白色的小花，带来自然清新的气息。光线柔和明亮，突显水晶的通透感和纯净度，去除原图的红色绒布背景，使整体色调更加现代、高级。\n光影：模拟清晨的自然窗光，柔和漫射。\n\n[Text & UI Layout]\n主标题：“灵透水晶 · 尺寸全解”（优雅宋体，置于上方空白处）\n副标题：“精选白水晶 / 多种规格随心选”（纤细黑体）\n布局提示：保留原有尺寸标注线的清晰度，文字颜色需适配浅色背景（建议改为深灰色）。",
+  "scenario": "image_modify",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the original image has complex annotation lines pointing to specific beads, the new background must be clean and uncluttered (high key/light colors) to ensure the text remains legible. Avoid busy patterns behind the text area. The lighting should be soft to maintain the 'transparent' look of the beads.",
+  "original_images_count": 1
+}

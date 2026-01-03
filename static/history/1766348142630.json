@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766348142630,
+  "original_prompt": "给这个手串做一张详情页，要求黑色有质感背景",
+  "optimized_prompt": "[Visual Description]\n\"A high-end, atmospheric macro product shot. The [Subject: circular beaded bracelet] is placed elegantly on a dark, textured surface (resembling rough black volcanic rock or slate). The lighting is dramatic and moody, using rim lighting to highlight the glossy reflection of the black obsidian beads and the golden chatoyancy of the central tiger's eye bead. The two matte black carved guardian beads (Pixiu) show detailed texture in contrast to the smooth beads. The background is deep black with subtle geological textures, emphasizing the premium quality of the materials.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Dark Luxury Minimalist (暗黑极简奢华).\nText Rendering Instructions:\n1. **Mood Title**: Content: '静谧·守护'. Style: [Elegant Serif, Metallic Gold Color]. Position: [Top Center or Floating in upper negative space].\n2. **Description**: Content: '甄选彩虹眼黑曜石，搭配金虎眼点睛'. Style: [Thin Sans-serif, White with reduced opacity].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用中心构图或对角线构图。手串作为绝对视觉中心，通过深色背景的‘空’来衬托珠子的‘实’。文字应放置在背景较暗、纹理较少的区域（如顶部或底部），主标题使用金色以呼应虎眼石的色彩，副标题使用白色或灰色以保持低调，整体不抢占产品的视觉焦点。",
+  "original_images_count": 1
+}

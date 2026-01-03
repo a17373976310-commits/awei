@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766999435640,
+  "original_prompt": "做一张1:1的淘宝主图，深色炖锅保持不变，更换背景场景，复古简约，画面清爽干净，但要有主次之分，字体要艺术字颜色与背景向适配，字内容不变，但要有主次之分，字体要艺术字颜色与背景向适配",
+  "optimized_prompt": "[Visual Description]\n现代中国电商厨具场景，复古简约风格。核心主体是[经典宜兴紫砂炖锅，直筒身微收口，深巧克力色哑光无釉质感，双C型对称耳把，圆顶盖带三个三角形排气孔]。\n[场景]: 锅具放置在一张干净的浅色胡桃木纹理桌面上，背景是米白色微纹理墙面，整体画面清爽干净，去除杂乱元素。\n[光影]: 柔和的自然侧光，强调紫砂原本的粗粝砂质感，光影层次分明但不沉重。\n\n[Text & UI Layout]\n***Layout Style**: 上下结构经典布局，字体具有艺术感且主次分明。\n文字渲染指南 (高辨识度，配色与背景和谐):\n1. **Main Title**: 内容: “宜兴紫砂锅”. 位置: 画面正上方悬空. 风格: [新中式书法体或艺术宋体], 颜色: [赭石色或深咖色], 呼应紫砂陶土色调.\n2. **Sub Title**: 内容: “内外无釉 无涂层 不上色 孕婴可用”. 位置: 主标题正下方. 风格: [纤细黑体], 字号较小，排列整齐.\n3. **Trust Badge**: 内容: “幸甚”. 位置: 标题右侧. 风格: [仿古红色印章设计].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a dark, matte object (chocolate brown), the background is shifted to a lighter 'Retro Minimalist' palette (beige/light wood) to ensure the product pops without being gloomy. The text hierarchy is established by size and weight: '宜兴紫砂锅' is the visual anchor in an artistic font, while the functional features are smaller and cleaner to avoid cluttering the 'fresh' vibe.",
+  "original_images_count": 1
+}

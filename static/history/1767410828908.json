@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767410828908,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），打开的首饰盒——包装盒——里面带有白色泡沫棉首饰盒包装——带logo的包装袋，做一张淘宝详情页。下面有三个图标并且带有文案",
+  "optimized_prompt": "[Visual Description]\n\"A high-end e-commerce product detail photography shot. The subject is the [Vaubel Packaging Set] arranged with artistic depth. The vibrant Hermes-orange shopping bag with the 'Vaubel' logo stands in the back. Next to it is the rigid gift box. In the foreground, the open display tray is visible, and the small jewelry case is clearly 'open', revealing its white satin interior and metal snap button. The white foam/flocking texture is highlighted. The background is a clean, premium off-white or soft warm grey studio surface. Lighting is soft and diffused, emphasizing the matte cardstock and smooth leather textures.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Clean E-commerce Detail Page (Vertical composition).\nText Rendering Instructions (Use Simplified Chinese):\n1. **Main Headline**: Content: '甄选礼盒 奢华尽现'. Style: [Elegant Serif, Gold or Black, prominent at the top].\n2. **Subtitle**: Content: '给予首饰最温柔的呵护'. Style: [Minimalist Sans-serif, smaller].\n3. **Icon Section**: At the bottom, three minimalist line-art icons arranged horizontally with text below them:\n   - Icon 1 (Diamond/Hand): Text '匠心工艺'\n   - Icon 2 (Shield/Layers): Text '加厚内衬'\n   - Icon 3 (Gift Box/Crown): Text '送礼首选'\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Suggest placing the Shopping Bag in the back left to anchor the height. The Rigid Box creates a mid-ground layer. The Open Tray and the Open Jewelry Case should be in the immediate foreground to show the 'inside details' (white foam/satin) as requested. The Title goes in the negative space at the top right. The Three Icons should be a structured footer element at the very bottom to guide the eye downward.",
+  "original_images_count": 1
+}

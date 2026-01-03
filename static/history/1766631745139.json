@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766631745139,
+  "original_prompt": "给这个手串做一张淘宝主图，要求多添加一点元素充实画面，文案：玄眸缀曜，能量绕腕 银曜猫眼聚气场 顺遂满程耀华年",
+  "optimized_prompt": "[Visual Description]\n现代中国电商[珠宝饰品]场景，[新中式玄学与高级感]商业摄影风格。一串由圆形宝石组成的珠串（具有光泽的银曜石黑色圆珠，高光抛光）位于[前景正中]，优雅地盘绕。\n[道具]: 画面元素丰富但有序，底部采用深色纹理岩石或黑檀木托底，周围环绕着流动的银色微光或淡淡的香薰烟雾（象征“气场”），后景点缀几颗散落的黑曜石碎石或极简的金属几何线条，增加画面的层次感与充实感。\n[背景]: 深邃的炭灰至黑色渐变影棚背景，完美衬托珠子的银色猫眼光泽。\n光线采用[戏剧性聚光灯]，精准捕捉每一颗珠子表面的银色闪光，营造出神秘而强大的能量感。\n\n[Text & UI Layout]\n***排版风格**: 上文下图经典布局 (Top-Bottom Standard).\n文字渲染说明 (必须高对比度且清晰):\n1. **主标题**: 内容: “玄眸缀曜，能量绕腕”. 位置: [顶部居中]. 风格: [3D金属银色书法字体，带微发光效果].\n2. **副标题**: 内容: “银曜猫眼聚气场”. 风格: [清晰的无衬线体，银白色，比主标题略小].\n3. **营销横幅**: 内容: “顺遂满程耀华年”. 风格: [半透明深色磨砂玻璃条，底部金边修饰].\n4. **信任徽章**: 内容: “天然甄选”. 风格: [右下角金色印章风格徽章].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "9:16",
+  "layout_logic": "Since the user requested a 'fuller' scene, I suggested adding textured bases (slate/wood) and atmospheric elements like smoke or scattered stones to fill the negative space without stealing focus. The text is placed at the top to avoid covering the bracelet, utilizing a metallic silver style to echo the product's 'silver sheen' feature.",
+  "original_images_count": 1
+}

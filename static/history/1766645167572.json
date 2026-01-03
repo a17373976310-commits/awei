@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766645167572,
+  "original_prompt": "给这个手串做一张淘宝主图，要求背靠茶杯，多添加一点元素充实画面，文案：红珠昭吉，鸿运常驻  天然南红玛瑙手串",
+  "optimized_prompt": "[Visual Description]\n淘宝天猫高转化率主图，新中式雅致风格。核心主体是[一串橙红色南红玛瑙圆珠手串，中间有一颗精致的金属珐琅莲花珠和一颗透亮的桃色太阳石]。手串自然地斜靠在一只温润的白瓷茶杯边，杯中茶汤金黄透亮。\n[道具丰富画面]: 画面前景散落几枚红润的柿子（寓意事事如意）和少许干茶叶，营造丰盛感；背景隐约可见古籍线装书和缭绕的檀香烟雾，增添文化底蕴。\n[光影]: 采用通透的商业影棚侧逆光，强调玛瑙的红润胶质感和金属莲花的细腻珐琅工艺，画面色彩饱满，红白金相间，喜庆且高级。\n\n[Text & UI Layout]\n***排版风格**: 经典上下结构或对角线构图。\n文字渲染指令 (清晰醒目，国潮风):\n1. **主标题**: 内容: “红珠昭吉，鸿运常驻”。位置: [画面上方留白处]。风格: [立体烫金书法字体，带有微微的投影]。\n2. **副标题**: 内容: “天然南红玛瑙手串”。风格: [现代黑体，字号较小，精致清晰]。\n3. **营销标签**: 内容: “满级润度 · 祥瑞随行”。风格: [磨砂玻璃质感长条底框]。\n4. **信任背书**: 内容: “七天无理由退换”。风格: [金色圆形徽章]。\n",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Considering the 'leaning on tea cup' composition, the product and cup will likely form a triangular visual center in the middle-lower section. I recommend placing the Main Title ('红珠昭吉，鸿运常驻') in the Top Left or Top Right negative space to balance the visual weight of the cup. The background should be relatively clean behind the text area (e.g., a blurry wall or window) to ensure the copy is instantly readable on a mobile screen.",
+  "original_images_count": 1
+}

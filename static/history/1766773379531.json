@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766773379531,
+  "original_prompt": "给这套产品穿戴在一个欧洲模特身上，场景白色博物馆建筑，要求场景明亮，模特摆出专业姿势，专业摄影",
+  "optimized_prompt": "[Visual Description]\n\"A high-end fashion editorial shot featuring a sophisticated European female model. She is wearing the [Subject Lock: luxurious bridal jewelry set, featuring the high-peaked baroque tiara, the V-shaped crystal necklace, and chandelier earrings]. The setting is a bright, white museum architecture with grand geometrical lines, marble textures, and high ceilings. The lighting is high-key and diffused, mimicking bright daylight to make the silver and crystals sparkle intensely. The model poses professionally, exuding confidence and elegance, looking slightly away from the camera.\"\n\n[Text & UI Layout]\n\"***Layout Style**: High-end Fashion Magazine (时尚杂志排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “璀璨时刻”. Style: [Elegant Serif, Gold or Silver texture]. Position: [Top center or Bottom right].\n2. **Description**: Content: “艺术与奢华的完美邂逅”. Style: [Minimalist Sans-serif, small, wide tracking].\"\n",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the background is a 'white museum architecture', there will be ample negative space (white/bright grey areas). I recommend placing the main title in a dark grey or silver font to maintain the 'high-end' monochromatic feel without being too distracting. The composition should be center-weighted or follow the rule of thirds, with the text balancing the model's gaze direction.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766767589802,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景是成人礼，旁边有家人和朋友为她庆生。",
+  "optimized_prompt": "[Visual Description]\n\"A cinematic, high-end lifestyle photography shot capturing a coming-of-age celebration. The subject is a young European girl, radiant with joy, standing as the focal point of a party. She is wearing the [Subject Lock: silver-tone baroque jewelry set], specifically featuring the high-arched tiara with a central teardrop crystal, the V-shaped crystal necklace, and matching chandelier earrings. The jewelry catches the warm ambient light, sparkling brilliantly. In the soft-focus background, family members and friends are seen clapping, smiling, and celebrating her. The setting is an elegant banquet hall or garden party with festive decor. The atmosphere is emotional, celebratory, and luxurious.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Immersive Storytelling (沉浸式故事排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: \\\"璀璨成人礼\\\". Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Upper left or right negative space].\n2. **Description**: Content: \\\"这一刻，做自己的公主\\\". Style: [Minimalist Sans-serif, white or light grey]. Position: [Below the title, smaller font size].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议将人物主体置于画面中心或黄金分割点，确保首饰（皇冠、项链、耳环）处于清晰焦平面。文案放置在背景较暗或较模糊的区域（如虚化的人群上方或侧面的墙壁空间），以保证文字的可读性，同时不遮挡产品细节。",
+  "original_images_count": 1
+}

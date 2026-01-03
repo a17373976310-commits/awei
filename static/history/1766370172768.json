@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766370172768,
+  "original_prompt": "帮我生成一栋美国现代城市独栋大楼上面有Jade Trau的字母，要求全景",
+  "optimized_prompt": "帮我生成一栋美国现代城市独栋大楼上面有Jade Trau的字母，要求全景, high quality, 4k",
+  "scenario": "free_mode",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "Default layout.",
+  "original_images_count": 1
+}

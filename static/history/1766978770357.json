@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766978770357,
+  "original_prompt": "帮我给这个产品和手臂添加一个场景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description] Professional Product Photography, Close-up shot. A human forearm wearing a [Voluminous multi-row stacked bead cuff in translucent peach/amber acrylic]. The background is a soft-focus, sun-drenched garden scene. Golden hour sunlight filters through lush green leaves, creating dappled light and bokeh effects on the skin and bracelet. The light highlights the internal refraction and high-gloss finish of the peach beads, making them glow. Dreamy, warm, and sophisticated atmosphere. \\n\\n[Text & UI Layout] Minimalist fashion magazine layout. Text placed in the upper left negative space to balance the diagonal line of the arm. Use a thin, elegant Serif font for the main title.\\n\\n[Content] Main Title: \\\"AMBER GLOW\\\" | Sub Title: \\\"Summer Collection\\\"\",\n    \"seadream_cn\": \"[Visual Description] 高级感商业摄影，手部特写。佩戴着[琥珀色多层亚克力串珠宽手镯]的手臂伸向光源。背景设定为午后温暖的自然光影，阳光透过翠绿的树叶洒下斑驳光点，营造出唯美、清新的夏日氛围。柔和的侧逆光穿透半透明的蜜桃色珠子，展现出晶莹剔透的质感与内部折射光泽，强调珠体的高光细节。肤色自然柔和。\\n\\n[Text & UI Layout] 极简主义排版，大量留白位于画面左上方。主标题使用优雅纤细的宋体或衬线体，字间距微宽，营造呼吸感。\\n\\n[Content] 主标题：“流光溢彩” | 副标题：“夏日限定系列”\",\n    \"layout_logic\": \"Since the arm enters from the bottom-right diagonally upwards, the visual weight is concentrated on the right. The text should be placed in the top-left 'empty' area (Negative Space) to create a balanced composition. The lighting should come from the top-left to illuminate the translucent beads properly.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

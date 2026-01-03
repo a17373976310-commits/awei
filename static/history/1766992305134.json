@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766992305134,
+  "original_prompt": "帮我给这个些透明的白色手串添加一个合适的背景，无文案",
+  "optimized_prompt": "[Visual Description]\n- Subject Lock: A wide, multi-strand cuff bracelet on a model's wrist, composed of stacked rows of transparent, amber-tinted spherical beads with high-gloss refraction. The beads act as lenses, distorting the skin tone beneath.\n- Environment: A soft, ethereal aesthetic setting. Light, billowing beige or cream silk fabric acting as a base, with soft natural sunlight filtering through, creating caustic light patterns (water-like reflections) on the surface.\n- Lighting: Warm, golden-hour rim lighting highlighting the translucency of the beads. Soft shadows.\n- Color Palette: Champagne gold, soft beige, warm amber, and clean white.\n\n[Text & UI Layout]\n- Layout Style: Minimalist fashion editorial style. The arm enters diagonally from the bottom left or right.\n- Main Title: \"Crystal Clear\" (Sans-serif, elegant, thin weight, centered or top right)\n- Sub Title: \"Summer Essence Collection\" (Smaller font, spaced out below title)\n- Slogan: \"Reflect Your Inner Light\" (Italic, bottom right corner)",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is a bracelet on a wrist (diagonal composition usually), place the text in the opposite corner to balance the visual weight. Use a clean, airy font to match the transparency of the beads.",
+  "original_images_count": 1
+}

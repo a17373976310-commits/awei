@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767323470830,
+  "original_prompt": "给这个手串做一张淘宝主图，要求背景暗色调（可以不是黑色）的女性高级礼盒面板或者放点黑白的玫瑰，文案：平安顺遂 白水晶",
+  "optimized_prompt": "[Visual Description]\nHigh-end Jewelry Photography for Tmall. The subject is [Subject Lock]: A single-strand beaded bracelet composed of uniformly sized, highly transparent spherical beads (Clear Quartz). The beads act as lenses, refracting light with sharp specular highlights on their surfaces. A key structural feature is the visible horizontal channel running through the center of each bead. The bracelet rests elegantly on a premium dark charcoal or deep midnight blue velvet texture inside a luxury gift box setting. \n[Props]: Several elegant, desaturated black and white roses are placed softly in the background, creating a romantic and mysterious atmosphere.\n[Lighting]: Dramatic studio spotlighting (Chiaroscuro style) that makes the transparent beads glow and sparkle against the dark background. High contrast, sharp focus on the crystal texture.\n\n[Text & UI Layout]\n***Layout Style**: Left-Aligned Vertical Luxury (左侧竖排高级布局).\nText Rendering Instructions (Must be Metallic Gold or White for contrast):\n1. **Main Title**: Content: \"平安顺遂\". Position: [Top Left]. Style: [Elegant Calligraphy or Serif font, Metallic Silver texture].\n2. **Sub Title**: Content: \"白水晶\". Style: [Minimalist Sans-serif, tracking spaced out].\n3. **Marketing Banner**: Content: \"天然原矿 · 净化磁场\". Style: [Thin white line border, minimal].\n4. **Trust Badge**: Content: \"甄选礼盒\". Style: [Small Gold Foil Stamp effect].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Due to the 'Dark Tone' background, all text must be in Light Colors (White, Silver, or Pale Gold) to ensure legibility. The crystal bracelet absorbs the background color, so the lighting is crucial—rim lighting is needed to separate the clear beads from the dark background. Place the text in the 'Negative Space' (the dark velvet area) to avoid covering the sparkling beads or the rose details.",
+  "original_images_count": 1
+}

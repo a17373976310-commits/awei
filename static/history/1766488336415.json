@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766488336415,
+  "original_prompt": "给这套产品做一张详情页",
+  "optimized_prompt": "[Visual Description]\n\"A breathtaking, romantic wedding morning still life photography. The subject [Baroque-inspired crystal filigree jewelry set] is the focal point. Specifically, the [classic curved tiara with intricate silver lattice] rests on a textured surface, with the [V-shaped drop necklace and teardrop earrings] arranged naturally below it. The jewelry is elegantly draped over folds of [soft ivory silk and delicate white tulle]. Lighting is [soft, diffused morning sunlight streaming through a sheer curtain], creating a [dreamy, ethereal, and pure] atmosphere. The scene includes [a single white rose and a blurred edge of a wedding veil] in the background to suggest the bridal context. The high-polish silver and crystals catch the light, creating subtle, magical starbursts.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: “璀璨时刻”. Style: [Elegant Serif, e.g., Didot or Bodoni, Silver or Charcoal Grey]. Position: [Floating in the upper right negative space].\n2. **Description**: Content: “见证永恒的誓言”. Style: [Clean Sans-serif, thin weight, smaller]. Position: [Directly below the title].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the jewelry is silver and 'ice-like', a 'High Key' (bright) background using white silk or tulle is recommended to evoke the wedding theme. The text should be placed in the negative space created by the fabric folds, likely in a dark grey or silver foil color to maintain elegance without being too harsh.",
+  "original_images_count": 1
+}

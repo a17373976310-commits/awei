@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767367685195,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求四宫格排版，展示这套首饰的穿戴方式，戴皇冠——戴耳环——戴项链，和一个穿戴好的模特。",
+  "optimized_prompt": "[Visual Description] A professional Amazon product listing image featuring a precise 2x2 grid collage layout (quadrant split) showcasing a silver bridal jewelry set. **[Subject Lock]:** The jewelry features a symmetrical silver filigree architecture defined by large pear-cut focal stones surrounded by dense round-crystal pavé detailing. **(Panel 1 - Top Left):** Close-up of a bride's hairstyle wearing the graduated silhouette tiara with the tall central peak. **(Panel 2 - Top Right):** Side profile close-up focusing on the dangling chandelier earring on a model's ear. **(Panel 3 - Bottom Left):** A close-up of the neck and décolletage showcasing the V-drop necklace with the teardrop pendant. **(Panel 4 - Bottom Right):** A half-body portrait of a beautiful bride in a white wedding dress wearing the complete set, smiling confidently. High-key lighting, clean aesthetics. \n\n[Text & UI Layout] Overlay sleek, professional English text suitable for Amazon. Main Title in the center or top: \"Royal Wedding Set\". Small labels near respective items: \"Exquisite Tiara\", \"Dazzling Earrings\", \"Statement Necklace\". Font style: Modern, minimal sans-serif in dark grey or metallic silver.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议使用细的白色或银色分割线将画面分为田字格。右下角的模特展示图（Full Set）可以稍微调整构图，使其视觉权重略大于其他三格局部图，或者作为视觉锚点。保持四个格子的色温一致（冷白/银色调），确保首饰的高光质感统一。",
+  "original_images_count": 2
+}

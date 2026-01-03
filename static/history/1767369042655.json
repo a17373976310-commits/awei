@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767369042655,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求以有创意的排版版式分别展示产品细节，背景是一个欧洲模特带着这套首饰。",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description] A high-converting Amazon main image featuring a stunning European bride model with an elegant updo hairstyle, wearing the [Subject Lock] silver-tone baroque jewelry set (tiara, V-shape necklace, drop earrings). The lighting is soft, glamourous studio illumination, highlighting the sparkle of the crystals against her skin and white lace wedding dress. The layout uses a creative composite style: the main layer is the model portrait, while the right side features three vertically stacked, circular loupe-style insets. These insets strictly display the macro details of the 'pear-cut central stones' and 'intricate filigree metalwork' from the tiara, necklace, and earrings respectively. \\n\\n[Text & UI Layout] In the negative space on the left, place professional English text: Main Title 'ROYAL BRIDAL SET', Subtitle 'Tiara, Necklace & Earrings', and a small badge 'Silver Plated'. Font style: Elegant Serif, color: Slate Grey or Silver.\",\n    \"seadream_cn\": \"[Visual Description] 亚马逊跨境电商爆款主图风格。画面主体为一位气质高贵的欧洲白人新娘模特，身穿婚纱，佩戴全套[Subject Lock]巴洛克风格银色首饰（皇冠、项链、耳环）。光影质感强调“高光泽银色镀层”与“梨形切割锆石”的璀璨火彩。排版采用“模特展示+细节放大”的创意组合：左侧为模特半身佩戴效果图，右侧设计三个悬浮的圆形放大镜特效，分别对焦展示皇冠的中央水滴主石、项链的V型吊坠细节以及耳环的镂空雕花工艺，以此体现产品的精致做工。\\n\\n[Text & UI Layout] 这里的文案需使用英文以符合亚马逊平台要求。左上角排版英文标题 'EXQUISITE DESIGN'，副标题 '3-Piece Wedding Jewelry'。字体采用纤细高雅的衬线体，营造奢华感。\",\n    \"layout_logic\": \"Split Composition Strategy: Allocate 60% of the canvas (left/center) to the lifestyle model shot to establish emotional connection. Dedicate the right 30% column to vertical detail close-ups to prove product quality (Visual Fingerprint verification). Place text in the top-left 'F-pattern' reading zone.\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 2
+}

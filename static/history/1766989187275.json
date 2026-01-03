@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766989187275,
+  "original_prompt": "帮我给这个些透明的白色手串添加一个红色场景，无文案",
+  "optimized_prompt": "[Visual Description]\nHigh-fashion product photography featuring a voluminous, multi-row cuff bracelet composed of transparent, spherical beads on a wrist. The beads have a warm peachy-amber tint and bubble-like texture. The scene is dominated by a luxurious, monochromatic red aesthetic. \nBackground: Deep crimson velvet drapes or red silk flowing softly, creating elegant folds and shadows. \nLighting: Dramatic chiaroscuro lighting, warm red gels, soft spotlights highlighting the refractive quality of the beads. The transparent beads pick up the red hues of the environment, creating glowing internal reflections. The skin tone is warm and natural, contrasting beautifully with the rich red background.\n\n[Text & UI Layout]\nLayout Style: Minimalist luxury poster style.\nMain Title: \"Crystal Allure\" (Serif font, gold or white, centered top or bottom)\nSub Title: \"Radiant Elegance in Every Bead\" (Sans-serif, smaller, below main title)\nText Placement: Keep the text area clean, avoiding overlap with the bracelet details. Use negative space in the red background for text.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product is on a wrist (likely diagonal composition), place the Main Title in the empty space opposite the arm (likely top-left or bottom-right). Use a serif font for a premium feel. The red background provides excellent contrast for white or gold text.",
+  "original_images_count": 1
+}

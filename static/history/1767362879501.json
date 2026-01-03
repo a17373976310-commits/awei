@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767362879501,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如木桌，桌子或者其他），有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "[Visual Description] \nA high-end Amazon lifestyle product photography shot. In the immediate foreground, sharp focus on the [Subject Lock] luxurious jewelry set: a silver-tone baroque tiara with five crystal peaks, a V-shaped necklace with a large pear-cut drop, and matching teardrop earrings. The set is elegantly displayed on a polished, rich mahogany wooden table surface, capturing the brilliant refraction of the cubic zirconia. \n\nIn the mid-ground, slightly softer focus, a European couple creates an emotional backdrop. A handsome European male in a smart suit stands beside the table, smiling warmly. A beautiful European female with her hands raised in genuine surprise and delight is looking down at the jewelry gift. The lighting is commercial studio quality mixed with warm ambient indoor light, highlighting the sparkle of the crystals and the joy on the woman's face.\n\n[Text & UI Layout] \nAmazon Listing Style overlay. \nTop Left: Bold, elegant serif font in metallic silver: \"Timeless Elegance\". \nBelow that: Smaller sans-serif text: \"Premium Bridal Collection\". \nBottom Right: A subtle badge graphic: \"Perfect Gift Choice\".",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since this is for an Amazon listing but requests a lifestyle scene, the product must remain the absolute visual anchor. Place the jewelry set in the lower 1/3 or center foreground with razor-sharp focus. The couple should be positioned behind the table in the upper 2/3, ensuring their expressions are visible but not stealing focus from the product details. Text should be placed in the negative space (upper left or right) to avoid covering the jewelry or the couple's faces.",
+  "original_images_count": 1
+}

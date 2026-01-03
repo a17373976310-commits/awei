@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766588371157,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求躺在浅红色背景里，旁边有一段米色丝带",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry scene, Premium Commercial Photography style. A beaded bracelet composed primarily of spherical red cinnabar-style beads with a glossy, speckled finish is lying naturally in the center. The bracelet features a focal translucent peach-pink gemstone and a blue cloisonné lotus bead with metallic outlines. [Props]: A flowing, elegant beige silk ribbon is arranged artistically next to the bracelet, guiding the eye without obscuring the product. [Background]: Clean Light Red Studio Background, creating a warm, monochromatic aesthetic. Lighting is High-key Studio Softbox, emphasizing the glittering mineral texture of the red beads and the gloss of the peach gem, ensuring sharp details.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “原矿帝王砂”. Position: [Top Center or Top Left]. Style: [3D Bold Serif Gold Texture]. Color: [Gold or White].\n2. **Sub Title**: Content: “高含量 金光闪耀”. Style: [Clean and sharp, smaller size].\n3. **Marketing Banner**: Content: “限时赠礼盒”. Style: [3D Red Gradient Capsule with Gold Trim].\n4. **Trust Badge**: Content: “真品保证”. Style: [Translucent Glass Badge].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Suggest placing the bracelet in the lower 60% of the frame to leave ample 'Negative Space' at the top for the Main Title. The beige ribbon should flow diagonally or in a curve behind the bracelet to create depth, avoiding covering the specific 'Blue Cloisonné Bead' which is a key visual identifier. Use a white or gold font for the text to contrast against the light red background.",
+  "original_images_count": 2
+}

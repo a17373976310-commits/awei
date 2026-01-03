@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766363513424,
+  "original_prompt": "给这个手串做一张详情页，要求有一个模特戴着手串",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle close-up photography shot. The [Subject: beaded bracelet with rainbow obsidian and central Tiger's Eye] is worn on a model's wrist (natural skin tone, visible veins, masculine but elegant hand). The model is wearing a textured linen shirt with the cuff slightly rolled up. The lighting is [Warm Afternoon Sunlight], casting a soft glow that highlights the chatoyancy of the golden Tiger's Eye bead and reveals the subtle purple-green iridescent rings on the black obsidian beads. The matte carved totem beads provide a textural contrast. The background is a shallow depth-of-field view of a [wooden desk or Zen tea table], blurring out details to keep focus on the wrist.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration (Scene Fusion Layout).\nText Rendering Instructions:\n1. **Mood Title**: Content: “静谧守护” (Silent Guardian). Style: [Elegant Serif / Songti, Gold or Dark Grey]. Position: [Floating in the upper right negative space].\n2. **Description**: Content: “天然彩虹眼黑曜石 · 匠心雕刻”. Style: [Clean Sans-serif, smaller size, semi-transparent].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用对角线构图，模特的手臂从画面左下向右伸展，将视觉重心引导至手串上。文字信息放置在画面右上方的背景虚化区域（Negative Space），与手串形成视觉平衡，避免遮挡黑曜石和虎眼石的关键材质细节。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767323133570,
+  "original_prompt": "给这个手串做一张淘宝主图，要求背景暗色调（可以不是黑色）的女性高级礼盒面板或者放点黑白的玫瑰，",
+  "optimized_prompt": "[Visual Description]\nModern Chinese E-commerce Jewelry scene, Premium Luxury Gift style. A single-strand beaded bracelet composed of uniformly sized, highly spherical clear crystal beads (10-12mm), showcasing flawless transparency and glass-like clarity. The beads act as lenses, refracting light with sharp highlights. The bracelet is elegantly draped over a dark, textured surface (resembling the interior of a high-end jewelry gift box) or dark velvet. \n[Props]: Artistically arranged black and white roses in the background, adding a romantic and mysterious touch. A hint of a satin ribbon.\n[Background]: Deep charcoal or dark slate moody background, low-key lighting to enhance the sparkle of the clear crystals.\nLighting is Focused Spotlight with Rim Lighting, creating a glowing effect on the clear beads against the dark void.\n\n[Text & UI Layout]\n***Layout Style**: Top-Bottom Standard.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: \"天然白水晶\". Position: [Top Left Negative Space]. Style: [3D Serif Font in Metallic Silver or White, Elegant and Thin].\n2. **Sub Title**: Content: \"通透无暇 · 净如琉璃\". Style: [Minimalist Sans-serif, small, letter-spaced].\n3. **Marketing Banner**: Content: \"甄选级 | 顺丰包邮\". Style: [Thin white wireframe capsule].\n4. **Trust Badge**: Content: \"精美礼盒\". Style: [Small Gold Foil Stamp effect].",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "考虑到水晶手串是全透明的，背景采用了深色（暗灰/黑/深丝绒）来最大化珠子的光泽感和透亮感。文字配色建议使用纯白或金属银色，以形成强烈的黑白对比，确保在暗色背景上的绝对可读性。黑白玫瑰作为配饰，既呼应了'高级感'，又不会用杂乱的色彩抢走透明水晶的主体地位。",
+  "original_images_count": 1
+}

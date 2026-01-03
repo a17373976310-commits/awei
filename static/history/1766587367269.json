@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766587367269,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求一个穿着红色衣服的人手托着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"Modern E-commerce [Jewelry Hand Model] Scene, [Oriental Aesthetics & Minimalist Commercial] style. A close-up shot of a hand gently holding a [deep crimson cinnabar bracelet with glittering flecks, featuring a unique peach quartz bead and a blue cloisonné floral charm] in the palm. The model is wearing a [soft, high-quality red silk or cotton traditional Chinese garment], the sleeve visible near the wrist, creating a harmonious red-on-red palette. \n[Props]: The hand is posed elegantly, palm slightly open, showcasing the bracelet's circular shape. No clutter.\n[Background]: [Softly blurred warm neutral tones or a very faint traditional Chinese window pattern], keeping focus entirely on the hand and product.\nLighting is [Soft, warm studio lighting], highlighting the glossy texture of the beads and the glitter inside the cinnabar.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Left-Right Balance or Bottom-Right Product Focus.\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “本命年红运”. Position: [Top Right or Top Left]. Style: [Bold Calligraphic Chinese Font with gold outline]. Color: [Gold/Yellow].\n2. **Sub Title**: Content: “高含量紫金砂”. Style: [Clean Sans-serif, white or light beige].\n3. **Marketing Banner**: Content: “镇店之宝”. Style: [Small red vertical tag or gold stamp style].\n4. **Trust Badge**: Content: “大师开光”. Style: [Subtle circular seal].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the user requested a hand-held shot with red clothing, the image will be dominated by red tones (red bracelet, red sleeve). To make the text pop, use 'Gold' or 'White' fonts. Place the text in the negative space (usually top left or top right) where the background is blurred. Ensure the 'Blue Cloisonné Charm' (the visual key) is facing the camera to break the monotony of the red color.",
+  "original_images_count": 2
+}

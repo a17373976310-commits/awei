@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766587166533,
+  "original_prompt": "给这个朱砂手串做一张淘宝主图，要求一个穿着红色衣服的人手托着这个手串",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce [Jewelry & Accessories] scene, [High-End Commercial Photography] style. A beaded bracelet composed primarily of spherical red beads with a distinctive glittery texture (resembling cinnabar or goldstone) is the hero. The bracelet features 18 red spheres, one translucent pale peach bead, and one intricate blue and purple cloisonné lotus charm. The product is being gently held in the palm of a hand belonging to a person wearing elegant [Red Silk or Velvet Clothing], creating a tone-on-tone aesthetic. The bracelet is located [Center-Right in the hand].\n[Props]: Softly blurred traditional Chinese teacup or wooden texture in the distance, but the focus is on the hand and bracelet.\n[Background]: [Softly Lit Studio Background with warm, festive tones], ensuring the red of the bracelet pops against the skin tone and clothing.\nLighting is [Studio Softbox with Rim Light], highlighting the glittery texture of the cinnabar beads and the gloss of the enamel charm.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (上文下图经典布局).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “本命鸿运 (Good Luck for Zodiac Year)”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with golden gradient and soft shadow]. Color: [Gold/Yellow to contrast with Red].\n2. **Sub Title**: Content: “高含量紫金砂 / 护身转运 (High Content Cinnabar / Protection)”. Style: [Clean and sharp, slightly smaller than main title, white text].\n3. **Marketing Banner**: Content: “礼盒包装 顺丰包邮 (Gift Box + Free Fast Shipping)”. Style: [Translucent White Bar or Red Ribbon UI].\n4. **Trust Badge**: Content: “假一赔三 (Authenticity Guarantee)”. Style: [Gold Seal Icon].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议使用'Tone-on-Tone'（同色系）构图策略，红色衣服作为背景色块，手部肤色作为中间调，朱砂手串作为最高饱和度的焦点。文案建议放在左上角或正上方，使用金色（#FFD700）或纯白色字体，以在红色背景中获得最大的可读性和点击率。",
+  "original_images_count": 2
+}

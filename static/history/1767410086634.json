@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767410086634,
+  "original_prompt": "给这四个包装（可以改变位置大小不能改变细节），打开的首饰盒——包装盒——首饰盒包装——包装袋，做一张淘宝主图。要求几何背景。",
+  "optimized_prompt": "[Visual Description]\n\"Modern Chinese E-commerce Jewelry Packaging scene, Minimalist Geometric Commercial Photography style. The subject is a luxury set of vibrant orange packaging items arranged in a depth-layered composition: 1. An orange shopping bag with black rope handles standing in the background, 2. A rectangular orange lid with a chocolate brown band standing mid-ground, 3. A large square base box with gold trim lying flat, 4. An open small hinged jewelry box with plush white satin interior in the immediate foreground (Hero Focus). [Props]: The items are placed on sleek geometric podiums (cubes and cylinders) in soft cream and beige tones. [Background]: A clean, abstract 3D geometric space with subtle shadows. Lighting is high-key Studio Softbox, ensuring the matte paper texture, gold foil edges, and the vibrant orange color are sharp and true to life.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Left Text Focus (Left alignment). \nText Rendering Instructions (Must be High Contrast & Legible in Simplified Chinese):\n1. **Main Title**: Content: “高端首饰包装”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with soft shadow]. Color: [Dark Chocolate Brown or Black].\n2. **Sub Title**: Content: “现货批发 · 支持定制”. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: “免费设计排版”. Style: [Premium UI, e.g. '3D Orange Gradient Capsule'].\n4. **Trust Badge**: Content: “源头工厂”. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用‘三角构图’摆放产品：最高的购物袋在后方作为背景支撑，中间放置盒盖与底盒，最前方放置打开的小首饰盒作为视觉焦点。几何背景的线条应引导视线指向前方的小盒子。文字信息集中在画面的左上角或右上角留白处，避免遮挡产品细节。",
+  "original_images_count": 1
+}

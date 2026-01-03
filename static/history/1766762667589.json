@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766762667589,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特头上（非真人），纯白背景，无文案",
+  "optimized_prompt": "Commercial product photography of a luxurious bridal jewelry set worn on a sleek, matte black mannequin bust. [Visual Description]: The set includes a high-arch silver tiara with intricate scrollwork and large teardrop crystals, a matching V-shaped necklace with a central drop pendant, and chandelier-style earrings. The jewelry is perfectly positioned on the black mannequin head to showcase the fit and drape. [Subject Lock]: Classic royal aesthetic, dense crystal pavé, symmetrical teardrop focal gems, silver filigree framework. [Environment]: Pure white background (#FFFFFF). [Lighting]: Bright, even studio lighting to create high contrast against the black mannequin, highlighting the sparkle of the crystals. Soft natural contact shadows at the base of the mannequin. No text, no props.",
+  "scenario": "amazon_white",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the background is pure white and there is no text, the black mannequin bust should be centered horizontally. The framing should be a medium close-up, capturing the head and neckline of the mannequin to fully display the tiara, earrings, and necklace together. Ensure the scale of the mannequin is about 85% of the frame height to allow breathing room.",
+  "original_images_count": 1
+}

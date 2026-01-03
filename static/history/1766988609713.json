@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766988609713,
+  "original_prompt": "帮我给这个产品添加一个红色场景，无文案",
+  "optimized_prompt": "[Visual Description]\nSubject: A wide, multi-row cuff bracelet composed of numerous uniform spherical beads stacked densely around a wrist, made of translucent amber glass with high-gloss finish.\nEnvironment: A monochromatic and dramatic red fashion editorial scene. Deep crimson velvet drapes or textured red silk background creating soft, luxurious folds. Warm, directional spotlighting enhances the translucency of the amber beads against the red backdrop, creating glowing internal refractions.\nAtmosphere: Passionate, bold, high-fashion, elegant, contrasting warm amber tones against deep red.\n\n[Text & UI Layout]\nContent: \"Pure Elegance\" (Main Title), \"Amber Glow Collection\" (Subtitle) [Auto-generated for context since user provided none, but emphasis is on the visual]\nFont Style: Minimalist serif font, elegant and thin, placed unobtrusively.\nPosition: The arm enters diagonally from the bottom-left or center-right; text is placed in the negative space of the red background, ensuring the product remains the focal point.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since the product (translucent amber beads) has a warm tone, placing it on a red background creates a bold, analogous color scheme. Use deep, saturated reds (crimson or burgundy) rather than bright fire-engine red to maintain elegance and allow the lighter amber beads to 'pop' through translucency. The layout should follow a diagonal composition to guide the eye along the arm.",
+  "original_images_count": 1
+}

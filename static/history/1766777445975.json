@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766777445975,
+  "original_prompt": "这套产品穿戴在一个欧洲模特身上，客厅场景，有一个欧洲男性双手做出正在给女性（看向男性微笑）带皇冠的姿势。",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle photography shot featuring a European couple in a luxurious, warm-toned living room. The European female model is seated, wearing a white elegant dress and the [Subject Lock: V-shaped necklace with crystal clusters and central teardrop pendant] and [Subject Lock: diamond-shaped drop earrings]. A European male stands behind or beside her, gently placing the [Subject Lock: filigree silver tiara with pear-shaped focal stones] on her head. The female model is looking up at the male with a warm, loving smile. Soft, romantic indoor lighting highlights the sparkles of the cubic zirconia and the emotional connection between the couple. Background features blurred velvet sofa and classic interior decor.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Romantic Storytelling (情感叙事排版).\nText Rendering Instructions:\n1. **Mood Title**: Text: '为爱加冕' (Crowning for Love). Style: [Elegant, flowing Serif font, Gold or Silver foil texture]. Position: [Upper left or right negative space].\n2. **Description**: Text: '璀璨时刻，只属于你' (Bright moments, only for you). Style: [Minimalist Sans-serif, small size]. Position: [Below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "4:3",
+  "layout_logic": "1. **构图焦点**: 画面应当以模特的上半身特写为主，皇冠的位置应处于视觉黄金分割点附近，确保珠宝细节清晰可见。\n2. **视线引导**: 男性的手势引导视线看向皇冠，女性的视线引导视线看向男性，形成一个封闭的情感交互环。\n3. **留白处理**: 建议在背景的虚化部分（如墙壁或窗帘处）预留空间放置文案，避免遮挡人物表情和珠宝主体。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766989688358,
+  "original_prompt": "帮我给这个些透明的白色手串添加一个红色背景，无文案",
+  "optimized_prompt": "[Visual Description]\nSubject: [Subject Lock] A multi-strand beaded cuff bracelet on a wrist, featuring spherical semi-transparent beads with glossy surface finish and internal refraction.\nBackground: A rich, festive red background. The texture should be smooth and luxurious, possibly red silk or velvet, to contrast with the glossy beads. Soft, warm lighting highlights the translucency of the beads against the red backdrop.\nStyle: Minimalist product photography, high fashion, elegant, studio lighting.\n\n[Text & UI Layout]\n(No text provided, minimalist layout)\nMain Title: \"\"\nSub Title: \"\"\nText Placement: Leave ample negative space in the upper left or right corners for potential future branding, but keep the current output clean.",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "Since no text is required, the layout should focus on centering the wrist and bracelet or placing it diagonally to lead the eye. The red background should be uniform but textured to avoid looking flat. Lighting should come from the side to enhance the spherical volume of the beads.",
+  "original_images_count": 1
+}

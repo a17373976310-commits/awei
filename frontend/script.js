@@ -20,6 +20,7 @@ class App {
         this.ctx = null;
         this.isDrawing = false;
         this.history = [];
+        this.logs = [];
 
         this.loadHistory();
         this.initTabs();
@@ -27,62 +28,59 @@ class App {
         this.initScenario();
         this.initUpload();
         this.initGeneration();
+        this.initHistory();
         this.renderHistory();
+        this.initLogPanel();
     }
 
     loadHistory() {
-        const saved = localStorage.getItem('img_history');
+        const saved = localStorage.getItem('banana_history');
         if (saved) {
             try {
                 this.history = JSON.parse(saved);
             } catch (e) {
                 console.error('Failed to load history', e);
+                this.history = [];
             }
         }
     }
 
-    addToHistory(data) {
-        const item = {
-            id: Date.now().toString(),
-            url: data.url,
-            prompt: data.prompt,
-            optimizedPrompt: data.optimizedPrompt,
-            originalImages: data.originalImages || [],
-            timestamp: Date.now()
-        };
-        this.history.unshift(item);
+    addToHistory(item) {
+        if (!item) return;
 
-        // Hard limit first
-        if (this.history.length > 20) {
-            this.history = this.history.slice(0, 20);
+        // Ensure item has an ID
+        if (!item.id) {
+            item.id = item.timestamp || Date.now().toString();
         }
 
+        // Avoid duplicates
+        if (this.history.find(h => h.id === item.id)) return;
+
+        this.history.unshift(item);
+        // Limit history to 50 items
+        if (this.history.length > 50) this.history.pop();
+
         this.saveHistory();
+        this.renderHistory();
     }
 
     saveHistory() {
         try {
-            localStorage.setItem('img_history', JSON.stringify(this.history));
+            localStorage.setItem('banana_history', JSON.stringify(this.history));
         } catch (e) {
             if (e.name === 'QuotaExceededError' || e.code === 22 || e.code === 1014) {
                 console.warn('LocalStorage quota exceeded. Trimming history...');
-                // Remove oldest items until it fits or is empty
                 while (this.history.length > 0) {
-                    this.history.pop(); // Remove last
+                    this.history.pop();
                     try {
-                        localStorage.setItem('img_history', JSON.stringify(this.history));
-                        // If success, break
+                        localStorage.setItem('banana_history', JSON.stringify(this.history));
                         break;
-                    } catch (e2) {
-                        // Continue trimming
-                    }
+                    } catch (e2) { }
                 }
-                this.renderHistory();
             } else {
                 console.error('Failed to save history', e);
             }
         }
-        this.renderHistory();
     }
 
     renderHistory() {
@@ -95,10 +93,10 @@ class App {
         }
 
         container.innerHTML = this.history.map(item => `
-      <div class="history-item" data-id="${item.id}">
-        <img src="${item.url}" alt="Generated Image">
-      </div>
-    `).join('');
+            <div class="history-item" data-id="${item.id}">
+                <img src="${item.url}" alt="Generated Image" onerror="this.src='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22100%22 height=%22100%22><rect width=%22100%22 height=%22100%22 fill=%22%23333%22/><text x=%2250%%22 y=%2250%%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%23666%22 font-size=%2212%22>加载失败</text></svg>'">
+            </div>
+        `).join('');
 
         container.querySelectorAll('.history-item').forEach(el => {
             el.addEventListener('click', () => {
@@ -121,14 +119,13 @@ class App {
         if (!modal) return;
 
         modalImg.src = item.url;
-        modalPrompt.textContent = item.prompt || '无';
-        modalOptimized.textContent = item.optimizedPrompt || '无';
+        modalPrompt.textContent = item.original_prompt || item.prompt || '无';
+        modalOptimized.textContent = item.optimized_prompt || item.optimizedPrompt || '无';
 
-        if (item.originalImages && item.originalImages.length > 0) {
+        if (item.original_images && item.original_images.length > 0) {
             modalOriginalGroup.classList.remove('hidden');
-            modalOriginalImg.classList.add('hidden'); // Hide single img if exists
+            modalOriginalImg.classList.add('hidden');
 
-            // Create or update gallery in modal
             let gallery = modalOriginalGroup.querySelector('.modal-original-gallery');
             if (!gallery) {
                 gallery = document.createElement('div');
@@ -136,7 +133,7 @@ class App {
                 modalOriginalGroup.appendChild(gallery);
             }
 
-            gallery.innerHTML = item.originalImages.map(src => `
+            gallery.innerHTML = item.original_images.map(src => `
                 <img src="${src}" class="modal-gallery-thumb" onclick="window.open('${src}', '_blank')">
             `).join('');
         } else {
@@ -144,13 +141,10 @@ class App {
         }
 
         modal.classList.remove('hidden');
-
-        // Enable zoom for modal image
         this.enableZoomPan(modalImg, document.querySelector('.modal-image-container'));
 
         const close = () => {
             modal.classList.add('hidden');
-            // Reset zoom
             modalImg.style.transform = 'translate(0px, 0px) scale(1)';
         };
 
@@ -161,6 +155,8 @@ class App {
     }
 
     enableZoomPan(imgElement, containerElement) {
+        if (!imgElement || !containerElement) return;
+
         let scale = 1;
         let panning = false;
         let pointX = 0;
@@ -168,7 +164,6 @@ class App {
         let startX = 0;
         let startY = 0;
 
-        // Reset transform
         imgElement.style.transform = 'translate(0px, 0px) scale(1)';
 
         const setTransform = () => {
@@ -190,7 +185,7 @@ class App {
             panning = true;
         };
 
-        document.onmouseup = (e) => {
+        document.onmouseup = () => {
             panning = false;
         };
 
@@ -206,11 +201,15 @@ class App {
     showPreview(url) {
         const container = document.getElementById('preview-container');
         if (container) {
-            container.innerHTML = `<img src="${url}" style="max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);">`;
-
-            // Enable zoom for preview
+            if (!url) {
+                container.innerHTML = '<div style="color: #ff4d4d; padding: 20px;">未找到图像 URL</div>';
+                return;
+            }
+            container.innerHTML = `<img src="${url}" style="max-width: 100%; max-height: 100%; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3);" onerror="this.onerror=null; this.src=''; this.parentElement.innerHTML='<div style=\'color: #ff4d4d; padding: 20px;\'>图像加载失败，请检查网络或刷新页面</div>';">`;
             const img = container.querySelector('img');
-            this.enableZoomPan(img, container);
+            if (img) {
+                this.enableZoomPan(img, container);
+            }
         }
     }
 
@@ -223,7 +222,6 @@ class App {
 
         const setMode = (mode) => {
             this.currentMode = mode;
-            // Reset all active states
             btnModify?.classList.remove('active');
             btnTxt?.classList.remove('active');
             btnImg?.classList.remove('active');
@@ -247,7 +245,6 @@ class App {
         btnImg?.addEventListener('click', () => setMode('img2img'));
         btnModify?.addEventListener('click', () => setMode('img_modify'));
 
-        // Auto-switch mode based on model selection
         const modelSelect = document.getElementById('model-select');
         modelSelect?.addEventListener('change', () => {
             if (modelSelect.value === 'doubao_seededit') {
@@ -258,6 +255,7 @@ class App {
 
     initRatios() {
         const grid = document.getElementById('ratio-grid');
+        if (!grid) return;
         grid.innerHTML = RATIOS.map(r => `
             <div class="ratio-btn ${r.value === this.selectedRatio.value ? 'active' : ''}" data-value="${r.value}">
                 <div class="ratio-preview" style="width: ${r.width * 4}px; height: ${r.height * 4}px"></div>
@@ -277,9 +275,8 @@ class App {
     initScenario() {
         const mainBtns = document.querySelectorAll('.scenario-selector > .scenario-btn:not(.sub-btn)');
         const subContainer = document.getElementById('sub-scenario-container');
-        const subBtns = subContainer.querySelectorAll('.sub-btn');
+        const subBtns = subContainer?.querySelectorAll('.sub-btn');
 
-        // Default
         this.selectedScenario = 'free_mode';
 
         mainBtns.forEach(btn => {
@@ -291,21 +288,21 @@ class App {
                 target.classList.add('active');
 
                 if (val === 'ecommerce') {
-                    subContainer.classList.remove('hidden');
-                    // Default to the active sub-button or the first one
-                    const activeSub = subContainer.querySelector('.sub-btn.active') || subBtns[0];
-                    this.selectedScenario = activeSub.dataset.value;
-                    // Ensure visual state matches
-                    subBtns.forEach(b => b.classList.remove('active'));
-                    activeSub.classList.add('active');
+                    subContainer?.classList.remove('hidden');
+                    const activeSub = subContainer?.querySelector('.sub-btn.active') || subBtns?.[0];
+                    if (activeSub) {
+                        this.selectedScenario = activeSub.dataset.value;
+                        subBtns?.forEach(b => b.classList.remove('active'));
+                        activeSub.classList.add('active');
+                    }
                 } else {
-                    subContainer.classList.add('hidden');
+                    subContainer?.classList.add('hidden');
                     this.selectedScenario = val;
                 }
             });
         });
 
-        subBtns.forEach(btn => {
+        subBtns?.forEach(btn => {
             btn.addEventListener('click', (e) => {
                 const target = e.currentTarget;
                 subBtns.forEach(b => b.classList.remove('active'));
@@ -318,29 +315,23 @@ class App {
     initUpload() {
         const dropZone = document.getElementById('upload-zone');
         const fileInput = document.getElementById('file-input');
-        const gallery = document.getElementById('upload-gallery');
-
         if (!dropZone || !fileInput) return;
 
         dropZone.addEventListener('click', () => fileInput.click());
-
         dropZone.addEventListener('dragover', (e) => {
             e.preventDefault();
             dropZone.style.borderColor = 'var(--primary)';
         });
-
         dropZone.addEventListener('dragleave', (e) => {
             e.preventDefault();
             dropZone.style.borderColor = 'var(--border)';
         });
-
         dropZone.addEventListener('drop', (e) => {
             e.preventDefault();
             dropZone.style.borderColor = 'var(--border)';
             const files = e.dataTransfer.files;
             if (files.length) this.handleFiles(files);
         });
-
         fileInput.addEventListener('change', (e) => {
             if (e.target.files.length) this.handleFiles(e.target.files);
         });
@@ -348,16 +339,14 @@ class App {
 
     handleFiles(files) {
         const gallery = document.getElementById('upload-gallery');
-        gallery.classList.remove('hidden');
+        gallery?.classList.remove('hidden');
 
         Array.from(files).forEach(file => {
             if (!file.type.startsWith('image/')) return;
-
             const reader = new FileReader();
             reader.onload = (e) => {
                 this.uploadedImages.push(e.target.result);
                 this.renderGallery();
-                // Select the last one by default
                 this.selectImage(this.uploadedImages.length - 1);
             };
             reader.readAsDataURL(file);
@@ -367,7 +356,6 @@ class App {
     renderGallery() {
         const gallery = document.getElementById('upload-gallery');
         if (!gallery) return;
-
         gallery.innerHTML = this.uploadedImages.map((src, idx) => `
             <div class="gallery-item ${idx === this.activeImageIndex ? 'active' : ''}" onclick="app.selectImage(${idx})">
                 <img src="${src}">
@@ -378,7 +366,6 @@ class App {
 
     deleteImage(index) {
         this.uploadedImages.splice(index, 1);
-
         if (this.uploadedImages.length === 0) {
             this.activeImageIndex = -1;
             this.uploadedImage = null;
@@ -387,30 +374,17 @@ class App {
                 dropZone.classList.remove('has-image');
                 dropZone.style.backgroundImage = '';
             }
-            const gallery = document.getElementById('upload-gallery');
-            if (gallery) gallery.classList.add('hidden');
+            document.getElementById('upload-gallery')?.classList.add('hidden');
         } else {
-            if (index === this.activeImageIndex) {
-                // If deleting active image, select the previous one or the first one
-                this.selectImage(Math.max(0, index - 1));
-            } else if (index < this.activeImageIndex) {
-                // If deleting an image before the active one, shift index down
-                this.activeImageIndex--;
-                this.renderGallery();
-            } else {
-                this.renderGallery();
-            }
+            this.selectImage(Math.max(0, index - 1));
         }
     }
 
     selectImage(index) {
         if (index < 0 || index >= this.uploadedImages.length) return;
-
         this.activeImageIndex = index;
-        this.uploadedImage = this.uploadedImages[index]; // Base64 string
+        this.uploadedImage = this.uploadedImages[index];
         this.renderGallery();
-
-        // Update dropzone preview
         const dropZone = document.getElementById('upload-zone');
         if (dropZone) {
             dropZone.classList.add('has-image');
@@ -429,7 +403,6 @@ class App {
     initGeneration() {
         const btn = document.getElementById('generate-btn');
         const promptInput = document.getElementById('prompt-input');
-
         if (!btn || !promptInput) return;
 
         btn.addEventListener('click', async () => {
@@ -439,26 +412,36 @@ class App {
                 return;
             }
 
+            const modelSelect = document.getElementById('model-select');
+            const modelName = modelSelect ? modelSelect.options[modelSelect.selectedIndex].text : '未知模型';
+            this.addLog('info', '开始生成图像', `模型: ${modelName} | 尺寸: ${this.selectedRatio.value}`);
+
             btn.disabled = true;
-            btn.innerHTML = '<span class="icon">⏳</span> 生成中...';
+            let elapsedSeconds = 0;
+            const updateButton = () => {
+                const minutes = Math.floor(elapsedSeconds / 60);
+                const seconds = elapsedSeconds % 60;
+                const timeStr = minutes > 0 ? `${minutes}分${seconds}秒` : `${seconds}秒`;
+                btn.innerHTML = `<span class="icon">⏳</span> 生成中... (${timeStr})`;
+            };
+            updateButton();
+            const timerInterval = setInterval(() => {
+                elapsedSeconds++;
+                updateButton();
+            }, 1000);
+
+            const controller = new AbortController();
+            const timeoutId = setTimeout(() => controller.abort(), 600000); // 10 minutes
 
             try {
                 const formData = new FormData();
                 formData.append('prompt', prompt);
                 formData.append('ratio', this.selectedRatio.value);
                 formData.append('scenario', this.selectedScenario);
-
-                const modelSelect = document.getElementById('model-select');
-                if (modelSelect) {
-                    formData.append('model', modelSelect.value);
-                }
-
+                if (modelSelect) formData.append('model', modelSelect.value);
                 const apiKeyInput = document.getElementById('api-key-input');
-                if (apiKeyInput && apiKeyInput.value) {
-                    formData.append('api_key', apiKeyInput.value);
-                }
+                if (apiKeyInput?.value) formData.append('api_key', apiKeyInput.value);
 
-                // Send all uploaded images for multi-view analysis
                 if (this.uploadedImages.length > 0) {
                     for (let i = 0; i < this.uploadedImages.length; i++) {
                         const blob = await this.base64ToBlob(this.uploadedImages[i]);
@@ -466,36 +449,132 @@ class App {
                     }
                 }
 
-                // Call Backend API
                 const response = await fetch('/api/generate', {
                     method: 'POST',
-                    body: formData
+                    body: formData,
+                    signal: controller.signal
                 });
 
                 if (!response.ok) {
-                    throw new Error('Generation failed');
+                    const errorText = await response.text();
+                    throw new Error(`Submission failed: ${errorText}`);
                 }
 
-                const data = await response.json();
+                const submitData = await response.json();
+                const result = await this.pollTaskStatus(submitData.task_id, controller.signal);
 
-                this.showPreview(data.url);
-                this.addToHistory({
-                    url: data.url,
-                    prompt: data.original_prompt || prompt,
-                    optimizedPrompt: data.optimized_prompt,
-                    originalImages: data.original_images || []
-                });
+                this.addLog('success', '图像生成成功', `耗时: ${elapsedSeconds}秒`);
+                this.showPreview(result.url);
+                this.addToHistory(result);
 
             } catch (error) {
                 console.error(error);
-                alert(`生成失败: ${error.message}`);
+                const msg = error.name === 'AbortError' ? '生成超时(10分钟)' : error.message;
+                this.addLog('error', '生成失败', msg);
+                alert(`生成失败: ${msg}`);
             } finally {
+                clearInterval(timerInterval);
+                clearTimeout(timeoutId);
                 btn.disabled = false;
                 btn.innerHTML = '<span class="icon">✨</span> 应用编辑';
             }
         });
     }
+
+    async pollTaskStatus(taskId, signal) {
+        let retryCount = 0;
+        const maxRetries = 3;
+
+        return new Promise((resolve, reject) => {
+            const poll = async () => {
+                try {
+                    const response = await fetch(`/api/tasks/${taskId}`, { signal });
+                    if (!response.ok) throw new Error(`服务器响应异常: ${response.status}`);
+
+                    const task = await response.json();
+                    retryCount = 0;
+
+                    if (task.status === 'succeed') {
+                        resolve(task.result);
+                    } else if (task.status === 'failed') {
+                        reject(new Error(task.error || '生成失败'));
+                    } else {
+                        if (task.progress) this.addLog('info', `生成进度: ${task.progress}%`, null);
+                        setTimeout(poll, 2000);
+                    }
+                } catch (err) {
+                    if (err.name === 'AbortError') {
+                        reject(new Error('生成超时(10分钟)，请检查网络或尝试简化提示词'));
+                        return;
+                    }
+                    retryCount++;
+                    if (retryCount <= maxRetries) {
+                        setTimeout(poll, 3000);
+                    } else {
+                        reject(new Error(`查询进度失败: ${err.message}`));
+                    }
+                }
+            };
+            poll();
+        });
+    }
+
+    initLogPanel() {
+        const clearBtn = document.getElementById('clear-log-btn');
+        if (clearBtn) clearBtn.addEventListener('click', () => this.clearLogs());
+        this.addLog('info', '系统已启动', '准备接收生成请求');
+    }
+
+    addLog(type, message, details = null) {
+        const now = new Date();
+        const timestamp = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
+        const log = { id: Date.now(), type, message, details, timestamp };
+        this.logs.unshift(log);
+        if (this.logs.length > 50) this.logs = this.logs.slice(0, 50);
+        this.renderLogs();
+    }
+
+    renderLogs() {
+        const container = document.getElementById('log-list');
+        if (!container) return;
+        if (this.logs.length === 0) {
+            container.innerHTML = '<div class="log-empty">工作日志将显示在这里</div>';
+            return;
+        }
+        container.innerHTML = this.logs.map(log => `
+            <div class="log-item ${log.type}">
+                <span class="log-timestamp">${log.timestamp}</span>
+                <div class="log-content">
+                    <div class="log-message">${log.message}</div>
+                    ${log.details ? `<div class="log-details">${log.details}</div>` : ''}
+                </div>
+            </div>
+        `).join('');
+        container.scrollTop = 0;
+    }
+
+    clearLogs() {
+        if (this.logs.length === 0) return;
+        if (confirm('确定要清空所有日志吗？')) {
+            this.logs = [];
+            this.renderLogs();
+            this.addLog('info', '日志已清空', null);
+        }
+    }
+
+    initHistory() {
+        const clearBtn = document.getElementById('clear-history-btn');
+        if (clearBtn) {
+            clearBtn.addEventListener('click', () => {
+                if (this.history.length === 0) return;
+                if (confirm('确定要清空所有历史记录吗？')) {
+                    this.history = [];
+                    this.saveHistory();
+                    this.addLog('info', '历史记录已清空', null);
+                }
+            });
+        }
+    }
 }
 
-// Initialize
 window.app = new App();

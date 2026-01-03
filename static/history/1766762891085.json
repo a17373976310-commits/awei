@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766762891085,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特头上（非真人），纯白背景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"Commercial product photography of a luxurious three-piece bridal jewelry set displayed on a sleek, matte black mannequin bust. The set includes a high-profile silver tiara with Baroque-inspired filigree and large teardrop crystals, a matching statement V-shaped necklace sitting perfectly on the neck form, and drop earrings. Pure white background (#FFFFFF). Bright, even studio lighting that highlights the sparkle of the crystals against the dark mannequin. High contrast, sharp focus, 85% scale, no text, no props.\",\n    \"seadream_cn\": \"商业产品摄影，展示一套奢华的新娘珠宝三件套，穿戴在一个光滑的哑光黑色人台模型上。套装包含一顶具有巴洛克风格镂空细节和大型水滴形水晶的高耸银色皇冠，一条完美贴合颈部模型的V形项链，以及配套的耳坠。纯白背景（#FFFFFF）。明亮均匀的影棚布光，突出水晶在深色人台上的闪耀光泽。高对比度，对焦清晰，画面占比85%，无文案，无道具。\",\n    \"layout_logic\": \"Since this is an Amazon-style listing image on a pure white background, the layout should center the black mannequin bust vertically. The jewelry needs to be the absolute focal point. The black mannequin provides high contrast to make the silver and crystals 'pop'. Ensure the necklace hangs naturally and the tiara sits securely on the head form. Leave ample whitespace on the edges for safe zones.\"\n  }\n]",
+  "scenario": "amazon_white",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

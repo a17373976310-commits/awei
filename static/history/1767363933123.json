@@ -1,0 +1,10 @@
+{
+  "timestamp": 1767363933123,
+  "original_prompt": "给这个一套首饰做一张亚马逊主图，要求这套首饰放在一个物体上（比如桌子或者其他的台面上）中间，比例合适（大概模特头部大小），有一个欧洲男性和满脸惊喜的女性",
+  "optimized_prompt": "[Visual Description] \nProfessional Amazon Lifestyle Photography. Center Stage: The [Subject Lock] (A cohesive, high-ornamentation bridal jewelry set consisting of a tiara, V-drop necklace, and chandelier earrings. The geometry is defined by intricate baroque-style scrollwork and filigree metal structures). The jewelry is displayed elegantly on a cream-colored velvet jewelry bust stand placed on a polished mahogany table. \n\nEnvironment & Characters: In the blurred background (bokeh), a handsome European male in a suit stands smiling warmly. Beside him, a beautiful European female has a 'surprised and delighted' expression, covering her mouth with her hands in joy, looking at the jewelry. \n\nLighting & Texture: Studio lighting setup mixed with natural window light. High-polish silver-tone alloy sparkles intensely. The large pear-cut crystals catch the light, creating prismatic flares. 8k resolution, sharp focus on the jewelry, depth of field applied to characters.\n\n[Text & UI Layout]\nMain Title: \"The Royal Collection\"\nSub Title: \"Unforgettable Moments\"\nFont Style: Elegant, thin Serif font (like Bodoni or Didot), Gold or Silver color, floating in the negative space at the top.",
+  "scenario": "image_modify",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the jewelry is complex (filigree/crystals), the text should be placed in the 'negative space' (likely the upper part of the image) to avoid visual clutter. The jewelry stand should be the anchor point in the lower-middle foreground. The couple should be slightly out of focus in the back to ensure the product remains the 'Hero' of the image while providing emotional context.",
+  "original_images_count": 2
+}

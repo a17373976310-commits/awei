@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766988505739,
+  "original_prompt": "帮我给这个产品添加一个红色场景，无文案",
+  "optimized_prompt": "[\n  {\n    \"nano_banana_en\": \"[Visual Description]\\nA high-end jewelry editorial shot featuring the [Subject Lock: wide, multi-strand cuff bracelet composed of uniform spherical beads with a warm, peach-to-amber tint]. The bracelet is worn on a model's wrist, positioned elegantly against a luxurious Deep Red background. The background consists of draped crimson velvet or silk satin, creating rich folds and shadows. Warm, cinematic lighting focuses on the bracelet, enhancing the refractive index of the translucent beads, causing them to glow with an inner amber light against the dark red surroundings. The skin tone is natural and soft, contrasting with the bold red scene.\\n\\n[Text & UI Layout]\\nPlace the Main Title \\\"鸿运当头\\\" (Great Luck) in a sophisticated, bold Serif font with a metallic gold texture in the upper right empty space. Below it, add the Subtitle \\\"流光溢彩 腕间风情\\\" (Flowing light and color, style on the wrist) in a smaller, clean white Sans-serif font. Align text to the right to balance the diagonal line of the arm.\",\n    \"seadream_cn\": \"[视觉描述]\\n高级珠宝商业摄影。画面主体为[视觉指纹：多层琥珀色圆珠宽手镯]，佩戴于模特手腕之上，展示出圆润通透的材质质感。场景设定为“红色氛围”，背景采用极具质感的酒红色或中国红丝绸帷幕，布光柔和而富有层次，营造出喜庆且奢华的氛围。重点强调珠子在红色环境光下的通透感，琥珀色与背景的红色相互辉映，形成温暖和谐的色调。光影处理细腻，突出手镯的玻璃光泽和体积感。\\n\\n[文字与UI布局]\\n主标题“鸿运当头”安排在画面右上方或者是左上方的留白处，使用具有传统韵味的烫金宋体或楷体，增强节日氛围。副标题“流光溢彩 腕间风情”位于主标题下方，使用简约的白色非衬线字体，字号较小，行间距适中。\",\n    \"layout_logic\": \"考虑到手腕通常呈现对角线构图，建议将文字排版放置在手腕指向的反方向（通常是左上角或右上角的负空间）。红色背景下，金色（Gold）和白色（White）的文字能产生最佳的可读性与高级感。\"\n  }\n]",
+  "scenario": "image_modify",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766772630220,
+  "original_prompt": "给这套产品穿戴在一个欧洲少女身上，场景圣诞节，要求场景明亮，后面有红色的圣诞树",
+  "optimized_prompt": "[Visual Description]\nA high-key, festive lifestyle photography shot. A young European girl model is wearing the luxurious bridal jewelry set (the silver tiara with peaked silhouette and central teardrop crystal, the V-shaped deep plunge necklace with pear-shaped pendant, and matching chandelier earrings). She is smiling elegantly, radiating joy. The setting is a bright, upscale interior decorated for Christmas. Directly behind her, slightly out of focus to create depth, stands a unique Red Christmas Tree adorned with silver baubles and twinkling fairy lights. The lighting is bright and airy (high-key lighting), emphasizing the sparkle of the clear crystals against her skin.\n\n[Text & UI Layout]\n***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: \"闪耀圣诞夜\" (Sparkling Christmas Eve). Style: [Elegant Serif, Silver or White gradient]. Position: [Top Center or Floating near the shoulder].\n2. **Description**: Content: \"璀璨光芒，点亮节日奇迹\" (Brilliant light, lighting up the holiday miracle). Style: [Clean Sans-serif, smaller].",
+  "scenario": "taobao_detail",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "建议采用中心构图或三分法构图，将欧洲少女安排在画面主要视觉点。红色的圣诞树作为强烈的背景元素，颜色较重，建议通过景深虚化（Bokeh）处理，避免抢夺前景银色珠宝的视觉焦点。文字应放置在画面较“空”的区域（如纯色背景墙面或虚化的树旁），使用白色或银色字体以呼应珠宝材质。",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766391916456,
+  "original_prompt": "给这个珠宝手串做一张主图",
+  "optimized_prompt": "[Visual Description]\n\"现代新中式高端珠宝摄影，玄学与奢华并存的商业风格。主体为一串男士金曜石手串，包含12颗带金沙效应的黑珠、2颗精雕貔貅珠和1颗明亮的黄虎眼石，呈现完美的圆形悬浮构图。\n[Props]: 底部为深色黑檀木纹理或粗糙的火山岩石板，周围环绕极淡的檀香烟雾，增添灵气。\n[Background]: 深邃的暗金风格虚化背景，突出产品的光泽感。\n光线采用[专业珠宝布光]，强调黑珠表面的金色猫眼效应和貔貅的雕刻细节，质感油润透亮。\"\n\n[Text & UI Layout]\n\"***Layout Style**: 经典电商主图布局 (左文右图或居中构图).\nText Rendering Instructions (清晰易读，高转化):\n1. **Main Title**: 内容: “金曜石貔貅手串”. 位置: [左上角黄金视点]. 风格: [立体烫金宋体，带有微弱辉光，彰显贵气].\n2. **Sub Title**: 内容: “招财转运 霸气男款”. 风格: [极简白色黑体，字间距适中].\n3. **Marketing Banner**: 内容: “5A级双金眼严选”. 风格: [磨砂黑金胶囊标签].\n4. **Trust Badge**: 内容: “开光加持”. 风格: [朱砂红印章风格图标].\"",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "1:1",
+  "layout_logic": "This product relies heavily on 'Chatoyancy' (the optical cat's eye effect). \n1. **Lighting**: The prompt emphasizes specific lighting angles to make the 'Golden Sheen' on the black beads and the 'Tiger Eye' strip visible, otherwise, it looks like plain black beads.\n2. **Composition**: A floating or slightly tilted angle is best to show the entire loop and the distinct 'Pixiu' carved beads clearly.\n3. **Text Placement**: Since the beads are dark, use bright metallic gold or pure white text on the dark background areas (Top Left/Right) to ensure maximum readability.",
+  "original_images_count": 1
+}

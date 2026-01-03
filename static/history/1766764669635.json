@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766764669635,
+  "original_prompt": "给这套产品穿戴在一个欧洲新娘身上，场景是生日聚会",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle photography shot capturing a celebratory moment. A beautiful European woman, styled as a birthday queen or bride, wears the [Subject Lock: luxury bridal jewelry set comprising a silver tiara with pear-shaped center, V-shaped crystal necklace, and chandelier earrings]. She is situated in a lavish birthday party setting. The lighting is warm and festive, coming from candles and ambient party lights, creating a dreamy bokeh background. She is smiling naturally, perhaps holding a champagne glass, with a blurred birthday cake in the background. The focus is sharp on the jewelry, capturing the sparkle of the clear crystals against the warm atmosphere.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Natural Integration.\nText Rendering Instructions:\n1. **Mood Title**: Content: “璀璨时刻” (Dazzling Moment). Style: [Elegant Serif, Gold or Silver foil texture]. Position: [Floating in negative space, upper right or left].\n2. **Description**: Content: “专属于你的闪耀加冕” (A sparkling coronation just for you). Style: [Clean Sans-serif, smaller, white with shadow].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "1:1",
+  "layout_logic": "建议采用中景构图（Medium Shot），将模特安排在画面一侧（如左侧），留出右侧的派对背景虚化区域用于放置文案。文字颜色建议使用带金属质感的银色或暖金色，以呼应珠宝的材质或环境的烛光。确保文案不遮挡头饰（Tiara）和项链（Necklace）的关键细节。",
+  "original_images_count": 1
+}

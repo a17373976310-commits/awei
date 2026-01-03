@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766777899014,
+  "original_prompt": "给这个产品做一张详情页，要求一个欧洲模特手捧着这套首饰，正对镜头。",
+  "optimized_prompt": "[Visual Description]\n\"A high-end lifestyle photography shot for a jewelry product detail page. A stunning European female model is facing the camera directly, her expression soft and romantic. She is gently holding the [Subject Lock: silver crystal jewelry set including the baroque tiara, V-shape necklace, and drop earrings] in her cupped hands, lifting them slightly towards the lens to present them. The jewelry sparkles intensely under soft, cinematic studio lighting, highlighting the pear-shaped and marquise-cut rhinestones. She wears a white off-shoulder wedding gown. The background is a soft, creamy bokeh of a luxury bridal dressing room, focusing entirely on the model and the sparkling jewelry.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Elegant Center Focus (视觉聚焦排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “为爱加冕” (Crowning for Love). Style: [Sophisticated Serif, Silver or Champagne Gold Gradient]. Position: [Centered at the bottom over the blurred dress area].\n2. **Description**: Content: “闪耀你的高光时刻” (Shine in your highlight moment). Style: [Minimalist Sans-serif, widely spaced]. Position: [Below the main title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "建议采用中心构图，模特手捧珠宝位于画面中轴线，利用大光圈虚化背景和模特的手臂边缘，将视觉焦点完全集中在模特手中的这套首饰上。文字信息建议放置在底部婚纱的虚化区域或顶部背景留白处，避免遮挡珠宝主体。",
+  "original_images_count": 1
+}

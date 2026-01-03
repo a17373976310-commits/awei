@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766566673160,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求锅斜放。",
+  "optimized_prompt": "[Visual Description]\n\"Modern High-End Kitchenware E-commerce scene, Commercial Studio Photography style. A round culinary frying pan with matte sage green exterior and smooth cream ceramic interior is placed diagonally in the center, tilted slightly to show both the non-stick coating and the curved green sidewall. The handle is crafted from polished stainless steel, pointing upwards to the right. [Props]: Surrounded by fresh basil leaves, a wooden spatula resting nearby, and scattered sea salt crystals (enhancing organic cooking vibe). [Background]: Soft-focus modern kitchen marble countertop with warm sunlight streaming in. Lighting is Bright Commercial Studio Softbox, ensuring the cream ceramic surface gleams and the green matte finish looks rich and tactile.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Top-Bottom Standard (Classic E-commerce Layout).\nText Rendering Instructions (Must be High Contrast & Legible):\n1. **Main Title**: Content: “轻油少烟 陶瓷不沾”. Position: [Top Left Negative Space]. Style: [3D Bold Sans-serif with soft shadow]. Color: [Deep Sage Green or Gold].\n2. **Sub Title**: Content: “健康烹饪新选择”. Style: [Clean and sharp, slightly smaller than main title].\n3. **Marketing Banner**: Content: “一抹即净”. Style: [Premium UI, e.g. '3D Green Gradient Capsule'].\n4. **Trust Badge**: Content: “食品级材质”. Style: [Translucent Glass Badge with Gold Rim].\"",
+  "scenario": "taobao_main",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the pan is requested to be placed diagonally (likely handle pointing top-right or bottom-right), this naturally creates empty negative space in the Top-Left corner. This is the prime 'F-pattern' reading spot for the Main Title. The 'Diagonal' composition adds dynamism, making the product look ready for use.",
+  "original_images_count": 2
+}

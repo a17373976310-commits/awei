@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766762465863,
+  "original_prompt": "给这套产品穿戴在一个黑色人体模特头上（非真人），纯白背景，无文案",
+  "optimized_prompt": "Commercial product photography of a luxury crystal jewelry set worn on a matte black mannequin head against a pure white background (#FFFFFF). [Visual Description]: The set includes a sparkling silver tiara with intricate filigree and large teardrop crystals, a matching diamond-style choker necklace, and a pair of chandelier earrings. The jewelry is elegantly displayed on a sleek, faceless black mannequin bust to maximize contrast and sparkle. [Lighting]: Bright, even studio lighting with soft reflections on the crystals. Soft natural contact shadow at the base of the mannequin. [Text & UI Layout]: No text, no props, clean minimalist composition, 85% scale, centered.",
+  "scenario": "amazon_white",
+  "model": "nano_banana_2_2k",
+  "ratio": "1:1",
+  "layout_logic": "Since the request specifies 'No Text', the layout logic is purely visual. Center the black mannequin bust vertically and horizontally. Ensure the white background is blown out to pure #FFFFFF for Amazon compliance. The black mannequin serves as a high-contrast anchor to make the silver and crystal jewelry pop. Maintain a comfortable margin around the mannequin so the tiara doesn't touch the top edge.",
+  "original_images_count": 1
+}

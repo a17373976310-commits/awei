@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766775803965,
+  "original_prompt": "给这套产品做一张淘宝详情页，一个欧洲模特穿戴着这套首饰，在米色渐变背景里摆出专业的姿势。",
+  "optimized_prompt": "[Visual Description]\n\"A high-end fashion photography shot for a jewelry product detail page. A sophisticated European female model is wearing the [Subject Lock: coordinated three-piece jewelry set featuring a high-arching tiara with scalloped silhouette, a statement V-shape necklace with a pear-shaped drop pendant, and matching drop earrings]. The model strikes a professional, elegant pose against a clean, smooth beige gradient background. The lighting is soft studio illumination (butterfly lighting), designed to make the high-polish silver-tone metal and clear cubic zirconia crystals sparkle intensely. The mood is luxurious, royal, and bridal.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Minimalist High-Fashion (极简时尚排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “奢华加冕”. Style: [Elegant Serif, Metallic Silver Texture]. Position: [Upper left or right negative space].\n2. **Description**: Content: “定格人生高光时刻”. Style: [Light Sans-serif, smaller, clean].\n\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the background is a clean beige gradient, place the text in the negative space (upper left or right) to balance the model's position. Use a metallic or dark grey font color to complement the silver jewelry without clashing with the beige background.",
+  "original_images_count": 1
+}

@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766778393072,
+  "original_prompt": "给这个产品做一张详情页，要求一个欧洲模特手捧着这套首饰，正对镜头，无模糊。",
+  "optimized_prompt": "[Visual Description]\n\"A high-definition commercial portrait for an e-commerce detail page. A sophisticated European female model stands facing the camera directly, making engaging eye contact. She is gently holding a coordinated bridal jewelry set in her hands, presenting it to the viewer. The jewelry includes a classic arched tiara with teardrop crystals, a V-shaped necklace, and chandelier earrings, all featuring intricate silver-tone filigree and clear rhinestones. The lighting is professional studio high-key, ensuring uniform brightness. **Crucial:** The image uses a deep depth of field (f/11), keeping both the model's face and the jewelry completely sharp and in focus with no blur.\"\n\n[Text & UI Layout]\n\"***Layout Style**: Professional & Clean (专业清晰排版).\nText Rendering Instructions:\n1. **Mood Title**: Content: “璀璨瞬间 为爱加冕”. Style: [Elegant Serif, Silver or Diamond texture]. Position: [Top center or overlaid in negative space].\n2. **Description**: Content: “精工镶嵌 · 奢华锆石新娘套组”. Style: [Minimalist Sans-serif, smaller size]. Position: [Below the title].\"",
+  "scenario": "taobao_detail",
+  "model": "comfly_nano_banana",
+  "ratio": "3:4",
+  "layout_logic": "Since the user requested 'no blur' and 'holding the jewelry', the composition should be a medium shot (waist up). The jewelry should be held at chest level to minimize the distance between the face and the product, making it easier to keep everything in focus. Text should be placed in the negative space (likely above the head or to the side if the pose is slightly asymmetrical) to avoid covering the model or the product.",
+  "original_images_count": 1
+}

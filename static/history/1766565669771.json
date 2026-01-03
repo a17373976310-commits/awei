@@ -1,0 +1,10 @@
+{
+  "timestamp": 1766565669771,
+  "original_prompt": "给这个绿色煎锅做一张淘宝主图，要求明亮有质感的白色哑光厨房背景。",
+  "optimized_prompt": "[Visual Description]\n一张极具质感的淘宝天猫主图，风格为现代极简北欧风 (Nordic Minimalist)。主角是一只[圆形煎锅]，拥有标志性的[哑光鼠尾草绿外壁]和[光泽奶油色陶瓷内壁]，手柄为[Y型分叉设计的抛光不锈钢手柄]，带有两颗明显的银色铆钉固定。\n[Props]: 画面中点缀着极简的白色陶瓷调味罐、一把浅色木铲，以及几株鲜嫩的迷迭香，营造“轻食健康”的氛围。\n[Background]: 高级[哑光白色厨房台面]，背景是模糊的白色橱柜或白色瓷砖，整体色调明亮、纯净、通透。\n光线采用[影棚级柔光]，强调陶瓷涂层的温润光泽和锅身磨砂质感的对比，不锈钢边缘要有清晰的高光反射。\n\n[Text & UI Layout]\n***Layout Style**: 经典的左文右图或上文下图结构。\n文字渲染说明 (必须清晰醒目):\n1. **Main Title**: 内容: “清新绿 治愈系烹饪”. 位置: [左上角大面积留白处]. 风格: [加粗无衬线体，深墨绿色，带有轻微投影].\n2. **Sub Title**: 内容: “进口陶瓷釉 · 物理不粘”. 风格: [纤细精致字体，深灰色].\n3. **Marketing Banner**: 内容: “健康首选”. 风格: [清新绿色胶囊按钮].\n4. **Trust Badge**: 内容: “不含PFOA”. 风格: [金属质感盾牌图标].",
+  "scenario": "taobao_main",
+  "model": "doubao_seedream_4_5",
+  "ratio": "3:4",
+  "layout_logic": "Suggest placing the frying pan at a slight 30-45 degree angle to showcase both the creamy interior depth and the sage green exterior wall. The handle should point towards the top-right or right side to guide the eye. Keep the top-left area purely white/matte for the heavy lifting of the copywriting text.",
+  "original_images_count": 2
+}
