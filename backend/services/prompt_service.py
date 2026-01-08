@@ -2,11 +2,11 @@ import requests
 import base64
 import json
 from typing import List
-from ..config import config
-from ..prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
+from config import config
+from prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
 
 class PromptService:
-    def optimize_prompt(self, prompt: str, scenario: str, image_bytes_list: List[bytes] = None, api_key: str = None) -> str:
+    def optimize_prompt(self, prompt: str, scenario: str, image_bytes_list: List[bytes] = None, api_key: str = None, api_url: str = None) -> str:
         print(f"DEBUG_LOG: optimize_prompt called. Scenario: {scenario}, Image Count: {len(image_bytes_list) if image_bytes_list else 0}")
         
         final_api_key = api_key if api_key else config.BANANA_API_KEY
@@ -18,17 +18,17 @@ class PromptService:
         fingerprint = {}
         if image_bytes_list:
             print(f"DEBUG_LOG: Stage 1 - Extracting Fingerprint from {len(image_bytes_list)} images...")
-            fingerprint = self._extract_fingerprint(image_bytes_list, final_api_key)
+            fingerprint = self._extract_fingerprint(image_bytes_list, final_api_key, api_url)
             print(f"DEBUG_LOG: Fingerprint: {fingerprint}")
 
         # 2. Stage 2: Dual-Core Prompt Engine
         print(f"DEBUG_LOG: Stage 2 - Generating Dual-Core Prompts for scenario: {scenario}")
-        optimized_json = self._generate_dual_core_prompts(prompt, scenario, fingerprint, image_bytes_list, final_api_key)
+        optimized_json = self._generate_dual_core_prompts(prompt, scenario, fingerprint, image_bytes_list, final_api_key, api_url)
         
         return optimized_json
 
-    def _extract_fingerprint(self, image_bytes_list: List[bytes], api_key: str) -> dict:
-        url = "https://ai.comfly.chat/v1/chat/completions"
+    def _extract_fingerprint(self, image_bytes_list: List[bytes], api_key: str, api_url: str = None) -> dict:
+        url = f"{api_url.rstrip('/')}/chat/completions" if api_url else "https://ai.comfly.chat/v1/chat/completions"
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}"
@@ -62,7 +62,7 @@ class PromptService:
         }
 
         try:
-            response = requests.post(url, headers=headers, json=payload, timeout=45, proxies={"http": None, "https": None})
+            response = requests.post(url, headers=headers, json=payload, timeout=120, proxies={"http": None, "https": None})
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
             return json.loads(content)
@@ -70,8 +70,8 @@ class PromptService:
             print(f"ERROR: Fingerprint extraction failed: {e}")
             return {}
 
-    def _generate_dual_core_prompts(self, user_prompt: str, scenario: str, fingerprint: dict, image_bytes_list: List[bytes], api_key: str) -> str:
-        url = "https://ai.comfly.chat/v1/chat/completions"
+    def _generate_dual_core_prompts(self, user_prompt: str, scenario: str, fingerprint: dict, image_bytes_list: List[bytes], api_key: str, api_url: str = None) -> str:
+        url = f"{api_url.rstrip('/')}/chat/completions" if api_url else "https://ai.comfly.chat/v1/chat/completions"
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}"
@@ -107,7 +107,7 @@ class PromptService:
         }
 
         try:
-            response = requests.post(url, headers=headers, json=payload, timeout=45, proxies={"http": None, "https": None})
+            response = requests.post(url, headers=headers, json=payload, timeout=120, proxies={"http": None, "https": None})
             response.raise_for_status()
             content = response.json()["choices"][0]["message"]["content"]
             

@@ -296,6 +296,23 @@ textarea:focus {
     border-color: var(--primary);
 }
 
+/* API URL Input */
+.api-url-input {
+    width: 100%;
+    background: var(--bg-input);
+    border: 1px solid var(--border);
+    color: var(--text-main);
+    padding: 0.75rem;
+    border-radius: var(--radius-sm);
+    font-family: inherit;
+    outline: none;
+    transition: var(--transition);
+}
+
+.api-url-input:focus {
+    border-color: var(--primary);
+}
+
 /* Scenario Selector */
 .scenario-selector {
     display: flex;
@@ -395,6 +412,37 @@ textarea:focus {
 .primary-btn:hover {
     background: var(--primary-hover);
     transform: translateY(-1px);
+}
+
+/* Cancel Button */
+.cancel-btn {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.cancel-btn:hover {
+    background: #dc2626;
+    transform: translateY(-1px);
+}
+
+.cancel-btn:active {
+    transform: translateY(0);
+}
+
+.cancel-btn.hidden {
+    display: none;
 }
 
 /* Upload Zone */
@@ -719,6 +767,7 @@ textarea:focus {
     transform: scale(1.05);
     border-color: var(--primary);
 }
+
 /* Work Log Section */
 .log-section {
     margin-top: 1rem;

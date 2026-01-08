@@ -1,5 +1,5 @@
 # backend/models.py
-from .config import config
+from config import config
 
 # Model Registry
 # Format:
@@ -70,3 +70,7 @@ MODEL_REGISTRY = {
         "provider": "openai"
     }
 }
+
+def get_model_info(model_id: str):
+    """Get model information from the registry."""
+    return MODEL_REGISTRY.get(model_id)

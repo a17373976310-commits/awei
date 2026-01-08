@@ -1,10 +1,11 @@
 import requests
 import base64
-from ..config import config
-from ..models import MODEL_REGISTRY
+from config import config
+from models import MODEL_REGISTRY
 
-# 1. 【强制尺寸映射】
-SIZE_MAP = {
+# 1. 【多级尺寸映射系统】
+# 1K 标准版 (约 1MP)
+SIZE_MAP_1K = {
     "1:1":  {"width": 1024, "height": 1024},
     "4:3":  {"width": 1152, "height": 896},
     "3:4":  {"width": 896,  "height": 1152},
@@ -12,13 +13,22 @@ SIZE_MAP = {
     "9:16": {"width": 720,  "height": 1280}
 }
 
-# Doubao 4.5 High-Res Size Map (Min 3.7MP)
-DOUBAO_SIZE_MAP = {
-    "1:1":  {"width": 2048, "height": 2048}, # 4.19MP
-    "4:3":  {"width": 2304, "height": 1728}, # 3.98MP
-    "3:4":  {"width": 1728, "height": 2304}, # 3.98MP
-    "16:9": {"width": 2688, "height": 1512}, # 4.06MP
-    "9:16": {"width": 1512, "height": 2688}  # 4.06MP
+# 2K 高清版 (约 4MP)
+SIZE_MAP_2K = {
+    "1:1":  {"width": 2048, "height": 2048},
+    "4:3":  {"width": 2304, "height": 1728},
+    "3:4":  {"width": 1728, "height": 2304},
+    "16:9": {"width": 2688, "height": 1512},
+    "9:16": {"width": 1512, "height": 2688}
+}
+
+# 4K 超高清版 (约 8MP-12MP)
+SIZE_MAP_4K = {
+    "1:1":  {"width": 3072, "height": 3072},
+    "4:3":  {"width": 3840, "height": 2880},
+    "3:4":  {"width": 2880, "height": 3840},
+    "16:9": {"width": 3840, "height": 2160},
+    "9:16": {"width": 2160, "height": 3840}
 }
 
 OPENAI_SIZE_MAP = {
@@ -75,7 +85,7 @@ class BananaService:
                     pass
             raise Exception(f"API请求失败(已重试{max_retries}次): {str(last_error)}{error_detail}")
 
-    def generate_image(self, prompt: str, ratio: str, image: bytes = None, mask: bytes = None, model_id: str = "nano_banana_2", api_key: str = None):
+    def generate_image(self, prompt: str, ratio: str, image: bytes = None, mask: bytes = None, model_id: str = "nano_banana_2", api_key: str = None, api_url: str = None):
         # Get model config
         model_config = MODEL_REGISTRY.get(model_id)
         if not model_config:
@@ -84,16 +94,22 @@ class BananaService:
         
         print(f"DEBUG_LOG: Using Model: {model_config['name']} ({model_id})")
             
-        # 获取尺寸
-        if model_id == "doubao_seedream_4_5":
-            size_config = DOUBAO_SIZE_MAP.get(ratio, DOUBAO_SIZE_MAP["1:1"])
+        # 智能尺寸选择
+        model_id_lower = model_id.lower()
+        if "4k" in model_id_lower:
+            size_config = SIZE_MAP_4K.get(ratio, SIZE_MAP_4K["1:1"])
+            print(f"DEBUG_LOG: Resolution Tier: 4K")
+        elif "2k" in model_id_lower or "doubao" in model_id_lower:
+            size_config = SIZE_MAP_2K.get(ratio, SIZE_MAP_2K["1:1"])
+            print(f"DEBUG_LOG: Resolution Tier: 2K")
         else:
-            size_config = SIZE_MAP.get(ratio, SIZE_MAP["1:1"])
+            size_config = SIZE_MAP_1K.get(ratio, SIZE_MAP_1K["1:1"])
+            print(f"DEBUG_LOG: Resolution Tier: 1K")
             
         width = size_config["width"]
         height = size_config["height"]
         
-        base_url = model_config["url"].rstrip('/')
+        base_url = api_url.rstrip('/') if api_url else model_config["url"].rstrip('/')
         real_model_id = model_config["model_key"]
         provider = model_config.get("provider", "default")
 
@@ -151,14 +167,19 @@ class BananaService:
         else:
             # --- Standard JSON Request ---
             url = f"{base_url}/images/generations"
+            
+            current_payload = {
+                "prompt": prompt,
+                "negative_prompt": "",
+                "model": real_model_id,
+            }
+            
             if provider == "comfly_json":
-                current_payload = {
-                    "model": real_model_id,
-                    "prompt": prompt,
+                current_payload.update({
                     "size": f"{width}x{height}",
                     "n": 1,
                     "response_format": "url"
-                }
+                })
                 if real_model_id == "nano-banana-2-2k":
                     current_payload["image_size"] = "1K"
                 if image:
@@ -166,21 +187,20 @@ class BananaService:
                     current_payload["image"] = f"data:image/png;base64,{base64_data}"
                     current_payload["strength"] = 0.7
             else:
-                current_payload = {
-                    "prompt": prompt,
-                    "negative_prompt": "",
-                    "model": real_model_id,
-                    "aspect_ratio": ratio
-                }
-                is_doubao = "doubao" in real_model_id.lower()
-                if is_doubao:
+                # Use aspect_ratio for standard ratios, width/height for others
+                standard_ratios = ["1:1", "4:3", "3:4", "16:9", "9:16"]
+                if ratio in standard_ratios:
+                    current_payload["aspect_ratio"] = ratio
+                else:
                     current_payload["width"] = width
                     current_payload["height"] = height
+                    
                 if image:
                     current_payload["image"] = base64.b64encode(image).decode('utf-8')
                     current_payload["strength"] = 0.7
 
             print(f"DEBUG_LOG: Sending JSON Request. URL={url}")
+            print(f"DEBUG_LOG: Payload: {json.dumps(current_payload, indent=2)}")
             response = self._make_request("POST", url, headers=headers, json_data=current_payload)
 
         try:

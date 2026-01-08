@@ -67,6 +67,13 @@
                                 placeholder="粘贴您的 API Key 以调用模型">
                         </div>
 
+                        <!-- API URL Input -->
+                        <div class="control-group">
+                            <label>API 地址 (可选)</label>
+                            <input type="text" id="api-url-input" class="api-url-input"
+                                placeholder="输入自定义 API 地址 (例如: https://api.example.com)">
+                        </div>
+
                         <!-- Scenario Selector -->
                         <div id="group-scenario" class="control-group">
                             <label>应用场景</label>
@@ -91,7 +98,8 @@
                                     <div class="group-label">详情页设计 (Detail Pages)</div>
                                     <div class="group-btns">
                                         <button class="scenario-btn sub-btn" data-value="taobao_detail">淘宝详情</button>
-                                        <button class="scenario-btn sub-btn" data-value="taobao_detail_suite">整套详情页</button>
+                                        <button class="scenario-btn sub-btn"
+                                            data-value="taobao_detail_suite">整套详情页</button>
                                         <button class="scenario-btn sub-btn" data-value="amazon_detail">亚马逊A+</button>
                                     </div>
                                 </div>
@@ -128,6 +136,11 @@
                         <!-- Generate Button -->
                         <button id="generate-btn" class="primary-btn">
                             <span class="icon">✨</span> 应用编辑
+                        </button>
+
+                        <!-- Cancel Button (hidden by default) -->
+                        <button id="cancel-btn" class="cancel-btn hidden">
+                            <span class="icon">⏸️</span> 取消任务
                         </button>
                     </div>
                 </aside>

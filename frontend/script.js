@@ -21,6 +21,8 @@ class App {
         this.isDrawing = false;
         this.history = [];
         this.logs = [];
+        this.currentController = null;  // 添加: 跟踪当前任务的AbortController
+        this.currentTimerInterval = null;  // 添加: 跟踪当前计时器
 
         this.loadHistory();
         this.initTabs();
@@ -28,6 +30,7 @@ class App {
         this.initScenario();
         this.initUpload();
         this.initGeneration();
+        this.initCancelButton();  // 添加: 初始化取消按钮
         this.initHistory();
         this.renderHistory();
         this.initLogPanel();
@@ -37,7 +40,7 @@ class App {
         const saved = localStorage.getItem('banana_history');
         if (saved) {
             try {
-                this.history = JSON.parse(saved);
+                this.history = JSON.parse(saved).slice(0, 4);
             } catch (e) {
                 console.error('Failed to load history', e);
                 this.history = [];
@@ -57,8 +60,8 @@ class App {
         if (this.history.find(h => h.id === item.id)) return;
 
         this.history.unshift(item);
-        // Limit history to 50 items
-        if (this.history.length > 50) this.history.pop();
+        // Limit history to 4 items
+        if (this.history.length > 4) this.history = this.history.slice(0, 4);
 
         this.saveHistory();
         this.renderHistory();
@@ -414,7 +417,24 @@ class App {
 
             const modelSelect = document.getElementById('model-select');
             const modelName = modelSelect ? modelSelect.options[modelSelect.selectedIndex].text : '未知模型';
-            this.addLog('info', '开始生成图像', `模型: ${modelName} | 尺寸: ${this.selectedRatio.value}`);
+            const scenarioMap = {
+                'free_mode': '通用模式',
+                'taobao_main': '淘宝主图',
+                'taobao_detail': '淘宝详情页',
+                'taobao_detail_suite': '整套详情页',
+                'brand_story': '品牌故事',
+                'creative_poster': '创意海报',
+                'amazon_white': '亚马逊白底',
+                'amazon_detail': '亚马逊A+',
+                'image_modify': '图像修改'
+            };
+            const scenarioName = scenarioMap[this.selectedScenario] || this.selectedScenario;
+            this.addLog('info', '🚀 开始生成任务', {
+                '模型': modelName,
+                '场景': scenarioName,
+                '尺寸': this.selectedRatio.value,
+                '图片数量': this.uploadedImages.length > 0 ? `${this.uploadedImages.length} 张` : '无'
+            });
 
             btn.disabled = true;
             let elapsedSeconds = 0;
@@ -429,9 +449,15 @@ class App {
                 elapsedSeconds++;
                 updateButton();
             }, 1000);
+            this.currentTimerInterval = timerInterval;
 
             const controller = new AbortController();
+            this.currentController = controller;
             const timeoutId = setTimeout(() => controller.abort(), 600000); // 10 minutes
+
+            // 显示取消按钮
+            const cancelBtn = document.getElementById('cancel-btn');
+            if (cancelBtn) cancelBtn.classList.remove('hidden');
 
             try {
                 const formData = new FormData();
@@ -441,6 +467,9 @@ class App {
                 if (modelSelect) formData.append('model', modelSelect.value);
                 const apiKeyInput = document.getElementById('api-key-input');
                 if (apiKeyInput?.value) formData.append('api_key', apiKeyInput.value);
+
+                const apiUrlInput = document.getElementById('api-url-input');
+                if (apiUrlInput?.value) formData.append('api_url', apiUrlInput.value);
 
                 if (this.uploadedImages.length > 0) {
                     for (let i = 0; i < this.uploadedImages.length; i++) {
@@ -463,20 +492,35 @@ class App {
                 const submitData = await response.json();
                 const result = await this.pollTaskStatus(submitData.task_id, controller.signal);
 
-                this.addLog('success', '图像生成成功', `耗时: ${elapsedSeconds}秒`);
+                const minutes = Math.floor(elapsedSeconds / 60);
+                const seconds = elapsedSeconds % 60;
+                const timeStr = minutes > 0 ? `${minutes}分${seconds}秒` : `${seconds}秒`;
+                this.addLog('success', '✨ 图像生成成功', {
+                    '耗时': timeStr,
+                    '图片URL': result.url ? '已生成' : '无'
+                });
                 this.showPreview(result.url);
                 this.addToHistory(result);
 
             } catch (error) {
                 console.error(error);
-                const msg = error.name === 'AbortError' ? '生成超时(10分钟)' : error.message;
-                this.addLog('error', '生成失败', msg);
+                const msg = error.name === 'AbortError' ? '⏱️ 生成超时 (10分钟)' : error.message;
+                this.addLog('error', '❌ 生成失败', {
+                    '原因': msg,
+                    '建议': error.name === 'AbortError' ? '图片生成时间较长,请稍后重试' : '请检查网络连接或联系管理员'
+                });
                 alert(`生成失败: ${msg}`);
             } finally {
                 clearInterval(timerInterval);
                 clearTimeout(timeoutId);
                 btn.disabled = false;
                 btn.innerHTML = '<span class="icon">✨</span> 应用编辑';
+
+                // 隐藏取消按钮并清空controller
+                const cancelBtn = document.getElementById('cancel-btn');
+                if (cancelBtn) cancelBtn.classList.add('hidden');
+                this.currentController = null;
+                this.currentTimerInterval = null;
             }
         });
     }
@@ -499,7 +543,12 @@ class App {
                     } else if (task.status === 'failed') {
                         reject(new Error(task.error || '生成失败'));
                     } else {
-                        if (task.progress) this.addLog('info', `生成进度: ${task.progress}%`, null);
+                        // 显示实时进度消息
+                        if (task.progress_message) {
+                            this.addLog('progress', task.progress_message, `进度: ${task.progress}%`);
+                        } else if (task.progress) {
+                            this.addLog('info', `生成进度: ${task.progress}%`, null);
+                        }
                         setTimeout(poll, 2000);
                     }
                 } catch (err) {
@@ -524,7 +573,39 @@ class App {
         if (clearBtn) clearBtn.addEventListener('click', () => this.clearLogs());
         this.addLog('info', '系统已启动', '准备接收生成请求');
     }
+    initCancelButton() {
+        const cancelBtn = document.getElementById('cancel-btn');
+        if (!cancelBtn) return;
 
+        cancelBtn.addEventListener('click', () => {
+            if (this.currentController) {
+                // 取消当前任务
+                this.currentController.abort();
+
+                // 清除计时器
+                if (this.currentTimerInterval) {
+                    clearInterval(this.currentTimerInterval);
+                    this.currentTimerInterval = null;
+                }
+
+                // 重置按钮状态
+                const generateBtn = document.getElementById('generate-btn');
+                if (generateBtn) {
+                    generateBtn.disabled = false;
+                    generateBtn.innerHTML = '<span class="icon">✨</span> 应用编辑';
+                }
+
+                // 隐藏取消按钮
+                cancelBtn.classList.add('hidden');
+
+                // 添加日志
+                this.addLog('warning', '⏸️ 任务已取消', '用户手动取消了生成任务');
+
+                // 清空controller
+                this.currentController = null;
+            }
+        });
+    }
     addLog(type, message, details = null) {
         const now = new Date();
         const timestamp = `${String(now.getHours()).padStart(2, '0')}:${String(now.getMinutes()).padStart(2, '0')}:${String(now.getSeconds()).padStart(2, '0')}`;
@@ -538,18 +619,41 @@ class App {
         const container = document.getElementById('log-list');
         if (!container) return;
         if (this.logs.length === 0) {
-            container.innerHTML = '<div class="log-empty">工作日志将显示在这里</div>';
+            container.innerHTML = '<div class="log-empty">📋 工作日志将显示在这里</div>';
             return;
         }
-        container.innerHTML = this.logs.map(log => `
-            <div class="log-item ${log.type}">
-                <span class="log-timestamp">${log.timestamp}</span>
-                <div class="log-content">
-                    <div class="log-message">${log.message}</div>
-                    ${log.details ? `<div class="log-details">${log.details}</div>` : ''}
+
+        const iconMap = {
+            'info': '📘',
+            'success': '✅',
+            'error': '❌',
+            'warning': '⚠️',
+            'progress': '⏳'
+        };
+
+        container.innerHTML = this.logs.map(log => {
+            const icon = iconMap[log.type] || '📌';
+            const detailsHtml = log.details ? `
+                <div class="log-details">
+                    ${typeof log.details === 'object' ?
+                    Object.entries(log.details).map(([k, v]) => `<div>• <strong>${k}:</strong> ${v}</div>`).join('') :
+                    log.details
+                }
+                </div>` : '';
+
+            return `
+                <div class="log-item log-${log.type}">
+                    <div class="log-icon">${icon}</div>
+                    <div class="log-body">
+                        <div class="log-header">
+                            <span class="log-message">${log.message}</span>
+                            <span class="log-timestamp">${log.timestamp}</span>
+                        </div>
+                        ${detailsHtml}
+                    </div>
                 </div>
-            </div>
-        `).join('');
+            `;
+        }).join('');
         container.scrollTop = 0;
     }
 
@@ -560,6 +664,40 @@ class App {
             this.renderLogs();
             this.addLog('info', '日志已清空', null);
         }
+    }
+
+    initCancelButton() {
+        const cancelBtn = document.getElementById('cancel-btn');
+        if (!cancelBtn) return;
+
+        cancelBtn.addEventListener('click', () => {
+            if (this.currentController) {
+                // 取消当前任务
+                this.currentController.abort();
+
+                // 清除计时器
+                if (this.currentTimerInterval) {
+                    clearInterval(this.currentTimerInterval);
+                    this.currentTimerInterval = null;
+                }
+
+                // 重置按钮状态
+                const generateBtn = document.getElementById('generate-btn');
+                if (generateBtn) {
+                    generateBtn.disabled = false;
+                    generateBtn.innerHTML = '<span class="icon">✨</span> 应用编辑';
+                }
+
+                // 隐藏取消按钮
+                cancelBtn.classList.add('hidden');
+
+                // 添加日志
+                this.addLog('warning', '⏸️ 任务已取消', '用户手动取消了生成任务');
+
+                // 清空controller
+                this.currentController = null;
+            }
+        });
     }
 
     initHistory() {

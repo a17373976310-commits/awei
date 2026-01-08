@@ -8,9 +8,9 @@ from fastapi import FastAPI, UploadFile, Form, File, HTTPException, BackgroundTa
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
-from .services.banana_service import banana_service
-from .services.prompt_service import prompt_service
-from .services.task_service import task_service
+from services.banana_service import banana_service
+from services.prompt_service import prompt_service
+from services.task_service import task_service
 
 def debug_log(message: str):
     """Helper to log debug info to a file since terminal output might be truncated or hard to follow."""
@@ -74,6 +74,7 @@ async def generate(
     scenario: str = Form("general"),
     model: str = Form("nano_banana_2"),
     api_key: Optional[str] = Form(None),
+    api_url: Optional[str] = Form(None),
     image: Optional[list[UploadFile]] = File(None),
     mask: Optional[UploadFile] = File(None)
 ):
@@ -91,7 +92,7 @@ async def generate(
     
     background_tasks.add_task(
         run_generation_task,
-        task_id, prompt, ratio, scenario, model, api_key, image_bytes_list, mask_bytes
+        task_id, prompt, ratio, scenario, model, api_key, api_url, image_bytes_list, mask_bytes
     )
     
     return {"task_id": task_id, "status": "pending"}
@@ -103,19 +104,25 @@ async def run_generation_task(
     scenario: str,
     model: str,
     api_key: Optional[str],
+    api_url: Optional[str],
     image_bytes_list: list[bytes],
     mask_bytes: Optional[bytes]
 ):
     try:
-        task_service.update_task(task_id, status="processing", progress=10)
+        task_service.update_task(task_id, status="processing", progress=5, progress_message="🎬 初始化生成任务...")
         print(f"\n>>> [ASYNC TASK {task_id}] Prompt: {prompt[:50]}... | Model: {model}")
         
         # 1. Optimize prompt
-        task_service.update_task(task_id, progress=20)
+        if image_bytes_list:
+            task_service.update_task(task_id, progress=10, progress_message=f"📸 分析上传的 {len(image_bytes_list)} 张产品图...")
+        
+        task_service.update_task(task_id, progress=15, progress_message="🤖 正在调用 gemini-3-pro-preview 优化提示词...")
         try:
-            optimized_result = prompt_service.optimize_prompt(prompt, scenario, image_bytes_list, api_key)
+            optimized_result = prompt_service.optimize_prompt(prompt, scenario, image_bytes_list, api_key, api_url)
+            task_service.update_task(task_id, progress=30, progress_message="✨ 提示词优化完成")
         except Exception as e:
             print(f"Prompt optimization failed: {e}")
+            task_service.update_task(task_id, progress=30, progress_message="⚠️ 提示词优化失败,使用原始提示词")
             optimized_result = prompt # Fallback to original prompt
         
         final_prompt = optimized_result
@@ -124,21 +131,40 @@ async def run_generation_task(
         try:
             import json
             prompt_data = json.loads(optimized_result)
-            is_seadream = "doubao" in model.lower() or "seadream" in model.lower()
-            if is_seadream:
-                final_prompt = prompt_data.get("seadream_cn", prompt_data.get("nano_banana_en", optimized_result))
+            
+            # Handle Luxury Visual Strategy format
+            if "luxury_visual_strategy" in prompt_data:
+                strategy = prompt_data["luxury_visual_strategy"]
+                screens = strategy.get("screens", [])
+                if screens:
+                    # Default to the first screen (Brand Impact)
+                    first_screen = screens[0]
+                    final_prompt = first_screen.get("positive_prompt", optimized_result)
+                    layout_logic = f"Screen: {first_screen.get('screen_name_zh', '1')}\n{strategy.get('visual_grammar_handbook', {}).get('composition_rules', {})}"
+                else:
+                    final_prompt = optimized_result
             else:
-                final_prompt = prompt_data.get("nano_banana_en", prompt_data.get("seadream_cn", optimized_result))
-            layout_logic = prompt_data.get("layout_logic", "")
-        except:
+                # Standard Dual-Core format
+                is_seadream = "doubao" in model.lower() or "seadream" in model.lower()
+                if is_seadream:
+                    final_prompt = prompt_data.get("seadream_cn", prompt_data.get("nano_banana_en", optimized_result))
+                else:
+                    final_prompt = prompt_data.get("nano_banana_en", prompt_data.get("seadream_cn", optimized_result))
+                layout_logic = prompt_data.get("layout_logic", "")
+        except Exception as e:
+            print(f"DEBUG_LOG: JSON parsing failed or format mismatch: {e}")
             final_prompt = optimized_result
 
         # 2. Generate Image
-        task_service.update_task(task_id, progress=40)
+        from models import get_model_info
+        model_info = get_model_info(model)
+        model_display_name = model_info.get("name", model) if model_info else model
+        task_service.update_task(task_id, progress=40, progress_message=f"🎨 正在使用 {model_display_name} 生成图像...")
         primary_image = image_bytes_list[0] if image_bytes_list else None
         
         try:
-            result = banana_service.generate_image(final_prompt, ratio, primary_image, mask_bytes, model, api_key)
+            result = banana_service.generate_image(final_prompt, ratio, primary_image, mask_bytes, model, api_key, api_url)
+            task_service.update_task(task_id, progress=70, progress_message="🖼️ 图像生成完成,正在处理...")
         except Exception as e:
             error_msg = str(e)
             if "Remote end closed connection" in error_msg or "Connection aborted" in error_msg:
@@ -150,14 +176,13 @@ async def run_generation_task(
         if not result:
             raise Exception("生成服务器未返回有效图像，请检查 API Key 或余额。")
 
-        task_service.update_task(task_id, progress=70)
         debug_log(f"Task {task_id}: Generation result type: {type(result)}")
         if isinstance(result, str):
             debug_log(f"Task {task_id}: Result prefix: {result[:50]}...")
         
         # 3. Proxy image (Download and convert to Base64)
         if result and isinstance(result, str) and result.startswith("http"):
-            task_service.update_task(task_id, progress=80)
+            task_service.update_task(task_id, progress=80, progress_message="📥 正在下载生成的图像...")
             try:
                 # Retry download up to 2 times
                 for attempt in range(2):
@@ -181,6 +206,7 @@ async def run_generation_task(
                 result = f"data:image/png;base64,{result}"
             
         # 4. Save History
+        task_service.update_task(task_id, progress=85, progress_message="💾 正在保存到历史记录...")
         try:
             timestamp = int(time.time() * 1000)
             history_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), "static", "history")
@@ -247,7 +273,7 @@ async def run_generation_task(
         except Exception as e:
             print(f"History save error: {e}")
 
-        task_service.update_task(task_id, status="succeed", progress=100, result={
+        task_service.update_task(task_id, status="succeed", progress=100, progress_message="✅ 完成!", result={
             "id": str(timestamp),
             "url": f"/static/history/{timestamp}.png" if saved_image else result,
             "optimized_prompt": final_prompt,
@@ -266,4 +292,5 @@ async def run_generation_task(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("backend.main:app", host="0.0.0.0", port=8080, reload=True)
+    # Use "main:app" so it works when running from the backend directory
+    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)

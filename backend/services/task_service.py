@@ -15,6 +15,7 @@ class TaskService:
             "type": task_type,
             "status": "pending",
             "progress": 0,
+            "progress_message": "初始化...",
             "result": None,
             "error": None,
             "created_at": time.time(),
@@ -22,7 +23,7 @@ class TaskService:
         }
         return task_id
 
-    def update_task(self, task_id: str, status: str = None, progress: int = None, result: Any = None, error: str = None):
+    def update_task(self, task_id: str, status: str = None, progress: int = None, progress_message: str = None, result: Any = None, error: str = None):
         if task_id not in self.tasks:
             return
         
@@ -31,6 +32,8 @@ class TaskService:
             task["status"] = status
         if progress is not None:
             task["progress"] = progress
+        if progress_message is not None:
+            task["progress_message"] = progress_message
         if result is not None:
             task["result"] = result
         if error is not None:
