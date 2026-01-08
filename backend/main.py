@@ -116,9 +116,9 @@ async def run_generation_task(
         if image_bytes_list:
             task_service.update_task(task_id, progress=10, progress_message=f"📸 分析上传的 {len(image_bytes_list)} 张产品图...")
         
-        task_service.update_task(task_id, progress=15, progress_message="🤖 正在调用 gemini-3-pro-preview 优化提示词...")
+        task_service.update_task(task_id, progress=15, progress_message="🤖 准备提示词优化引擎...")
         try:
-            optimized_result = prompt_service.optimize_prompt(prompt, scenario, image_bytes_list, api_key, api_url)
+            optimized_result = prompt_service.optimize_prompt(prompt, scenario, image_bytes_list, api_key, api_url, task_id, task_service)
             task_service.update_task(task_id, progress=30, progress_message="✨ 提示词优化完成")
         except Exception as e:
             print(f"Prompt optimization failed: {e}")
@@ -155,12 +155,21 @@ async def run_generation_task(
             print(f"DEBUG_LOG: JSON parsing failed or format mismatch: {e}")
             final_prompt = optimized_result
 
+        task_service.update_task(task_id, progress=35, progress_message="🔧 准备图像生成参数...")
         # 2. Generate Image
         from models import get_model_info
         model_info = get_model_info(model)
         model_display_name = model_info.get("name", model) if model_info else model
-        task_service.update_task(task_id, progress=40, progress_message=f"🎨 正在使用 {model_display_name} 生成图像...")
+        provider = model_info.get("provider", "default") if model_info else "default"
         primary_image = image_bytes_list[0] if image_bytes_list else None
+        
+        # More detailed progress based on whether it's text-to-image or image-to-image
+        if primary_image:
+            task_service.update_task(task_id, progress=40, progress_message=f"🖌️ 正在使用 {model_display_name} 进行图像编辑...")
+        else:
+            task_service.update_task(task_id, progress=40, progress_message=f"🎨 正在使用 {model_display_name} 生成图像...")
+        
+        task_service.update_task(task_id, progress=45, progress_message=f"📡 正在发送请求到 {provider} 服务器...")
         
         try:
             result = banana_service.generate_image(final_prompt, ratio, primary_image, mask_bytes, model, api_key, api_url)
@@ -292,5 +301,17 @@ async def run_generation_task(
 
 if __name__ == "__main__":
     import uvicorn
-    # Use "main:app" so it works when running from the backend directory
-    uvicorn.run("main:app", host="0.0.0.0", port=8080, reload=True)
+    import os
+    
+    # Detect if running in production (Zeabur) or development
+    is_production = os.getenv("ZEABUR_SERVICE_ID") is not None
+    
+    # Get port from environment variable (Zeabur sets PORT)
+    port = int(os.getenv("PORT", 8080))
+    
+    if is_production:
+        # Production mode: use backend.main:app and disable reload
+        uvicorn.run("backend.main:app", host="0.0.0.0", port=port, reload=False)
+    else:
+        # Development mode: use main:app (for running from backend directory) and enable reload
+        uvicorn.run("main:app", host="0.0.0.0", port=port, reload=True)

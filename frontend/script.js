@@ -545,9 +545,7 @@ class App {
                     } else {
                         // 显示实时进度消息
                         if (task.progress_message) {
-                            this.addLog('progress', task.progress_message, `进度: ${task.progress}%`);
-                        } else if (task.progress) {
-                            this.addLog('info', `生成进度: ${task.progress}%`, null);
+                            this.addLog('info', task.progress_message, { '进度': `${task.progress}%` });
                         }
                         setTimeout(poll, 2000);
                     }

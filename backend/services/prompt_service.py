@@ -6,7 +6,7 @@ from config import config
 from prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
 
 class PromptService:
-    def optimize_prompt(self, prompt: str, scenario: str, image_bytes_list: List[bytes] = None, api_key: str = None, api_url: str = None) -> str:
+    def optimize_prompt(self, prompt: str, scenario: str, image_bytes_list: List[bytes] = None, api_key: str = None, api_url: str = None, task_id: str = None, task_service = None) -> str:
         print(f"DEBUG_LOG: optimize_prompt called. Scenario: {scenario}, Image Count: {len(image_bytes_list) if image_bytes_list else 0}")
         
         final_api_key = api_key if api_key else config.BANANA_API_KEY
@@ -18,21 +18,30 @@ class PromptService:
         fingerprint = {}
         if image_bytes_list:
             print(f"DEBUG_LOG: Stage 1 - Extracting Fingerprint from {len(image_bytes_list)} images...")
-            fingerprint = self._extract_fingerprint(image_bytes_list, final_api_key, api_url)
+            if task_service and task_id:
+                task_service.update_task(task_id, progress=18, progress_message=f"🔍 正在使用 gemini-3-pro-preview 分析 {len(image_bytes_list)} 张图片...")
+            fingerprint = self._extract_fingerprint(image_bytes_list, final_api_key, api_url, task_id, task_service)
             print(f"DEBUG_LOG: Fingerprint: {fingerprint}")
+            if task_service and task_id:
+                task_service.update_task(task_id, progress=25, progress_message="✅ 产品特征提取完成")
 
         # 2. Stage 2: Dual-Core Prompt Engine
         print(f"DEBUG_LOG: Stage 2 - Generating Dual-Core Prompts for scenario: {scenario}")
-        optimized_json = self._generate_dual_core_prompts(prompt, scenario, fingerprint, image_bytes_list, final_api_key, api_url)
+        if task_service and task_id:
+            task_service.update_task(task_id, progress=28, progress_message="📝 正在使用 gemini-3-pro-preview 生成优化提示词...")
+        optimized_json = self._generate_dual_core_prompts(prompt, scenario, fingerprint, image_bytes_list, final_api_key, api_url, task_id, task_service)
         
         return optimized_json
 
-    def _extract_fingerprint(self, image_bytes_list: List[bytes], api_key: str, api_url: str = None) -> dict:
+    def _extract_fingerprint(self, image_bytes_list: List[bytes], api_key: str, api_url: str = None, task_id: str = None, task_service = None) -> dict:
         url = f"{api_url.rstrip('/')}/chat/completions" if api_url else "https://ai.comfly.chat/v1/chat/completions"
         headers = {
             "Content-Type": "application/json",
             "Authorization": f"Bearer {api_key}"
         }
+        
+        if task_service and task_id:
+            task_service.update_task(task_id, progress=20, progress_message="📷 正在编码图片数据...")
         
         # Prepare content with multiple images
         content_list = [
@@ -61,6 +70,9 @@ class PromptService:
             "response_format": {"type": "json_object"}
         }
 
+        if task_service and task_id:
+            task_service.update_task(task_id, progress=22, progress_message="🚀 正在调用 gemini-3-pro-preview 提取产品特征...")
+        
         try:
             response = requests.post(url, headers=headers, json=payload, timeout=120, proxies={"http": None, "https": None})
             response.raise_for_status()
@@ -70,7 +82,7 @@ class PromptService:
             print(f"ERROR: Fingerprint extraction failed: {e}")
             return {}
 
-    def _generate_dual_core_prompts(self, user_prompt: str, scenario: str, fingerprint: dict, image_bytes_list: List[bytes], api_key: str, api_url: str = None) -> str:
+    def _generate_dual_core_prompts(self, user_prompt: str, scenario: str, fingerprint: dict, image_bytes_list: List[bytes], api_key: str, api_url: str = None, task_id: str = None, task_service = None) -> str:
         url = f"{api_url.rstrip('/')}/chat/completions" if api_url else "https://ai.comfly.chat/v1/chat/completions"
         headers = {
             "Content-Type": "application/json",
@@ -105,6 +117,9 @@ class PromptService:
             ],
             "response_format": {"type": "json_object"}
         }
+
+        if task_service and task_id:
+            task_service.update_task(task_id, progress=29, progress_message="🚀 正在调用 gemini-3-pro-preview 生成双核提示词...")
 
         try:
             response = requests.post(url, headers=headers, json=payload, timeout=120, proxies={"http": None, "https": None})
