@@ -1,11 +1,7 @@
 import requests
 import base64
-try:
-    from config import config
-    from models import MODEL_REGISTRY
-except ImportError:
-    from backend.config import config
-    from backend.models import MODEL_REGISTRY
+from config import config
+from models import MODEL_REGISTRY
 
 # 1. 【多级尺寸映射系统】
 # 1K 标准版 (约 1MP)

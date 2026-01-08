@@ -1,22 +1,29 @@
 import os
+import sys
 import json
 import base64
 import time
 import requests
+
+# Add parent directory to sys.path to support imports in production (Zeabur)
+# This allows both "from config import" and "from backend.config import" to work
+current_dir = os.path.dirname(os.path.abspath(__file__))
+parent_dir = os.path.dirname(current_dir)
+if parent_dir not in sys.path:
+    sys.path.insert(0, parent_dir)
+if current_dir not in sys.path:
+    sys.path.insert(0, current_dir)
+
 from typing import Optional
 from fastapi import FastAPI, UploadFile, Form, File, HTTPException, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.staticfiles import StaticFiles
-# Try relative imports first (for local development), then absolute imports (for production)
-try:
-    from services.banana_service import banana_service
-    from services.prompt_service import prompt_service
-    from services.task_service import task_service
-except ImportError:
-    from backend.services.banana_service import banana_service
-    from backend.services.prompt_service import prompt_service
-    from backend.services.task_service import task_service
+
+# Now imports should work regardless of how the script is run
+from services.banana_service import banana_service
+from services.prompt_service import prompt_service
+from services.task_service import task_service
 
 def debug_log(message: str):
     """Helper to log debug info to a file since terminal output might be truncated or hard to follow."""
@@ -163,10 +170,7 @@ async def run_generation_task(
 
         task_service.update_task(task_id, progress=35, progress_message="🔧 准备图像生成参数...")
         # 2. Generate Image
-        try:
-            from models import get_model_info
-        except ImportError:
-            from backend.models import get_model_info
+        from models import get_model_info
         model_info = get_model_info(model)
         model_display_name = model_info.get("name", model) if model_info else model
         provider = model_info.get("provider", "default") if model_info else "default"
