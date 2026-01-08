@@ -2,8 +2,12 @@ import requests
 import base64
 import json
 from typing import List
-from config import config
-from prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
+try:
+    from config import config
+    from prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
+except ImportError:
+    from backend.config import config
+    from backend.prompts import PRODUCT_LOCK_PROMPT, MAIN_ENGINE_INSTRUCTION, PROMPT_REGISTRY, PROMPT_TEMPLATES
 
 class PromptService:
     def optimize_prompt(self, prompt: str, scenario: str, image_bytes_list: List[bytes] = None, api_key: str = None, api_url: str = None, task_id: str = None, task_service = None) -> str:
