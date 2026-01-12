@@ -86,6 +86,9 @@ class BananaService:
             raise Exception(f"API请求失败(已重试{max_retries}次): {str(last_error)}{error_detail}")
 
     def generate_image(self, prompt: str, ratio: str, image: bytes = None, mask: bytes = None, model_id: str = "nano_banana_2", api_key: str = None, api_url: str = None):
+        # Clean ratio
+        ratio = ratio.strip()
+
         # Get model config
         model_config = MODEL_REGISTRY.get(model_id)
         if not model_config:
@@ -137,7 +140,7 @@ class BananaService:
                 "model": real_model_id,
                 "n": 1,
                 "aspect_ratio": ratio,
-                "size": f"{width}x{height}",
+                # "size": f"{width}x{height}", # Removed to avoid conflict with aspect_ratio
                 "strength": 0.7,
                 "response_format": "url"
             }
@@ -148,6 +151,7 @@ class BananaService:
                 del headers["Content-Type"]
                 
             print(f"DEBUG_LOG: Sending Multipart Request (Img2Img). URL={url}")
+            print(f"DEBUG_LOG: Img2Img Data: {data}")
             response = self._make_request("POST", url, headers=headers, files=files, data=data)
             
         elif provider == "openai":
