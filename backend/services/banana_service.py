@@ -75,9 +75,10 @@ class BananaService:
                 print(f"DEBUG_LOG: Request failed (Attempt {retry_count}/{max_retries + 1}): {error_type}: {e}")
                 
                 # If it's an SSL or Connection error, try disabling SSL verification for the next attempt
-                if isinstance(e, (requests.exceptions.SSLError, requests.exceptions.ConnectionError)):
-                    print("DEBUG_LOG: SSL/Connection error detected. Disabling SSL verification for retry...")
+                if isinstance(e, (requests.exceptions.SSLError, requests.exceptions.ConnectionError, requests.exceptions.Timeout)):
+                    print("DEBUG_LOG: SSL/Connection/Timeout error detected. Disabling SSL verification and extending timeout for retry...")
                     verify_ssl = False
+                    timeout = timeout + 30 # Extend timeout for retry
                 
                 if retry_count <= max_retries:
                     wait_time = 2 * retry_count
